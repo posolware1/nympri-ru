@@ -1,35 +1,29 @@
 # nympri-ru
 
-Russian localization patch for Nymphomania Priestess Alpha 0.80j, plus the NP_Language switch.
+Russian language patch for Nymphomania Priestess. You need the English Alpha 0.80j.
 
-Install: see README_RU.txt.
+It adds Russian text and a language switch. It is not a full game build.
 
-Companion plugins: https://github.com/posolware1/nympri-plugins
+## Install
 
-Ready-to-download archive (same contents as this tree): NymPri_080j_RU_Language_Patch.zip
+Run `install.bat` and point it at the game folder (the folder with `Game.exe` and `www`).
+Python 3 is required (`Add python.exe to PATH` when you install it).
 
----
+The script backs up the files it replaces, copies `www`, and registers the plugins.
 
-Nymphomania Priestess Alpha 0.80j — Russian localization PATCH + language switch
-Patch date: 2026-11-05
+By hand, if you prefer:
 
-Drop-in patch for the English original www folder (Alpha 0.80j).
-No Game.exe / audio / images / movies — translation data + 2 plugins only.
+1. Back up the game folder.
+2. Copy this patch's `www` into the game's `www` (overwrite).
+3. Run `python patch_plugins_js.py path\to\www\js\plugins.js`
+4. Play.
 
-Install
-1. Backup your game (at least www/csv, www/data/System.json, www/js/plugins.js).
-2. Copy this archive's www/ into the game's www/ (overwrite).
-3. Register plugins in www/js/plugins.js:
-   - Insert NP_Language immediately after MEO_Util_Node
-   - Append NP_OptionsCategories at the end of the plugins list
-   Or run: python patch_plugins_js.py path/to/www/js/plugins.js
-   See plugins_fragment.txt for exact JSON lines.
+## Language
 
-Usage
-Default language: Russian. Switch via Options → «Язык / Language»
-or the Title screen «RU | EN» button (reloads the game).
+Russian is the default. Switch in Options → «Язык / Language», or the title-screen button RU | EN.
 
-Architecture: RU is primary (csv + System terms). EN mode reads www/lang/en/.
+Optional, separate mod plugins: https://github.com/posolware1/nympri-plugins
 
-Not included: gameplay mods (battle HUD, elites, diary, Yarizo quests, etc.).
-For the full RU+mod build, use the separate Drive release.
+Advanced: `plugins_fragment.txt` shows the `plugins.js` lines if you edit that file yourself.
+
+Same files, packed: `NymPri_080j_RU_Language_Patch.zip`

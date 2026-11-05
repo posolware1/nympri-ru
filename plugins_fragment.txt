@@ -1,3 +1,6 @@
+// Advanced / необязательно. install.bat вставляет эти строки сам.
+// Use this only when editing www/js/plugins.js by hand.
+
 // === NymPri 0.80j RU Language Patch — plugins.js edits ===
 // 1) RIGHT AFTER the MEO_Util_Node entry, INSERT:
 {"name":"NP_Language","status":true,"description":"v1.1 Language: Russian / English (Options + Title).","parameters":{}},
