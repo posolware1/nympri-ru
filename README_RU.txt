@@ -1,28 +1,32 @@
-Nymphomania Priestess — русский язык (Alpha 0.80j)
+Nymphomania Priestess Alpha 0.80j — патч русской локализации + язык
+Сборка: 2026-11-05
 
-Что это
-Патч перевода для английской Alpha 0.80j: русские тексты и переключатель языка.
-Нужна английская Alpha 0.80j. Это не полная сборка игры.
+ЧТО ЭТО
+Лёгкий патч ПОВЕРХ английской www (Alpha 0.80j).
+Без Game.exe / аудио / картинок / видео — только перевод, EN-оверлей и 2 плагина.
 
-Установка
-Запустите install.bat и укажите папку игры (там лежат Game.exe и www).
-Нужен Python 3: при установке отметьте Add python.exe to PATH.
+Плагины геймплея: https://github.com/posolware1/nympri-plugins
 
-Скрипт сделает бэкап, скопирует www и пропишет плагины.
+ТРЕБОВАНИЯ
+• Оригинал Alpha Ver.0.80j (английская www).
+• Не ставить поверх полной русской сборки с модом.
 
-Вручную, если так удобнее:
-1. Сделайте копию папки игры.
-2. Скопируйте папку www из патча в www игры с заменой файлов.
-3. Выполните: python patch_plugins_js.py path\to\www\js\plugins.js
-4. Запустите игру.
+УСТАНОВКА (Windows)
+1. Бэкап игры (хотя бы www\csv, www\data\System.json, www\js\plugins.js).
+2. Скачайте ZIP релиза или распакуйте этот репозиторий.
+3. Запустите:
+     install.bat "C:\путь\к\игре"
+   или: python install.py "C:\путь\к\игре"
+4. Запустите игру. Язык по умолчанию: Русский.
 
-Язык
-По умолчанию русский.
-Переключение: Настройки → «Язык / Language» или кнопка «RU | EN» на титуле.
+Вручную: скопируйте www\ патча в www\ игры с заменой, затем
+  python patch_plugins_js.py "C:\путь\к\игре\www\js\plugins.js"
+(NP_Language сразу после MEO_Util_Node, NP_OptionsCategories в конце —
+ см. plugins_fragment.txt).
 
-Мод-плагины отдельно (необязательно):
-https://github.com/posolware1/nympri-plugins
+ЯЗЫК
+Настройки → «Язык / Language» или кнопка «RU | EN» на титуле (перезапуск).
+RU — основной; EN читает www\lang\en\.
 
-Подробная правка plugins.js вручную: plugins_fragment.txt
-
-Те же файлы архивом: NymPri_080j_RU_Language_Patch.zip
+ОТКАТ
+Восстановите бэкап www и удалите www\lang\en, NP_Language.js, NP_OptionsCategories.js.

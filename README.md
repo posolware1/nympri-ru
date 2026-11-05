@@ -1,29 +1,39 @@
 # nympri-ru
 
-Russian language patch for Nymphomania Priestess. You need the English Alpha 0.80j.
+Russian localization **patch** for Nymphomania Priestess **Alpha 0.80j**, plus the `NP_Language` switch.
 
-It adds Russian text and a language switch. It is not a full game build.
+Not a full game. No `Game.exe`, audio, images, or movies — translation data + 2 plugins only.
 
-## Install
+Gameplay plugins (battle HUD, diary, elites, …): [nympri-plugins](https://github.com/posolware1/nympri-plugins)
 
-Run `install.bat` and point it at the game folder (the folder with `Game.exe` and `www`).
-Python 3 is required (`Add python.exe to PATH` when you install it).
+Ready ZIP: [Releases](https://github.com/posolware1/nympri-ru/releases) → `NymPri_080j_RU_Language_Patch.zip`
 
-The script backs up the files it replaces, copies `www`, and registers the plugins.
+## Requirements
 
-By hand, if you prefer:
+- English **Alpha 0.80j** install (folder that contains `www\`).
+- Do **not** drop this on top of the full RU+mod build — that is a different package.
 
-1. Back up the game folder.
-2. Copy this patch's `www` into the game's `www` (overwrite).
-3. Run `python patch_plugins_js.py path\to\www\js\plugins.js`
-4. Play.
+## Install (Windows)
 
-## Language
+1. Backup the game (at least `www\csv`, `www\data\System.json`, `www\js\plugins.js`).
+2. Download the release ZIP **or** clone/unpack this repo.
+3. Run:
+   ```bat
+   install.bat "C:\path\to\game"
+   ```
+   Or: `python install.py "C:\path\to\game"`
+4. Start the game. Default language: **Russian**.
 
-Russian is the default. Switch in Options → «Язык / Language», or the title-screen button RU | EN.
+Manual: copy this repo’s `www\` into the game’s `www\` (overwrite), then  
+`python patch_plugins_js.py "C:\path\to\game\www\js\plugins.js"`  
+(`NP_Language` right after `MEO_Util_Node`, `NP_OptionsCategories` last — see `plugins_fragment.txt`).
 
-Optional, separate mod plugins: https://github.com/posolware1/nympri-plugins
+## Language switch
 
-Advanced: `plugins_fragment.txt` shows the `plugins.js` lines if you edit that file yourself.
+Options → **Язык / Language**, or title button **RU | EN** (reloads). Choice is saved in `config.rpgsave`.
 
-Same files, packed: `NymPri_080j_RU_Language_Patch.zip`
+RU is primary (`csv` + System terms). EN mode reads `www\lang\en\`.
+
+## Rollback
+
+Restore your backup of `www` (or `csv` / `System.json` / `plugins.js.bak`) and delete `www\lang\en`, `NP_Language.js`, `NP_OptionsCategories.js`.
