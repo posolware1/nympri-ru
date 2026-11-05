@@ -1,0 +1,617 @@
+共通部,,,共通部追加 ver.1.1.0,共通部追加 ver.1.1.0,破棄禁止,日本語,（下の行もゲーム内で使われます）,,,,,,English,,,,,,,Espanol,,,,,,
+$quest_id=0,変数番号,難易度(5),解放条件(改行区切り),受注場所マップID,,タイトル,[受注場所],[依頼人],[報酬],[進捗],[依頼内容],[依頼詳細],Title:,Place:,Client:,Reward:,Progress:,Description:,Detail:,TITLE:,PLACE:,CLIENT:,REWARD:,PROGRESS:,DESCRIPTION:,DETAIL:
+$quest_id=900101,902,1,$v[999] >= 999,,TRUE,\c[2]廃墟からの脱出,,,,"$progress1=閉じ込められた部屋から脱出する手立てを探す
+$progress4=廃墟から脱出する
+$progress99=完",廃墟から脱出する。,"商人に付き添って乗っていた馬車が襲われてしまった。
+この廃墟から脱出しなくてはならない。",\c[2]Escape from a ruin,,,,"$progress1=Find a way to escape from the room
+$progress4=Escape from the ruin
+$progress99=Complete!",Escape from a ruin.,"The carriage you were riding in with the client was attacked.
+You must escape from this ruin.",,,,,,,
+$quest_id=900102,903,1,,13,TRUE,\c[2]地下下水の調査,王都冒険者ギルド,下水管理員,$g50,"$progress1=ギルド受付で話を聞く
+$progress2=地下下水の奥地の排水溝へと向かいトラブルを解決する
+$progress5=ギルドへ報告する
+$progress99=完了",地下下水の調査,"地下下水の排水溝で何かが詰まってるらしい。
+様子を見てきてくれ。",\c[2]Patrol the Sewer.,Adventurer's Guild,Sewer Maintenance Worker,$g50,"$progress1=Talk to the guild receptionist.
+$progress2=Head over to drain in the depths of the underground sewers and esolve the issue.
+$progress5=Report back to the guild.
+$progress99=Complete!",Underground sewer investigation,"It seems something is clogged in the drain of the underground sewers. 
+Go check it out. ",,,,,,,
+$quest_id=900103,904,1,$v[903] >= 99,13,TRUE,\c[2]新人冒険者訓練,王都冒険者ギルド,,,"$progress1=冒険者ギルド受付で訓練に関して話を聞く
+$progress2=名声を\c[2]10以上\c[0]にして訓練に参加する
+$progress99=完了",冒険者訓練に参加する,"冒険者ギルドは新人冒険者を手厚くサポート！
+百戦錬磨の教官と一線で活躍する先輩冒険者のアドバイスで
+もっともっと強くなれるかも！？",\c[2]The newbie training,Adventurer's Guild,,,"$progress1=Confirm at the Adventurer’s Guild reception in the royal capital.
+$progress2=increase Fame to \c[2]10 or more\c[0] and participate in training
+$progress99=Complete!",Participate in the Beginner Adventurer Training ,"The Adventurer's Guild provides strong support for novice adventurers! 
+Veteran adventurers and instructors teach practical survival skills! ",,,,,,,
+$quest_id=900104,905,1,$v[904] >= 99,,TRUE,\c[2]祈りと対価,王都冒険者ギルド,ホームレス,,"$progress1=”王都玄関口”で依頼主から話を聞く
+$progress2=”王都地下下水１層の鉄格子部屋”から奥へと向かう
+$progress3=”タクちゃんの部屋”を捜索する
+$progress7=冒険者ギルドに報告する
+$progress99=完了",行方不明者の捜索を行う。,"友達が行方不明になっちまったんだ……
+支払える金はねぇ、だけど誰か助けてくんろ……",\c[2]Prayer and Compensation,Adventurer's Guild,Homeless,,"$progress1=\c[2]At the entrance to the royal capital\c[0], listen to the client. 
+$progress2=\c[2]Proceed from the grated room on the first level of the royal capital's underground sewers\c[0].
+$progress3=\c[2]Search the room of Taku-chan located deep within the sewer ground floor\c[0]. 
+$progress7=Report to the adventurer guild.
+$progress99=Complete!",Search for the Missing Person ,"My friend has gone missing... 
+I don't have any money to pay, but please, someone help me... ",,,,,,,
+$quest_id=900105,906,1,$v[905] >= 99,13,TRUE,\c[2]ゴブリン掃討作戦,王都冒険者ギルド,近隣の村の村長,$g150,"$progress1=名声を\c[2]30以上\c[0]にしてギルド受付から作戦に参加する
+$progress2=ゴブリンの巣穴を進み攻略する
+$progress27=襲撃してきたゴブリンたちを倒す
+$progress34=オーガを倒し村を守る
+$progress99=完了",大規模なゴブリンの巣を掃討する。,"村の近くに大きなゴブリンの巣が出来た。
+家畜や村人が連れ去られ被害が出てる。
+根絶やしにしてくれ！",\c[2]Goblin Extermination Operation,Adventurer's Guild,Village Chief of a Nearby Village,$g150,"$progress1=Increase Fame to \c[2]30 or higher\c[0] and join the operation via the guild receptionist.
+$progress2=Advance into the goblin nest and conquer it.
+$progress27=Protect the village from the goblins.
+$progress34=Defeat the ogre and protect the village.
+$progress99=Complete!",Exterminate a large-scale goblin nest,"A large goblin nest has appeared near the village. 
+Livestock and villagers have been abducted, causing significant harm. 
+Wipe them out completely!",,,,,,,
+$quest_id=900107,908,1,$v[999] >= 999,13,TRUE,\c[2]ニンフ教団,王都冒険者ギルド,冒険者ギルド,,"$progress1=交易路にある村でレオン達と合流する
+$progress3=廃神殿を進む
+$progress11=部屋を捜索する
+$progress13=地下の隠しエリアを捜索する
+$progress99=完了",レオンたちと共に行栄不明者の捜索を行う。,"調査の結果、ニンフ教団の信者が出入りしている廃神殿を突き止めた。
+既に冒険者を向かわせたが連絡が途絶えてしまっている。
+行方不明者と連絡が途絶えた行方不明者の捜索も行う必要がある。",\c[2]Nymph Cult,Adventurer's Guild,Adventurer's Guild,,"$progress1=Meet up with Leon and the others in the crossroad village
+$progress3=Proceed through the abandoned temple
+$progress11=Search the rooms of the abandoned temple
+$progress13=Find the secret passage in the temple
+$progress14=Search the hidden area under the temple
+$progress20=The missing people are found — get out together with them
+$progress99=Complete!",Search for the missing persons together with Leon and the others.,"The investigation revealed an abandoned temple frequented by followers of the Nymph Cult.
+Adventurers were already sent there, but communication has been lost.
+It is necessary to search for both the missing persons and the adventurers whose contact was cut off.",,,,,,,
+$quest_id=900109,910,1,$v[908] >= 99,13,TRUE,\c[2]物資輸送,王都冒険者ギルド,王都兵士,$g20,"$progress1=『王都　商店街』にいる兵士から荷物を預かる
+$progress3=『交易路にある村』へと向かい、物資を指定された村人へと届ける
+$progress4=『廃教会のある森』で迷子になった少女を探す
+$progress5=洞窟へと入り捜索を続ける
+$progress6=少女を村へと送り届ける
+$progress99=完了",荷物を交易路にある村へと運ぶ。,この荷物を交易路にある村に住んでいる俺の妻へと運んでほしい。,\c[2]Supply Transport,Adventurer's Guild,Soldier of the Royal Capital,$g20,"$progress1= Receive the package from the soldier in the market street in the Royal Capital.
+$progress3= Head to the ""village on the trade route"" and deliver the supplies to the designated villager
+$progress4= Search for the lost girl in the ""forest with the abandoned church.
+$progress5=Enter the cave and continue the search
+$progress6=Escort the girl back to the village
+$progress99=Complete!","Deliver the package to the village on the trade route.
+","I want you to deliver this package to my wife who lives in the village on the trade route.
+",,,,,,,
+$quest_id=900110,911,1,$v[999] >= 999,,TRUE,\c[2]神の慈悲,,,,"$progress1=『廃教会のある森』で\n[96]を探す
+$progress2=『廃教会』への侵入経路を見つける
+$progress4=\n[97]を探す
+$progress5=謎の女を倒す
+$progress99=完了",,"\n[96]に何か問題が起きたようだ。
+廃教会のある森へと向かった彼を追いかけなくてはならない。",\c[2]Divine Mercy,,,,"$progress1=Search for \n[96] in the forest with the abandoned church
+$progress2=Find a way into the abandoned church
+$progress4=Search for \n[97]
+$progress5=Defeat the mysterious woman
+$progress99=Complete!",Search for \n[96] in the forest with the abandoned church.,"It seems that something has happened to \n[96].
+You must follow him to the forest with the abandoned church.",,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+$quest_id=900202,912,2,$v[1] == 9999,13,TRUE,\c[2]２つ星昇級試験,王都冒険者ギルド,ギルド,,"$progress1=港町でレオン達と合流する
+$progress2=試験内容：森を抜け智と愚の塔へ向かう
+$progress3=『賢者の声』を再生する
+$progress99=完了",試験をクリアし２つ星に昇級する。,"ついに２つ星に昇級する時が来た！
+そのためには試験をパスしなければならない。
+２つ星の試験は非常に簡単なので誰でも難なくパスできるだろう。",\c[2]Exam for 2 Star Adventurers,Adventurer's Guild,Adventurer's Guild Receptionist,,"$progress1=Meet with Leon and Iris at the Port Town.
+$progress2=Test: Reach The Tower.
+$progress3=Trigger the “Voice of the Arch-Mage“.
+$progress99=Complete!",Pass the test and promote your adventurer rank.,"Finally, it's time for you 2 to become 2 Star adventurers!
+Ace the test, you got it!",,,,,,,
+$quest_id=900203,913,2,$s[302] == true,13,TRUE,\c[2]オーク豚討伐,王都冒険者ギルド,"$progress1=Confirm at the Adventurer’s Guild reception in the royal capital.
+$progress2=increase Fame to \c[2]10 or more\c[0] and participate in training
+$progress99=Complete!",$g100,"$progress1=魔女の森の洞窟前で冒険者二人と合流する
+$progress2=オーク豚を討伐する
+$progress3=冒険者二人と合流する
+$progress99=完了",オーク豚の討伐に手を貸す。,"人が住む集落の近くのオーク豚が現れた。
+洞窟まで追い込んだが念のために援護に来てほしい。",\c[2]Orc Pig,Adventurer's Guild,Adventurer,$g100,"$progress1=Meet the adventurers in the forest with the abandoned church
+$progress2=Enter the cave where the orc pig is hiding
+$progress3=Defeat the orc pig
+$progress5=Talk to the adventurers
+$progress99=Complete!",Help the adventurers finish off the cornered orc pig.,"We cornered an orc pig in a cave, but going in after it alone is scary.
+We need backup — just in case!",,,,,,,
+$quest_id=900204,914,2,$v[913] == 99,13,TRUE,\c[2]孤児院の安全,王都冒険者ギルド,孤児院,$g100,"$progress1=ギルド受付嬢に詳細を確認する
+$progress2=孤児院の院長と話す
+$progress3=地下倉庫の調査
+$progress4=孤児院・院長に報告する。
+$progress99=完了",孤児院の安全を確保する。,"地下倉庫から怪しい物音が聞こえるのです。
+子供たちの安全のためにも調査をお願いします。",\c[2]Security verification,Adventurer's Guild,Orphanage,$g100,"$progress1=Talk to the guild receptionist
+$progress2=Talk to the head of the orphanage
+$progress3=Investigate the warehouse
+$progress4=Report to the head of the orphanage
+$progress99=Complete!",Secure the safety of the orphanage.,"I’ve heard some strange noise from the warehouse.
+Please investigate.",,,,,,,
+$quest_id=900205,915,2,$v[914] == 99,13,TRUE,\c[2]あしながおじさん,王都冒険者ギルド,？？？,$g100,"$progress1=ギルド受付嬢から荷物を預かる
+$progress2=孤児院へ荷物を届ける
+$progress3=孤児院内を捜索する
+$progress99=完了",孤児院へ荷物を届ける。,指定した日時で孤児院への荷物をの運搬をお願いします。,\c[2]Daddy-Long-Legs,Adventurer's Guild,???,$g100,"$progress1=Pick up the parcel for the orphanage from the guild receptionist
+$progress2=Deliver the parcel to the orphanage
+$progress3=Gnolls are attacking the orphanage — fight them off
+$progress7=Break into the burning orphanage
+$progress9=Find the priest in the burning orphanage
+$progress10=Fight through to the chapel with the priest and save the children
+$progress11=Get out of the burning orphanage
+$progress12=Cross the Titan Step to the town in the wasteland
+$progress14=To be continued in a future version of the game
+$progress99=Complete!",Deliver the parcel to the orphanage.,"Please deliver this parcel to the orphanage on time.
+The sender wishes to remain anonymous.",,,,,,,
+$quest_id=900206,916,2,$v[1] == 9999,13,TRUE,\c[2]悪しき狩人達,王都冒険者ギルド,無し,,"$progress1=地下下水第３層『ノールのアジト』へと向かう
+$progress2=地下下水第２層でホームレスのロシタを探す
+$progress3=ノールから情報を聞き出す
+$progress4=ノールのアジトから逃げる
+$progress5=焼却施設から脱出する
+$progress99=完了",王都地下下水でノール達の孤児院襲撃について調べる,"\v[50]！　私は罪無き人々を手にかけたノール達を決して許すことができません！
+必ずや報いを受けさせる必要があります！",\c[2]Dirty Hunters,Adventurer's Guild,—,,"$progress1=Go down to the 3rd floor of the Sewers, to the Gnoll lair
+$progress2=Find the homeless Losito on the 2nd floor of the Sewers
+$progress3=Return to the Gnolls and find out who is behind the raid
+$progress5=Escape from the Gnoll lair
+$progress7=Leon: get through the guarded ruins
+$progress11=Iris: find out about Dogeshun in the noble mansion
+$progress16=Escape from the 4th floor of the Sewers
+$progress17=Find Losito on the 2nd floor of the Sewers
+$progress18=Find out what is happening to Losito
+$progress99=Complete!",Investigate the raid on the orphanage and find who planned the attack.,"I can’t forgive what these raiders have done…
+We must find out who the mastermind is behind this!",,,,,,,
+,,,,,TRUE,,,,,,,,,,,,,,,,,,,,,
+$quest_id=900301,922,3,$v[1] == 9999,13,TRUE,\c[2]タイタン・ステップ,王都冒険者ギルド,冒険者ギルド,,"$progress1=『南部に続く森』を抜ける
+$progress2=『荒野の街』を目指す
+$progress3=荒野の街の冒険者ギルドでデーモンについて話を聞く
+$progress4=『ホスピタル騎士団駐屯所』でホスピタラーに話を聞く
+$progress5=『荒野の街』の冒険者ギルドで報告する
+$progress99=完了",タイタン・ステップに向かい発生しているデーモンの目撃情報について調査する。,タイタン・ステップに向かい発生しているデーモンの目撃情報について調査する。,\c[2]Titan Step,Adventurer's Guild,Adventurer's Guild Receptionist,,"$progress1=Travel through the forest leading south
+$progress2=Head toward the town in the wasteland
+$progress3=Ask about the daemon incident at the Adventurer's Guild in the wasteland town
+$progress4=Head to the camp of the Hospital Knights and talk to the Hospitaller
+$progress5=Report to the Adventurer's Guild in the wasteland town
+$progress99=Complete!",Find out about the daemon that appeared on the Titan Step.,"A daemon has appeared on the Titan Step.
+The guild in the wasteland town is waiting for reinforcements — find out what happened there.",,,,,,,
+$quest_id=900302,923,3,$v[1] == 9999,246,TRUE,\c[2]ポイズン・ピンク,荒野の街冒険者ギルド,無し,,"$progress1=荒野の街スラムで情報を集める
+$progress3=荒野の街南部の遺跡でポイズン・ピンクを見つける
+$progress15=王都冒険者ギルドへ報告する
+$progress16=王城へと向かう
+$progress17=千里眼の占い師と喋る
+$progress18=スラムに向かい千里眼の占い師を探す
+$progress99=完了",ノールとデーモンの関連性を探る。,ノールとデーモンの関連性を探る。,\c[2]Poison Pink,Adventurer's Guild,—,,"$progress1=Gather information in the slum of the wasteland town
+$progress3=Find traces of Poison Pink in the Bloody Ruins
+$progress15=Report to the Adventurer's Guild in the capital
+$progress16=Head to the royal castle
+$progress17=Talk with The Eye
+$progress18=Head to the slum of the capital and find The Eye
+$progress20=Repel the Gnoll attack on the slum of the capital
+$progress28=To be continued in a future version of the game
+$progress99=Complete!",Find out how the Gnolls and the daemon of the Titan Step are connected.,"Gnolls, a daemon and a strange pink drug — too many coincidences.
+Start with the slum of the wasteland town.",,,,,,,
+$quest_id=900303,924,3,$v[1] == 9999,13,TRUE,\c[2]血と骨,王都冒険者ギルド,国王,,"$progress1=未実装
+$progress99=完了",ノールとの戦いに備える,ノールとの戦いに備える。,\c[2]Blood and Bone,Adventurer's Guild,King,,"$progress1=Prepare for the battle against the Gnolls (to be continued in a future version)
+$progress99=Complete!",Prepare to fight the Gnolls.,"The Gnolls are gathering their forces.
+The King needs every blade — prepare for a great battle.",,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+$quest_id=900351,931,3,$v[1] == 9999,13,TRUE,\c[2][アイリス編]悪徳の街へようこそ,無し,無し,,"$progress1=街を散策する
+$progress2=レッド・ピラミッドへと向かう
+$progress5=夜に『星降る丘』へと向かう
+$progress99=完了","アリーナに出場するため『悪徳の街』へとやってきた\n[4]。
+アリーナ出場まで時間はある。",悪徳の街を散策する。,\c[2][Iris] Welcome to Sin City!,-,-,,"$progress1=walks in the town
+$progress2=heads to “Red Pylamid”
+$progress5=heads to “Starry Hill” in night
+$progress99=Complete!","\n[4] arrived at Sin City for Arena.
+She starts to investigate the town.","\n[4] arrived at Sin City for Arena.
+She starts to investigate the town.",,,,,,,
+$quest_id=900352,932,3,$v[1] == 9999,13,TRUE,\c[2][アイリス編]夢魔の夢,無し,無し,,"$progress1=『タイガーズ・デン』へと向かう
+$progress2=\n[73]の話を聞く
+$progress3=夜に『タイガーズ・デン』に戻る
+$progress4=未実装
+$progress99=完了",体の刻印の正体を知るため、マダム・\n[73]の話を聞く必要がある。,\n[73]の話を聞く。,\c[2][Iris] Succubus Dream,-,-,,"$progress1=Head to Tigers Den
+$progress2=Ask \n[73] about the mark
+$progress3=Head to Tigers Den at night
+$progress4=To be continued in a future version of the game
+$progress99=Complete!",\n[4] must ask \n[73] about the strange mark.,"A strange mark on \n[4]’s body won’t let her rest.
+Maybe \n[73] knows what it is?",,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+$quest_id=101001,1003,1,$v[903] == 99,13,,大ネズミ討伐（周回）,王都冒険者ギルド,ギルド,$g50,"$progress1=大ネズミを残り\c[2]@ec(([11 - \v[1003], 0].max))匹\c[0]倒す
+$progress99=完",大ネズミを\c[2]10\c[0]匹倒す,下水道のネズミが多すぎる！退治して！,Exterminate Giant Rats. (Repeatable),Adventurer's Guild,Adventurer's Guild Receptionist,$g50,"$progress1=Defeat remaining \c[2]@ec(([11 - \v[1003], 0].max))\c[0] Giant Rats.
+$progress99=Complete!",Defeat 10 Giant Rats.,"There are STILL too many rats!
+Please exterminate them!",,,,,,,
+$quest_id=101002,1004,1,$v[903] == 99,13,,蔓延る蜘蛛の巣,王都冒険者ギルド,ギルド,"$g50
+$i2x2","$progress1=蜘蛛の糸を残り\c[2]@ec((10 - $gameParty.numItems($dataItems[302])))個\c[0]集める
+$progress2=冒険者ギルドに報告する
+$progress99=完",蜘蛛の糸を\c[2]10\c[0]個集める,蜘蛛の巣を潰して\c[2]蜘蛛の糸を１０個\c[0]集めてください。,Concerns about growing Spider Webs.,Adventurer's Guild,Adventurer's Guild Receptionist,"$g50
+$i2x2","$progress1=Spider Webs left to collect: \c[2]@ec(([10 - $gameParty.numItems($dataItems[302]), 0].max))\c[0]
+$progress2=Report to the Adventurer’s Guild
+$progress99=Complete!",Collect 10 Spider Webs,Remove and gather 10 \c[2]Spider Webs\c[0].,,,,,,,
+$quest_id=101003,1005,1,$v[903] == 99,13,,このストッキング誰のもの？,王都冒険者ギルド,恋するジョージ,$g100,"$progress1=王都広場で恋するジョージと話す
+$progress2=王都内でストッキングの持ち主を探す
+$progress99=完",ストッキングの持ち主を探す,"この甘美な香りのストッキングの持ち主を
+探してほしい。",Whose pantyhose are these?,Adventurer's Guild,George,$g100,"$progress1=Talk to George at the central district.
+$progress2=Find out who the owner of the stockings is.
+$progress99=Complete!",Find the owner of the stockings.,Please find the owner of these luscious smelling stockings.,,,,,,,
+$quest_id=101004,1006,1,$v[903] == 99,13,,私の指輪を探して,王都冒険者ギルド,新妻,$g50,"$progress1=王都玄関で新妻と会話する
+$progress2=地下下水で指輪を探す
+$progress4=指輪を新妻に渡す
+$progress99=完",新妻が紛失した指輪を探す,"彼からもらった大事な指輪を排水溝の中に
+落としてしまったの。
+探してきて！",Please help find my ring.,Adventurer's Guild,Wife,$g50,"$progress1=Talk to the client at the entrance area.
+$progress2=Find the ring in the sewer.
+$progress4=Return the ring to the wife.
+$progress99=Complete!",Find the client's engagement ring.,"I dropped my precious ring in the gutters.
+Please find it!",,,,,,,
+$quest_id=101005,1007,1,,156,,開かずの宝箱,教会療養所地下倉庫,シスター,,"$progress1=開かずの宝箱をピッキングで解錠する
+$progress99=完",宝箱を解錠する,,Mysterious chest in Church...,Church,Nun,N/A,"$progress1=Attempt to open the chest.
+$progress99=Complete!",Attempt to open the chest.,What's inside this locked chest...?,,,,,,,
+$quest_id=101006,1008,1,$v[225] >= 1,19,,錬金術の材料１,ポーションメーカーショップ,ポーションメーカー,$g100,"$progress1=赤い花を１０個と蜘蛛の糸を5個を集める
+$progress2=ポーションメーカーに納品する
+$progress99=完",材料を集める,赤い花×10と蜘蛛の糸×5を集めてきて。,Gathering materials for alchemy1,Potion Shop,Potion Maker,$g100,"$progress1=Collect 10 Red Flowers and 5 Spider Webs
+$progress2=Deliver the materials to the Potion Maker
+$progress99=Complete!",Gathering materials for alchemy.,Collect 10 Red Flowers and 5 Spider Webs.,,,,,,,
+$quest_id=101007,1009,1,$v[225] >= 2,19,,錬金術の材料２,ポーションメーカーショップ,ポーションメーカー,$g100,"$progress1=欠けた牙５個と魔物の血5個を集める
+$progress2=ポーションメーカーに納品する
+$progress99=完",材料を集める,欠けた牙×5と魔物の血×5を集めてきて。,Gathering materials for alchemy2,Potion Shop,Potion Maker,$g100,"$progress1=Collect 5 Chipped Fangs (wolves) and 5 Monster Bloods (goblins)
+$progress2=Deliver the materials to the Potion Maker
+$progress99=Complete!",Gathering materials for alchemy.,Collect 5 Chipped Fangs and 5 Monster Bloods.,,,,,,,
+$quest_id=101008,1010,1,$v[903] == 99,13,,荷運び１,王都冒険者ギルド,市民,$g20,"$progress1=王都玄関口で市民から荷物を預かる
+$progress2=交易路にある村にいる村人に荷物を届ける
+$progress99=完",荷物を運ぶ,この荷物を\c[2]交易路にある村\c[0]にいる人に届けてほしいの。,Cargo transportation1,Adventurer's Guild,Civilian,$g20,"$progress1=Receive luggage from the citizen at the royal capital's entrance
+$progress2=Deliver the luggage to the villager at the crossroads village
+$progress99=Complete!",Deliver a piece of luggage,Please deliver this package to the person in \c[2]the crossroads village\c[0],,,,,,,
+$quest_id=101009,1011,1,$v[903] == 99,13,,荷運び２,王都冒険者ギルド,兵士,$g20,"$progress1=王都玄関口で兵士から荷物を預かる
+$progress2=青の洞窟にいる兵士に荷物を届ける
+$progress99=完",荷物を運ぶ,補給物資を\c[2]入り江洞窟\c[0]の兵士に渡してくれ,Cargo transportation2,Adventurer's Guild,Soldier,$g20,"$progress1=Receive luggage from the soldier at the royal capital's entrance
+$progress2=Deliver the luggage to the soldier at the blue cave
+$progress99=Complete!",Deliver a piece of luggage,Please take this luggage to the soldier in \c[2]Blue cave\c[0],,,,,,,
+$quest_id=101010,1012,1,$v[903] == 99,13,,王都に迫る悪魔の影,王都冒険者ギルド,魔法学園生徒,$g100,"$progress1=王都中央広場で学園の男子生徒から話を聞く
+$progress2=女子生徒に関する目撃情報を残り\c[2]@ec(([5 - \v[1012], 0].max))人\c[0]から聞き出す。
+$progress10=女子生徒に会い、話をする。
+$progress99=完",人探しを行う,"この王都に魔の者の手が迫ろうとしているでゴザル！
+拙者の正義にどなたか協力してくだされェ！！！",The shadow of Chaotic,Adventurer's Guild,Academy Student,$g100,"$progress1=Talk with a male student at the central street.
+$progress2=Gather information about a female student from the remaining \c[2]@ec(([5 - \v[1012], 0].max)) people\c[0]
+$progress10=Talk with a female student on the low traffic street.
+$progress99=Complete!",Find a person,"Evil forces are approaching this royal capital!
+Will someone assist me in my quest for justice!!!",,,,,,,
+$quest_id=101011,1013,1,$v[225] >= 1,19,,魔物を倒して１,ポーションメーカーショップ,ポーションメーカー,$g50,"$progress1=蜘蛛を残り\c[2]@ec(([6 - \v[1013], 0].max))匹\c[0]倒す
+$progress99=完",蜘蛛を５匹倒す,蜘蛛５匹分の足が必要。倒してきて。,Defeat monsters,Potion Shop,Potion Maker,$g50,"$progress1=Defeat remaining \c[2]@ec(([6 - \v[1013], 0].max))\c[0] Spiders.
+$progress99=Complete!",Defeat 5 Spiders.,I need spider legs. Defeat 5 spirders.,,,,,,,
+$quest_id=101012,1014,1,$v[225] >= 1,19,,薬を届けて１,ポーションメーカーショップ,ポーションメーカー,$g30,"$progress1=薬を港町の船乗りに届ける
+$progress99=完",荷物を運ぶ,この薬を港町の船乗りに届けて。,Deliver the potion,Potion Shop,Potion Maker,$g30,"$progress1=Deliver the luggage to the sailor at the port town
+$progress99=Complete!",Deliver a piece of luggage,Deliver the potion to the sailor in the port town.,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+$quest_id=106001,1042,1,,232,,ゴブリンの討伐（周回）,交易路にある村,村人,$g70,"$progress1=ゴブリンを残り@ec(([6 - \v[1042], 0].max))匹倒す
+$progress99=完",ゴブリンを\c[2]５\c[0]匹倒す,入り江洞窟に現れるゴブリン退治を手伝ってほしい。,Exterminate Goblins.,Village close to trading route,Villager,$g70,"$progress1=Defeat @ec(([6 - \v[1042], 0].max)) Goblins
+$progress99=Complete!",Defeat 5 Goblins.,Please help us defeat the Goblins residing at the Cave Cove.,,,,,,,
+$quest_id=106002,1043,1,,232,,牧場しぼり,交易路にある村,ファーマー,$g50,"$progress1=交易路にある村の酪農家と”会話”する
+$progress99=完",農家の手伝いをする,牛の乳絞りを手伝ってくんろ。若ぇおなごがええなぁ。,Help with milking at the ranch.,Village close to trading route,Old farmer,$g50,"$progress1=”Talk” to the farmer in the village close to trading route.
+$progress99=Complete!",Help the farmer with his request.,"Help me milk some cows.
+I prefer to hire a young woman.",,,,,,,
+$quest_id=106003,1044,1,$v[1043] >= 99,232,,さちこの乳,交易路にある村,ファーマー,$g100,"$progress1=畜産農家の話を聞く
+$progress2=ミルキングポーションを手に入れる
+$progress3=畜産農家にミルキングポーションを渡す
+$progress99=完",農家の悩みを解決する,"さちこのよぉ、乳の出が悪ぃんだぁ。
+さちこのためによぉ……
+ちょっと王都までお使いしてくんねぇかなぁ。",Sachiko's Milk,Village close to trading route,Old farmer,$g100,"$progress1=Get more information from the farmer.
+$progress2=Acquire a Milking Potion.
+$progress3=Give Milking Potion to the farmer.
+$progress99=Complete!",Help the farmer out.,"My Sachiko has problems with milking...
+Please visit the Kingdom and buy a potion for her.",,,,,,,
+$quest_id=106004,1045,1,"$v[1044] >= 99
+$s[290] == true",232,,新たな販路を求めて,交易路にある村,ファーマー,$g100,"$progress1=畜産農家の話を聞く
+$progress2=牛乳販売の護衛と手伝い
+$progress99=完",農家の悩みを解決する,"最近売れ行きが悪くてよぉ……
+港町まで販路拡大しようと思ってんだぁ。",Milk Road,Village close to trading route,Old farmer,$g100,"$progress1=Talk to the farmer.
+$progress2=Help out the farmer.
+$progress99=Complete!",Resolve the farmer's problem.,"I wish to make a new trade route…
+It will be called the Milk Road!",,,,,,,
+$quest_id=106005,1046,1,$v[1] == 9999,232,,牧場物語,交易路にある村,ファーマー,$g100,"$progress1=住み込みで手伝いをする
+$progress2=働く
+$progress99=完",農家の悩みを解決する,"爆売れでありてぇんじゃが……
+人手が足りてないんじゃあ……
+１週間程度でエエから手伝ってくんろ。",Harvest Moon,Village close to trading route,Old farmer,$g100,"$progress1=Help out the farmer.
+$progress2=Work!
+$progress99=Complete!",Resolve the farmer's problem.,I need your help!,,,,,,,
+$quest_id=106006,1047,1,,232,,狼討伐（周回）,交易路にある村,村人,$g80,"$progress1=狼を残り@ec(([11 - \v[1047], 0].max))匹倒す
+$progress99=完",狼を\c[2]10\c[0]匹倒す,狼の群れが増えて被害が多発している！,Exterminate Giant Wolfs. (Repeatable),Village close to trading route,Villager,$g80,"$progress1=Wolves left to defeat: \c[2]@ec(([11 - \v[1047], 0].max))\c[0]
+$progress99=Complete!",Defeat 10 Wolfs.,"There are STILL too many wolfs!
+Please exterminate them!",,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+$quest_id=102001,1052,1,,999,,貝殻探し,シャイニング・ビーチ,村人,$g50,"$progress1=『洞窟を抜けた先にある海岸』で波の音が聞こえる貝殻を探す
+$progress99=完",波の音が聞こえる貝殻を探す,彼との思い出の貝殻を探してください。,Wave Sound,Shining Beach,Villager,$g50,"$progress1= Find a seashell that lets you hear the sound of the waves.
+$progress2= Deliver the seashell to the client.
+$progress99=Complete!",Find a seashell.,Please help me to find a seashell that lets you hear the sounds of the waves.,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+$quest_id=202001,1122,2,,233,,海賊討伐,港町,漁師,$g100,"$progress1=海賊を残り@ec(([6 - \v[1122], 0].max))匹倒す
+$progress99=完",海賊を\c[2]5\c[0]人倒す,"海賊どもに海を荒らされて大変だ！
+こらしめてくれ！",Exterminate Pirates,Port town,Fisherman,$g100,"$progress1=Defeat @ec(([6 - \v[1042], 0].max)) Pirates
+$progress99=Complete!",Defeat 5 Pirates,Please help us defeat the Pirates!,,,,,,,
+$quest_id=202002,1123,2,,233,,海賊キャプテンを討て！,港町,漁師,$g100,"$progress1=海賊キャプテンを倒す
+$progress99=完",海賊キャプテンを倒す,海賊キャプテンを倒してくれ！,Exterminate Pirate Captain,Port town,Fisherman,$g100,"$progress1=Defeat Pirate Captain
+$progress99=Complete!",Defeat a Pirate Captain,Please help us defeat the Pirate Captain!,,,,,,,
+$quest_id=206001,1142,2,$v[1] == 9999,232,,ウェアウルフ討伐,交易路にある村,村人,$g150,"$progress1=廃教会のある森でウェアウルフを討伐する
+$progress2=依頼主に報告する
+$progress99=完",ウェアウルフを倒す,廃教会にある森に出没するウェアウルフを討伐してほしい。,Exterminate Werewolf,Village close to trading route,Villager,$g150,"$progress1=Defeat Werewolf in the forest close to the trading route village
+$progress2=Report to the client.
+$progress99=Complete!",Defeat a Werewolf,Please help us defeat the Werewolf!,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+$quest_id=201003,1105,2,$v[9] >= 2,13,,偉大な魔法使いを目指して,王都冒険者ギルド,新米魔法使い,$g100,"$progress1=「ダンシング・ユニコーン」の2階左奥の部屋へ向かう
+$progress2=依頼主の問題を解決する
+$progress99=完",新米魔法使いの悩みを解決する,"わ、私は新米魔法使いなのですが……
+ご協力していただきたいことが……
+だ、だ、男性一人でお願いします……
+ダンシング・ユニコーンの2階左奥の部屋で待ってます……",I want to be a great Wizard,Adventurer's Guild,Newbie Mage,$g100,"$progress1=Come \c[2]alone, without your partner\c[0], to the far left room on the 2nd floor of The Dancing Unicorn
+$progress2=Hear out the beginner Mage and help her
+$progress99=Complete!",Help the beginner Mage.,"I-I’m a beginner Mage…
+I need an assistant for a magic experiment. Please come alone!",,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+$quest_id=201005,1107,2,$v[9] >= 2,13,,浴場改良,王都冒険者ギルド,大浴場店主,$g100,"$progress1=大浴場の受付で話を聞く
+$progress2=赤い花を残り\c[2]@ec((10 - $gameParty.numItems($dataItems[350])))個\c[0]、白い花を残り\c[2]@ec((10 - $gameParty.numItems($dataItems[351])))個\c[0]、薬草を残り\c[2]@ec((5 - $gameParty.numItems($dataItems[2])))個\c[0]を集める
+$progress3=浴場に納品する
+$progress99=完",指定されたアイテムを集める,"疲労の溜まった冒険者たちのために大浴場を
+更に強化したい！手伝ってほしい！",Improving bath house,Adventurer's Guild,The keeper of the bath house,$g100,"$progress1=Head to the bath house and hear quest from the bath house keeper
+$progress2=Find \c[2]@ec(([10 - $gameParty.numItems($dataItems[350]), 0].max))\c[0] Red Flowers, \c[2]@ec(([10 - $gameParty.numItems($dataItems[351]), 0].max))\c[0] White Flowers and \c[2]@ec(([5 - $gameParty.numItems($dataItems[2]), 0].max))\c[0] Medicine Herbs
+$progress3=Deliver to the bath house in the capital.
+$progress99=Complete!",Gather the items,"I would like to improve bath house!
+Help me!",,,,,,,
+$quest_id=201006,1108,2,$v[9] >= 2,13,,寝取られた僕の復習,王都冒険者ギルド,寝取られた男,$g100,"$progress1=夜、人通りの少ない通りで依頼主と喋る
+$progress2=復讐代行を果たす
+$progress99=完",依頼主の悩みを解決する,"僕から彼女を寝取った男と、
+ホイホイ男に尻振ったバカな女に復讐をしたい……！",Revenge for NTR,Adventurer's Guild,A cuckold,$g100,"$progress1=Talk to the client in the low traffic street in night.
+$progress2=Resolve his quest.
+$progress99=Complete!",Resolve the cleint's problem.,I need to revenge assholes!,,,,,,,
+$quest_id=201007,1109,2,$v[245] >= 480,19,,盗まれたストッキング,ポーションメーカーショップ,\n[10],$g100,"$progress1=ポーションメーカーと話す
+$progress2=ストッキングを入手する
+$progress99=完",依頼主の悩みを解決する,……,A stolen stocking,Potion Maker Shop,\n[10],$g100,"$progress1=Talk to \n[10]
+$progress2=Acquire a stcoking
+$progress99=Complete!",Resolve the client's problem.,……,,,,,,,
+$quest_id=201008,1110,2,,999,,ある高貴な貴族への配達,路地裏,怪しい男,$g500,"$progress1=荷物を届けるため王都スラム内３番倉庫へ行く
+$progress99=完",荷物を届ける,"この荷物をスラムの３番倉庫に居る男に届けてくれ。
+中身は見るなよ。",Cargo transportation for the noble,Backstreet,Stranger,$g500,"$progress1=Deliver the luggage to the noble in the 3rd warehouse in the slum.
+$progress99=Complete!",Deliver a piece of luggage,"Deliver the package to the noble in the 3rd warehouse in the slum.
+Don’t look see the contents in the package, Never.",,,,,,,
+$quest_id=201009,1111,2,,999,TRUE,ルード,スラム,スラムの王,,"$progress1=王都地下下水のホームレスの溜まり場でルードの情報を残り\c[2]@ec(([4 - \v[1111], 0].max))つ\c[0]集める
+$progress5=収集した情報をスラムの王に報告する
+$progress6=主人公達を事件に巻き込んだ男のアジトで男を捕える
+$progress9=男の事をスラムの王に報告する
+$progress10=スラムにルードを蔓延させているノール達のアジトに向かい壊滅させる。アジトは\c[2]南部に続く森\c[0]にある洞窟を抜けた先にある。
+$progress15=スラムの王に報告する
+$progress99=完",スラムのルード問題を解決する,"スラムはルードにより浸食されてしまっている。
+この問題を解決しなくてならない。",Rude,Slum,The king of slum,,"$progress1=Gather information about Rude from the homeless in the royal capital's underground sewer. People left to ask: \c[2]@ec(([4 - \v[1111], 0].max))\c[0]
+$progress5=Report the collected information to the slum lord
+$progress6=Capture the man who involved the protagonists in the incident at his hideout
+$progress9=Report about the man to the slum lord
+$progress10=Destroy the hideout of the Gnolls selling Rude — beyond a cave in the \c[2]forest leading south\c[0]
+$progress15=Report to the slum lord
+$progress18=Repel the Gnoll attack on the slum
+$progress99=Complete!",Resolve Rude problem in the slum,The slum is being eroded by Rude. This problem must be solved,,,,,,,
+$quest_id=201010,1112,2,,999,,幽霊屋敷,スラム,スラム住民,$g50,"$progress1=スラムの幽霊屋敷を捜索する
+$progress10=手に入れた指輪を依頼主に返す
+$progress99=完",幽霊屋敷で形見の指輪を手に入れる,"亡き妻との思い出の指輪がここにあるんだ。
+探してきてくれねぇか？",Haunted House,Slum,Slum Dweller,$g50,"$progress1=Find out the ring in the ghost house in the slum.
+$progress10=Deliver the ring to the client.
+$progress99=Complete!",Find the ring in the ghost house,"I reckon there's a keepsake ring of my late wife tucked away 
+in this here tumbledown homestead. 
+Mind scouting around for it?",,,,,,,
+$quest_id=201011,1113,2,,999,,スラムのスリ,スラム,,,"$progress1=財布を盗んだ男を探しだしお金を取り返す。
+$progress2=男は歓楽街の売春宿によく居るという。
+$progress99=完","スラムで財布を盗まれた。
+取り返さなくてはならない。","スラムで財布を盗まれた。
+取り返さなくてはならない。",Pickpocket!,Slum,—,,"$progress1=Find out the pickpocket and get back your money.
+$progress2=You’ve gathered information that the pickpocket often frequents a brothel in the RLD.
+$progress99=Complete!","Your silver coins are stolen by a pickpocket.
+You must get your money back.","Your silver coins are stolen by a pickpocket.
+You must get your money back.",,,,,,,
+$quest_id=201012,1114,2,$v[225] >= 3,19,,錬金術の材料３,ポーションメーカーショップ,ポーションメーカー,$g100,"$progress1=白い花を残り\c[2]@ec((Math.max(0, 10 - $gameParty.numItems($dataItems[351]))))個\c[0]、スライムゼリーを残り\c[2]@ec((Math.max(0, 3 - $gameParty.numItems($dataItems[303]))))個\c[0]集める
+$progress2=ポーションメーカーに納品する
+$progress99=完",材料を集めてポーションメーカーに納品する,白い花を１０個とスライムゼリーを３個集めてきて。,Gathering materials for alchemy3,Potion Shop,Potion Maker,$g100,"$progress1=Gathering White Flower x \c[2]@ec(([10 - $gameParty.numItems($dataItems[351]), 0].max))\c[0] and Slime Jelly x \c[2]@ec(([10 - $gameParty.numItems($dataItems[303]), 0].max))\c[0]
+$progress2=Deliver to Potion Maker.
+$progress99=Complete!",Gathering materials for alchemy.,Collect White Flower x 10 and Slime Jelly x 3 for alchemy.,,,,,,,
+$quest_id=201013,1115,2,$v[225] >= 3,19,,錬金術の材料４,ポーションメーカーショップ,ポーションメーカー,$g100,"$progress1=ゴブリンアルケミストがドロップする奇妙なポーションを2個集める
+$progress2=ポーションメーカーに納品する
+$progress99=完",材料を集めてポーションメーカーに納品する,ゴブリンアルケミストが作るポーションを調べたい。,Gathering materials for alchemy4,Potion Shop,Potion Maker,$g100,"$progress1=Gathering \c[2]Strange Potion x 2\c[0] that is dropped by \c[2]Goblin Alchemist\c[0]
+$progress2=Deliver to Potion Maker.
+$progress99=Complete!",Gathering materials for alchemy.,Collect 2 Strange Potions from Goblin Alchemist for alchemy.,,,,,,,
+$quest_id=201090,3570,2,$v[1] == 9999,171,TRUE,The Tavern Mercenary,Port Town,Rumors,,"$progress1=Word is a tramp with a spear is hanging around the Port Town looking for a party. Go take a look (requires 2-star rank). \c[6][Port Town]\c[0]
+$progress2=You got the tramp out of trouble. He is looking for a party at the Adventurers' Guild — talk to him and take him on as a companion. \c[6][Adventurers' Guild, capital]\c[0]
+$progress3=You turned him down, but he is still waiting at the Adventurers' Guild. If you change your mind, talk to him again. \c[6][Adventurers' Guild, capital]\c[0]
+$progress4=The sailors took the tramp away to work off his debt. You can buy him out at the pier for 200 silver (from the next day). \c[6][Port Town, pier]\c[0]
+$progress5=The ransom has not been paid — the tramp is still at the pier. Bring 200 silver. \c[6][Port Town, pier]\c[0]
+$progress99=Complete! \c[2]Yarizo\c[0] is your companion. He now waits at the capital's tavern.
+$progress100=Quest closed: the tramp is dead or gone — he can no longer be hired.",Find the tramp with the spear.,People in the capital gossip about a stowaway tramp with a spear: he was dragged off a ship at the Port Town and now he is eager to become an adventurer.,The Tavern Mercenary,Port Town,Rumors,,"$progress1=Word is a tramp with a spear is hanging around the Port Town looking for a party. Go take a look (requires 2-star rank). \c[6][Port Town]\c[0]
+$progress2=You got the tramp out of trouble. He is looking for a party at the Adventurers' Guild — talk to him and take him on as a companion. \c[6][Adventurers' Guild, capital]\c[0]
+$progress3=You turned him down, but he is still waiting at the Adventurers' Guild. If you change your mind, talk to him again. \c[6][Adventurers' Guild, capital]\c[0]
+$progress4=The sailors took the tramp away to work off his debt. You can buy him out at the pier for 200 silver (from the next day). \c[6][Port Town, pier]\c[0]
+$progress5=The ransom has not been paid — the tramp is still at the pier. Bring 200 silver. \c[6][Port Town, pier]\c[0]
+$progress99=Complete! \c[2]Yarizo\c[0] is your companion. He now waits at the capital's tavern.
+$progress100=Quest closed: the tramp is dead or gone — he can no longer be hired.",Find the tramp with the spear.,People in the capital gossip about a stowaway tramp with a spear: he was dragged off a ship at the Port Town and now he is eager to become an adventurer.,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+$quest_id=207014,1175,2,$v[225] >= 3,329,,鉱石収集：鉄,ギャルドワーフの工房,ギャルドワーフ,$g100,"$progress1=鉄を残り\c[2]@ec((Math.max(0, 10 - $gameParty.numItems($dataItems[400]))))個\c[0]集める
+$progress2=ギャルドワーフに納品する
+$progress99=完",材料を集めてギャルドワーフに納品する,鉄を集めてきてくれめんす。よろ！,Gathering materials for blacksmith:Iron,Blacksmith,Gyaru Dwarf,$g100,"$progress1=GatheringSlime Iron x \c[2]@ec(([10 - $gameParty.numItems($dataItems[400]), 0].max))\c[0]
+$progress2=Deliver to Gyaru Dwarf.
+$progress99=Complete!",Gathering materials for blacksmith.,Gather irons for blacksmith! ,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+$quest_id=301010,1212,3,$v[9] >= 3,13,TRUE,不死なる者,王都冒険者ギルド,黄金７柱修道女,,"$progress1=\c[2]交易路にある村\c[0]で修道女に話を聞く
+$progress2=廃教会のある森で夜にグールを探す
+$progress4=港町から船に乗り智と愚の塔に行き賢者に話を聞く
+$progress5=アビサル・ウッズにある古城へと向かいヴァンパイアに関して調査する
+$progress6=２Ｆ右手側通路の奥から聞こえる物音を調べる
+$progress12=吸血姫と一緒に廃教会のある森でグールと遭遇した現場へと向かう
+$progress14=ドクターを追う
+$progress99=完",グール事件を解決する。,"王都近郊の森にグールが現れたそうです。
+それが事実であれば一大事です、調査をお願いします。",The Immortal,Adventurer's Guild,The Golden 7 Pillars Nun,,"$progress1=Talk to the nun in the crossroad village
+$progress2=Search for ghouls at night in the forest with the abandoned church
+$progress4=Go to the Tower of Wisdom and Folly via the Port Town and talk to the arch mage
+$progress5=Head to the ancient castle in Abyssal Woods and investigate the vampire
+$progress6=Investigate the sound coming from the end of the hallway on the right side of the second floor
+$progress12=Go with the Vampire Princess to the place in the forest with the abandoned church where you met the ghouls
+$progress14=Chase the Doctor
+$progress15=Deal with the Doctor in her laboratory
+$progress98=Report to the Adventurer's Guild
+$progress99=Complete!",Resolve the ghouls incident.,"Ghouls have reportedly appeared in the forest near the royal capital.
+If this is true, it is a serious matter. Please investigate.",,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+$quest_id=307001,1262,3,,246,,ダイア・ウルフ討伐,荒野の街,住人,$g200,"$progress1=ダイア・ウルフを残り\c[2]@ec(([6 - \v[1262], 0].max))匹\c[0]倒す
+$progress99=完",ダイア・ウルフを\c[2]5\c[0]体倒す,"キャラバンの安全を確保するために
+ダイア・ウルフを討伐してくれ！",Exterminate Dire Wolfs,Wasteland town,Dweller,$g200,"$progress1=Dire Wolves left to defeat: \c[2]@ec(([6 - \v[1262], 0].max))\c[0]
+$progress99=Complete!",Defeat \c[2]5\c[0] Dire Wolves.,Defeat Dire wolfs to protect safe for caravans!,,,,,,,
+$quest_id=307002,1263,3,,246,,キラー・パンサー討伐,荒野の街,住人,$g200,"$progress1=キラー・パンサーを残り\c[2]@ec(([6 - \v[1263], 0].max))匹\c[0]倒す
+$progress99=完",キラー・パンサーを\c[2]5\c[0]体倒す,"キャラバンの安全を確保するために
+キラー・パンサーを討伐してくれ！",Exterminate Killer Panthers,Wasteland town,Dweller,$g200,"$progress1=Killer Panthers left to defeat: \c[2]@ec(([6 - \v[1263], 0].max))\c[0]
+$progress99=Complete!",Defeat \c[2]5\c[0] Killer Panthers.,Defeat Killer Panthers to protect safe for caravans!,,,,,,,
+$quest_id=307003,1264,3,,246,,ふしぎなキノコ,荒野の街,錬金術師ギルド,$g200,"$progress1=キノコ（魔素汚染）を残り\c[2]@ec((Math.max(0,5 - $gameParty.numItems($dataItems[325]))))個\c[0]集める。
+$progress2=錬金術師ギルドに納品する。
+$progress99=完",材料を集める,"研究に汚染されたキノコが必要です。
+ご協力お願いします。",Wonder mushroom,Wasteland town,Alchemist Guild,$g200,"$progress1=Gather \c[2]@ec(([5 - $gameParty.numItems($dataItems[325]), 0].max))\c[0] Magicules pollution Mushrooms
+$progress2=Report to the alchemist guild.
+$progress99=Complete!",Gather the items,"We need the items for research.
+Please help us.",,,,,,,
+$quest_id=307004,1265,3,,246,,蠢く根野菜,荒野の街,錬金術師ギルド,$g200,"$progress1=根野菜（魔素汚染）を残り\c[2]@ec((Math.max(0,5 - $gameParty.numItems($dataItems[326]))))個\c[0]集める。
+$progress2=錬金術師ギルドに納品する。
+$progress99=完",材料を集める,"研究に汚染された根野菜が必要です。
+ご協力お願いします。",Walking root vegetables,Wasteland town,Alchemist Guild,$g200,"$progress1=Gather \c[2]@ec(([5 - $gameParty.numItems($dataItems[326]), 0].max))\c[0] Magicules pollution Root vegetables
+$progress2=Report to the alchemist guild.
+$progress99=Complete!",Gather the items,"We need the items for research.
+Please help us.",,,,,,,
+$quest_id=307005,1266,3,,1,,テッカバ！,荒野の街,鍛冶屋の弟子,$g500,"$progress1=タイタン・ステップ地下洞窟に居る鍛冶屋を呼び戻す
+$progress2=ナチュラル・ゴーレムから魔石を回収する
+$progress3=魔石を荒野の街のギャルドワーフに渡す
+$progress99=完",鍛冶屋を呼び戻す,師匠を呼び戻してください！,The Blacksmith,Wasteland town,Blacksmith’s apprentice,$g500,"$progress1=Go to the Titan Step Cave and call back the black smith
+$progress2=Defeat Nature Golem and get special mana stone.
+$progress3=Give the special mana stone to the black smith.
+$progress99=Complete!",Call back the black smith!,"Please call my master, the Gyaru Dwarf back!",,,,,,,
+$quest_id=307006,1267,3,,246,,オーク討伐,荒野の街,冒険者ギルド,$g200,"$progress1=オークを残り\c[2]@ec(([6 - \v[1267], 0].max))匹\c[0]倒す
+$progress99=完",オークを５体討伐する,人々に危害を加えるオーク達の討伐をお願いします。,Exterminate Orcs,Wasteland town,Adventurer's Guild,$g200,"$progress1=Defeat \c[2]@ec(([6 - \v[1267], 0].max))\c[0] Orcs
+$progress99=Complete!",Defeat 5 orcs.,"Please defeat the orcs to ensure the safety of our region!""",,,,,,,
+$quest_id=307007,1268,3,,246,,連れ去られた村人,荒野の街,近隣の村の住人,$g150,"$progress1=襲撃された村の住人から話を聞く
+$progress2=オーク・キャンプに連れ去られた村人を\c[2]@ec(([5 - \v[1268], 0].max))日以内\c[0]に救出する
+$progress10=襲撃された村の住人に報告する
+$progress99=完",連れ去られた村人を救出する,"村がオークに襲撃されて村人が連れ去られた！
+助けてください！",Rescue Villagers,Wasteland town,Villager,$g150,"$progress1=Talk to the villagers of the attacked village
+$progress2=Rescue the villagers taken to the Orc camp. Days left: \c[2]@ec(([5 - \v[1268], 0].max))\c[0]
+$progress10=Report back to the villagers of the attacked village
+$progress99=Complete!",Rescue the kidnapped villagers.,"The village was attacked by orcs and the villagers were taken away!
+The captives only have a few days — please help!",,,,,,,
+$quest_id=307008,1269,3,,246,,オーク・ジェネラル討伐,荒野の街,冒険者ギルド,$g300,"$progress1=オーク・ジェネラルを残り\c[2]@ec(([2 - \v[1269], 0].max))匹\c[0]倒す
+$progress99=完",オーク・ジェネラルを討伐する,オーク・ジェネラルを討伐してください。,Exterminate Orc General,Wasteland town,Adventurer's Guild,$g300,"$progress1=Defeat \c[2]@ec(([2 - \v[1269], 0].max))\c[0] Orc General
+$progress99=Complete!",Defeat the Orc General.,It’s time to defeat Orc General!,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+$quest_id=309001,1282,3,,999,,蛇の教え,冒険者の野営地,蛇教のドルイド,,"$progress1=蛇教の神殿に向かう
+$progress2=蛇神の血を手に入れる
+$progress3=蛇神の血をドルイドの元に持っていく
+$progress99=完",蛇神の血を手に入れる,蛇教の秘跡を行うため、試練に打ち勝つのです。,Teaching of the Serpent,Adventurer’s Camp,Serpent Druid,,"$progress1=Head to the Temple of the Serpent
+$progress2=Obtain the Serpent Goddess’s blood
+$progress3=Deliver the blood to the Serpent Druid
+$progress99=Complete!",Obtain the Serpent Goddess’s blood.,You have to get the Serpent Goddess’s blood for the sacrament.,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+$quest_id=309005,1286,3,,288,,アケパロイ討伐,冒険者の野営地,冒険者ギルド,$g250,"$progress1=アケパロイを残り\c[2]@ec(([6 - \v[1286], 0].max))匹\c[0]倒す
+$progress99=完",アケパロイを５体討伐する,"アケパロイは調査隊にとって非常に脅威です。
+彼らを少しでも減らし調査を手助けしてください。",Exterminate Acephalos,Adventurer’s Camp,Adventurer's Guild,$g250,"$progress1=Defeat @ec(([6 - \v[1286], 0].max)) Acephalos
+$progress99=Complete!",Defeat 5 Acephalos.,"The Acephalos are a significant threat to the expedition team. 
+Please help the team by reducing their numbers, 
+even just a little, to help in their exploration.",,,,,,,
+$quest_id=309006,1287,3,,288,,ケンタウロス討伐,冒険者の野営地,冒険者ギルド,$g250,"$progress1=ケンタウロスを残り\c[2]@ec(([6 - \v[1287], 0].max))匹\c[0]倒す
+$progress99=完",ケンタウロスを５体討伐する,"ケンタウロスはアビサルウッズの脅威です。
+アビサル・ウッズの調査のために彼らを倒さなくてはなりません。",Exterminate Centaurs,Adventurer’s Camp,Adventurer's Guild,$g250,"$progress1=Defeat @ec(([6 - \v[1287], 0].max)) Centaurs
+$progress99=Complete!",Defeat 5 Centaurs,"Centaurs are a threat in the Abyssal Woods. 
+We must defeat them to carry out the investigation of the Abyssal Woods.",,,,,,,
+$quest_id=309007,1288,3,,288,,ドライアドの蜜を求めて,冒険者の野営地,行商人,$g300,"$progress1=ドライアドの蜜を残り\c[2]@ec((5 - $gameParty.numItems($dataItems[336])))個\c[0]集める
+$progress2=冒険者の野営地にいる行商人に渡す
+$progress99=完",ドライアドの蜜を５つ手に入れる,"商売の道具に使うドライアドの蜜を取ってきてくれ。
+礼は弾むぞ。",Concerns about Dryad Honey,Adventurer’s Camp,Traveling Merchant,$g300,"$progress1=Dryad Honey left to collect: \c[2]@ec(([5 - $gameParty.numItems($dataItems[336]), 0].max))\c[0]
+$progress2=Report to the Merchant
+$progress99=Complete!",Gather 5 jars of Dryad Honey in the Orchard of Death.,"Bring back some of Dryad Honey that we use in our trading.
+There will be a generous reward.",,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+$quest_id=1,990,1,,1,,\c[29]Welcome to NymPri!,,チュートリアル,,"$progress1=冒険者ギルドや街の人からクエストを受けて『名声』を３０にしよう
+$progress2=王都の冒険者ギルドで受付嬢に話しかけ昇級申請を行い冒険者ランクを２にしよう！
+$progress99=完",,"Nymphomania Priestessの世界へようこそ！
+\n[1]と\n[2]はまだまだ駆け出しの冒険者だ。
+\n[3]のように冒険者として名を馳せるため、様々なクエストをこなして名声を得よう！
+
+クエストは\c[2]冒険者ギルド\c[0]の掲示板や、
+クエストアイコンが出ている街の人から受注する事ができる。
+
+まずは名声を３０獲得し、冒険者ギルドに申請して\c[2]冒険者ランク２\c[0]を目指すのだ！",\c[29]Welcome to NymPri!,,,,"$progress1=Accept quests from the Adventurer’s guild or people in the town/village and get “Fame” to 30.
+$progress2=Give the receptionist at the Adventurer's Guild in the capital an Adventurer's Rank of 2! 
+$progress99=Complete!",,"Welcome to the world of Nymphomania Priestess!
+To expand the range of your adventures, first aim to achieve \c[2]Adventurer Rank 2\c[0]!",,,,,,,
+$quest_id=2,991,1,,1,,\c[29]パーティメニュー,,チュートリアル,,"$progress1=キーボードのＡを押して『パーティメニュー』から司祭メニュをー呼び出す
+$progress99=完",,"いつでもどこでも\n[2]とイチャイチャしたい？
+そんな時こそ\c[2]パーティメニュー\c[0]だ！
+
+キーボードのＡを押してパーティメニューを起動しよう！",\c[29]Party Menu,,Tutorial,,"$progress1=Press A on the keyboard to call up the Party Menu
+$progress99=Complete!",,"Want intimacy with your partner anytime, anywhere? 
+Then that's exactly what you need to do with the \c[2]Party Menu\c[0]!  
+Press A on your keyboard to activate the party menu!",,,,,,,
+$quest_id=3,992,1,,1,,\c[29]一人？二人？,,チュートリアル,,"$progress1=いずれかの拠点に居る時、Aキーメニューから『ソロで行動する』を選択して一人で行動してみよう
+$progress2=王都宿屋の自室でパートナーと合流しよう
+$progress99=完",,"\n[1]と\n[2]は切っても切れぬ関係かもしれないが、
+たまには一人で行動したい時もある！
+Aキーメニューを開き\c[2]別行動\c[0]を選択して一人で行動してみよう。
+
+王都宿屋の自室で再びパートナーと合流する事が出来る。
+もしもパートナーが部屋に居ない場合は呼び戻すことができる。
+
+時には部屋に鍵がかかっていることも。
+その場合は時間を進行させることで再び部屋に入れるようになる。",\c[29]Solo? Duo?,,Tutorial,,"$progress1=Call Party menu when you are in any settlement, and try to act alone.
+$progress2=Meet your partner in the room in the capita.
+$progress99=Complete!",,"Although the relationship between \n[1] and \n[2] may be inseparable, there are times when you want to act alone! 
+Open the A-key menu and select and “Go solo”.
+
+You can meet up with your partner again in your room at the capital.
+If your partner is not in the room, you can call him back.  
+Sometimes the room is locked. In this case, you will be able to enter the room again by spending the time at somewhere.",,,,,,,
+$quest_id=4,993,1,,1,,\c[29]従者,,チュートリアル,,"$progress1=冒険者ランクを２にして\n[21]か\n[10]と従者契約を結ぼう
+$progress99=完",,"冒険者ランクが２になると新たな機能『従者』が解放され、
+パーティに3人目のメンバーを加えることができる。
+
+\c[2]\n[21]\c[0]か\c[2]\n[10]\c[0]が従者候補だ。
+\n[21]は港町のイベント後に王都ギルドに現れる。
+\n[10]は主人公がソロの時に道具屋に行き\n[10]とのイベントをこなし、
+絆レベルが４になれば従者契約を結ぶことができる。",\c[29]Follower,,Tutorial,,"$progress1=Set your Adventurer Rank to 2 and sign a follower contract with either \n[21] or \n[10]
+$progress99=Complete!",,"When the adventurer rank reaches 2, the new function ""Follower"" is released and a third member can be added to the party.  
+
+\The candidate for the squire is either \c[2]\n[21]\c[0] or \c[2]\n[10]\c[0].
+\n[21] will appear at the Adventurer’s guild after the event at the port town.
+
+\n[10] will be a follower when you can reach bonds lvl 4 of her. 
+You need to be solo as the protagonist to trigger her event and increase the bonds lvl.",,,,,,,
+$quest_id=5,994,1,,1,,\c[29]キャンプ,,チュートリアル,,"$progress1=キャンプキットを手に入れる
+$progress2=ワールドマップでエリア選択後に『キャンプ』を選択、もしくはダンジョン内のキャンプに入り焚火からキャンプを起こす
+$progress99=完",,"冒険と言えば野営！
+野営をうまく使いＨＰやＭＰ、疲労の回復を行おう。
+
+また、キャンプ中でしか発生しないイベントや
+従者を連れていると専用のイベントが発生するぞ！
+
+キャンプキットは各拠点の道具屋で購入する事ができる。",\c[29]Camp,,Tutorial,,"$progress1=Get a Camping kit
+$progress2=Select ""Camping"" after selecting an area on the world map, or enter a camp in a dungeon and build a camp from a bonfire
+$progress99=Complete!",,"When it comes to adventuring, camping is a must! Use the camp to recover HP, MP, and fatigue. 
+
+Camping has many special scenes and you’ll see some special scenes with your follower if you have a follower in your party!
+
+ Camping kits can be purchased at the item shop at each settlement.",,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+$quest_id=11,1000,1,,1,,\c[29]ポータブルチートゴッド,全てのクエスト終了後に発生,チュートリアル,,"$progress1=王都宿屋、自室のタンスから\c[2]ポータブル・チートゴッド\c[0]を手に入れる。
+$progress2=アイテムからポータブル・チートゴッドを起動してみる
+$progress99=完",,現在アルファ版のNymPriではチートを使用して色々な数値を自由に操作する事ができる。,\c[29]Portable Cheat God,,Tutorial,,"$progress1=Get the Portable Cheat God from the wardrobe in the room in the capital inn
+$progress2=Call Cheat menu from Portable Cheat God
+$progress99=Complete!",,"Currently in the alpha version of NymPri, you can use cheats to manipulate various values.
+",,,,,,,

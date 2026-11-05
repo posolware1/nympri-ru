@@ -1,0 +1,173 @@
+$id=0,free,JPN_NAME,DESCRIPTION,ENG_NAME,DESCRIPTION,SPN_NAME,DESCRIPTION
+$id=1,,攻撃,敵単体にダメージを与える。,Attack,,,
+$id=2,,防御,身を守ることに専念し、受けるダメージを抑える。,Defense,,,
+$id=3,,連続攻撃,敵単体に対して２回攻撃を行う。,Continuous Attack,,,
+$id=4,,２回攻撃,敵２体にダメージを与える。,Double Attack,,,
+$id=5,,３回攻撃,敵３体にダメージを与える。,Triple Attack,,,
+$id=6,,逃げる,敵キャラの行動用。使用者が戦闘から離脱する。,Escape,,,
+$id=7,,様子を見る,何もしない。,Watching,,,
+$id=8,,炎の息,敵全体に炎属性のダメージを与える。,Fire Breath,,,
+$id=9,,吹雪の息,敵全体に冷気属性のダメージを与える。,Ice Breath,,,
+$id=10,,電撃,敵全体に雷属性のダメージを与える。,Thunder Breath,,,
+$id=11,,猛毒の霧,敵全体を毒状態にする。,Poison Breath,,,
+$id=12,,眩しい光,敵全体を暗闇状態にする。,Giddy Flash,,,
+$id=13,,妖しい霧,敵全体を沈黙状態にする。,Mysterious Fog,,,
+$id=14,,超音波,敵全体を混乱状態にする。,Ultrasonics,,,
+$id=15,,誘惑の歌,敵全体を混乱状態にする。,Tempt Song,,,
+$id=16,,甘い息,敵全体を睡眠状態にする。,Sweet Breath,,,
+$id=17,,眠りの花粉,敵全体を睡眠状態にする。,Sleeping Pollen,,,
+$id=18,,痺れる息,敵全体を麻痺状態にする。,Paralyze Breath,,,
+$id=19,,麻痺にらみ,敵単体を麻痺状態にする。,Terror Sight,,,
+$id=20,,足払い,敵単体のバランスを崩させる。,,,,
+$id=21,,体当たり,敵単体にダメージを与え、バランスを崩させる。,,,,
+$id=22,,雄たけび,敵全体のバランスを崩させる。,,,,
+$id=23,,吸血,敵単体のＨＰを吸収する。,,,,
+$id=24,,瞑想,使用者のＨＰを回復する。,,,,
+$id=25,,--------------------,,--------------------,,,
+$id=26,,[ヒロインスキル],,[Heroine's Skill],,,
+,,,,,,,
+$id=28,,ガニ股ドスケベダンス,スケベな敵を確率で魅了状態にする。,"Slutty ""Crab-Crotch"" Dance","[Grants ""Charm"" status to the enemy.]
+When performed, it lets monsters know you're ready to mate.",,
+,,,,,,,
+$id=30,,[主人公スキル],,[Player's Skill],,,
+$id=31,,激励,"疲労上昇：10
+司祭の状態異常[精神]を一定の確率で解消する。",Encourage,"Fatigue: +10
+Clear Priestess's Mental condition.",,
+,,,,,,,
+$id=34,,[戦士スキル],,[Warrior's Skill],,,
+$id=35,,強打,"疲労上昇：10
+敵に武器ダメージ1.5倍のダメージを与える。",Strike,"Fatigue: +10
+Swing your weapon at your foe with all your might, doing extra damage to them.",,
+$id=36,,シールドバッシュ,"疲労上昇：10
+確率で敵をよろめき状態にする。",Shield Bash,"Fatigue: +10
+Slam your shield at your opponent, causing them to be stunned.",,
+$id=37,,ウォークライ,"疲労上昇：10
+敵のHATEを自身に集める。",War Cry,"Fatigue: +10
+Gathers HATE on the skill user.",,
+$id=38,,エイム,HITを50%上昇させ、８０％のダメージを与える。,Aim,Deal 80% Damage with increasing hit by 50%,,
+$id=39,,カウンター,１ラウンド中、自身に『カウンター』を付与する。,Counter,Gain “Counter” stat in the round.,,
+,,,,,,,
+$id=80,,[盗賊スキル],,[Shief's Skill],,,
+$id=81,,開錠,"[パッシブ]
+ロックピックと罠解除の難易度を１下げる。",Unlocking,"[Passive]
+Reduce the difficulty level for both Lock Picking and Trap Release by 1.",,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+$id=100,,[ヒロインスキル],,[Heroine's Skill],,,
+$id=101,,激励[Old],"疲労上昇：10
+主人公の状態異常[精神]を一定の確率で解消する。",Encourage,"Fatigue: +10
+Clear Protagonist's Mental condition.",,
+,,,,,,,
+$id=104,,服を脱ぐ[破棄予定],戦闘中におもむろに全裸になる。,Strip clothes off,Priestess takes off her outfit.,,
+$id=105,,ガニ股ドスケベダンス[Old],スケベな敵を確率で魅了状態にする。,"Slutty ""Crab-Crotch"" Dance","[Grants ""Charm"" status to the enemy.]
+When performed, it lets monsters know you're ready to mate.",,
+$id=106,,ヒール[OLD],"通常時：HPを20回復する。
+戦闘時：HPを2d6+信仰値分回復する。",Heal[Old],"On MAP: Heals 20 HP
+In Combat: Heals HP by 2d6 + Faith",,
+,,,,,,,
+$id=115,,[司祭スキル],,[Heroine's Skill],,,
+$id=116,,ヒール,"通常時：HPを50%回復する。
+戦闘時：HPを2d6+信仰値分回復する。",Heal,"On MAP: Heals 50% HP
+In Combat: Heals HP by 2d6 + Faith",,
+,,,,,,,
+$id=118,,サンクチュアリ,"通常時：味方全体のHPを20回復する。
+戦闘時：味方全体のHPを2d6+信仰値分回復する。",Sanctuary,"On MAP: Heals 20 HP for all ally
+In Combat: Heals HP by 2d6 + Faith for all ally",,
+$id=119,,リザレクション,ノックダウン状態の味方を復活させる。,Resurrection,Remove “Knocked Down” Stat.,,
+$id=120,,プロテクション[Old],対象に信仰値分のアーマーポイントを１ターン付与。,Protection[Old],Grants Armor points equal to Faith value to the target for 1 turn.,,
+$id=121,,キュア・フィジカル,味方一体の身体デバフ（毒・麻痺・睡眠）を解除する。,Cure Physical,Removes physical debuff (Poison / Paralyze / Sleep),,
+$id=122,,キュア・マインド,味方一体の精神デバフ（催眠）を解除する。,Cure Mind,Removes mental debuff (hypnosis),,
+$id=123,,キュア・オール,味方一体の全てのデバフを解除する。,Cure All,Removes  an ally debuff,,
+$id=124,,リリーフ,味方全体のデバフを解除する。,Relief,Removes all ally debuff,,
+$id=125,,ブレス,味方一体の筋力・体力・知力・技量・信仰を20%上昇させる,Bless,"Increases the target's STR,VIT,INT,TEC and Faith by 20 %.",,
+$id=126,,カース,敵の筋力・体力・知力・技量・信仰を20%減少させる。,Curse,"Decreases the target's STR,VIT,INT,TEC and Faith by 20 %.",,
+,,,,,,,
+$id=128,,スプリング,全員の疲労を３０回復する。,Spring,"[All]
+Fatigue - 30",,
+,,,,,,,
+$id=130,,サイレント・ヘム,"自身のHATE値を０にして、
+敵のちんイラトークンを５つ取り除く。",Silent Hymn,"Sing a soothing melody. Reduces the user's HATE Tokens to 0.
+Removes 5 Horny Tokens from the enemy.",,
+$id=131,,プロテクション,対象に信仰値分のアーマーポイントを１ターン付与。,Protection,Grants Armor Points that equals the user's Faith for 1 turn.,,
+,,,,,,,
+,,,,,,,
+$id=140,,セイントブロウ,[奇跡][光][ダメージ:3d6+信仰],Saint Blow,"[Miracle][Holy]
+Deals ""Fire"" damage “3d6 + Int” to the target.",,
+,,,,,,,
+$id=149,,リビール,"[奇跡]
+信仰の力で対象の情報や嘘を看破する。",Reveal,"[Miracle]
+Reveals the information of the target by user’s Faith.",,
+$id=150,,[魔法使い],,,,,
+$id=151,,ファイア・アロー,"[魔法][火]
+ダメージ:3d6+知力",Fire Arrow,"[Magic][Fire]
+Deals ""Fire"" damage “3d6 + Int” to the target.",,
+,,,,,,,
+$id=156,,ウォーター・スピア,"[魔法][水]
+ダメージ:3d6+知力",Water Spear,"[Magic][Water]
+Deals ""Water"" damage “3d6 + Int” to the target.",,
+,,,,,,,
+$id=161,,ストーン・ハンマー,"[魔法][地]
+ダメージ:3d6+知力",Stone Hammer,"[Magic][Earth]
+Deals ""Earth"" damage “3d6 + Int” to the target.",,
+,,,,,,,
+$id=166,,サンダー・ボルト,"[魔法][雷]
+ダメージ:3d6+知力",Thunder Bolt,"[Magic][Thunder]
+Deals ""Thunder"" damage “3d6 + Int” to the target.",,
+,,,,,,,
+$id=171,,マナ・ストライク,"[魔法][無]
+ダメージ:2d6",Mana Strike,"[Magic][-][Damage:1d6]
+Deals damege ""2d6"" to the target.",,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+$id=180,,【サブキャラ固有】,,,,,
+$id=181,,靴を脱ぐ[OLD],靴を脱いで蒸れを解消する。,Take off her shoes[Old],Takes off her shoes off and provekes to the target.,,
+,,,,,,,
+,,,,,,,
+$id=201,,ポイズン,"[魔法]
+敵を『毒』にする。",Poison,"Grants ""Poison"" status to the target.",,
+$id=202,,ブラインド,"[魔法]
+敵を『暗闇』にする。",Blind,"Grants ""Blind"" status to the target.",,
+$id=203,,サイレント,"[魔法]
+敵を『沈黙』にする。",Silent,"Grants ""Silence"" status to the target.",,
+$id=204,,コンフューズ,"[魔法]
+敵を『混乱』にする。",Confuse,"Grants ""Confuse"" status to the target.",,
+$id=205,,スリープ,"[魔法]
+敵を『睡眠』にする。",Sleeping Pollen,"Grants ""Sleep"" status to the target.",,
+$id=206,,パラライズ,"[魔法]
+敵を『麻痺』にする。",Paralyze,"Grants ""Paralyze"" status to the target.",,
+$id=207,,ストーン,"[魔法]
+敵を『石化』にする。",Stone,"Grants ""Stone"" status to the target.",,
+$id=208,,ヒプノシス,"[魔法]
+敵を『トランス』にする。",Hypnosis,"Grants ""Hypnosis"" status to the target.",,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+$id=251,,靴を脱ぐ,靴を脱いで蒸れを解消する。,Take off her shoes,Takes off her shoes off and provekes to the target.,,
+,,,,,,,
+$id=255,,エロ漫画で見たアレ,エロ漫画で見たアレを行い敵を挑発する,Ero Manga Knowledge,Shows her ero mang knowledge and provokes to the target.,,
+,,,,,,,
+$id=301,,[魔法使い],,,,,
+$id=302,,ファイア・アロー[OLD],"[魔法][火]
+ダメージ:3d6+知力",Fire Arrow [Old],"[Magic][Fire]
+Deals ""Fire"" damage “3d6 + Int” to the target.",,
+,,,,,,,
+$id=351,,[司祭],,[Priestess],,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+$id=400,,【錬金術師】,,,,,
+,,,,,,,
+$id=402,,[調合]ヒールポーション低級,"[要求：薬草　水]
+ヒールポーションを作成する。",[Alchemy] Health Potion S,"[Require: Heal Herb and Water]
+Makes Health Potion S.",,
+$id=406,,[調合]毒瓶,"[要求：毒草　水]
+毒瓶を作成する。",[Alchemy] Poison Bottle,"[Require: Poison Herb and Water]
+Makes Poison Bottle.",,
+,,,,,,,
+$id=410,,[パッシブ]ポーション強化,"[パッシブ]
+戦闘中、薬草・ポーションの効果が強化される",[Passive]Potion+,"[Passive]
+In combat, herbs and potion effect is improved.",,

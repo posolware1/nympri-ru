@@ -1,0 +1,392 @@
+$id=0,free,JPN_NAME,DESCRIPT,ENG_NAME,DESCRIPT,SPN_NAME,DESCRIPT
+$id=1,,☆主人公の武器,,☆Weapon of Protagonist,,☆Weapon of Protagonist,
+$id=2,,ショートソード,"[片手剣][要求筋力:3]
+[武器ヒット値:3][武器ダメージ:2][疲労値：+3]",Short Sword,"[One-handed] [Requires Strength: 3] [Accuracy:3][Damage:2][Fatigue:+3]
+Isn't this weapon too short to be called a sword...?",,
+$id=3,,ショートソード+1,"[片手剣][要求筋力:3]
+[武器ヒット値:4][武器ダメージ:1d3][疲労値：+3]",Short Sword +1,"[One-handed] [Requires Strength: 3] [Accuracy:4][Damage:1d3][Fatigue:+3]
+Isn't this weapon still too short to be called a sword...?",,
+$id=4,,,,,,,
+$id=5,,,,,,,
+$id=6,,,,,,,
+$id=7,,,,,,,
+$id=8,,ナイフ,"[短剣][要求筋力:1]
+[武器ヒット値:5][武器ダメージ:1][疲労値：+1]",Knife,"[Dagger] [Requires Strength:1] [Accuracy:5][Damage:1][Fatigue:+1]
+A common cutlery used to cut vegetables. Popular with rogues.",,
+$id=9,,ナイフ+1,"[短剣][要求筋力:1]
+[武器ヒット値:7][武器ダメージ:1][疲労値：+1]",Knife +1,"[Dagger] [Requires Strength:1] [Accuracy:7][Damage:1][Fatigue:+1]
+A common cutlery used to cut vegetables, and flesh. Popular with rogues.",,
+$id=10,,,,,,,
+$id=11,,,,,,,
+$id=12,,,,,,,
+$id=13,,,,,,,
+$id=14,,粗削りの大剣,"[両手剣][要求筋力:5]
+[武器ヒット値:1][武器ダメージ:4][疲労値：+5]",Rough Great Sword,"[Two-handed] [Requires Strength: 5] [Accuracy:1][Damage:4][Fatigue:+5]
+A rusty double-bladed great sword that requires 2 hands to wield it.",,
+$id=15,,粗削りの大剣+1,"[両手剣][要求筋力:5]
+[武器ヒット値:2][武器ダメージ:2d3][疲労値：+5]",Rough Great Sword +1,"[Two-handed] [Requires Strength: 5] [Accuracy:2][Damage:2d3][Fatigue:+5]
+A dirty double-bladed great sword that requires 2 hands to wield it.",,
+$id=16,,,,,,,
+$id=17,,,,,,,
+$id=18,,,,,,,
+$id=19,,,,,,,
+$id=20,,,,,,,
+$id=21,,☆☆,,☆☆,,,
+$id=22,,ロングソード,[片手剣][要求筋力:6][武器ヒット値:4][武器ダメージ:3][疲労値：+3],Long Sword,"[One-handed] [Requires Strength: 6] [Accuracy:4][Damage:3][Fatigue:+3]
+A generic weapon for many adventurers.",,
+$id=23,,ロングソード+1,"[片手剣][要求筋力:6]
+[武器ヒット値:5][武器ダメージ:2d3][疲労値：+3]",Long Sword+1,[One-handed] [Requires Strength: 6] [Accuracy:5][Damage:2d3][Fatigue:+3],,
+$id=25,,はやての剣,"[片手剣][要求筋力:6]
+[武器ヒット値:6][武器ダメージ:3][疲労値：+3]",Hayabusa Sword,[One-handed] [Requires Strength: 6] [Accuracy:6][Damage:3][Fatigue:+3],,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+$id=26,,誓い,"[片手剣][要求筋力:3]
+司祭の好感度30ごとにダメージ+1（最大+3）",Oath,"[One-handed][Req. STR:3] [Hit:5][Dmg:2][Fatigue:+3]
++1 damage per 30 Priestess love (max +3) while she is in the party.",,
+$id=27,,飢えの刃,"[片手剣][要求筋力:6][呪い]
+命中ごとにストレス+3、外せない",Hunger Blade,"[One-handed][Req. STR:6] [Hit:5][Dmg:2d6] \c[2][Cursed]\c[0]
+Each hit: +3 stress. Can't be removed without cleansing.",,
+$id=28,,ダガー,"[短剣][要求筋力:1]
+[武器ヒット値:6][武器ダメージ:1d3][疲労値：+1]",Dagger,[Dagger] [Requires Strength:1] [Accuracy:6][Damage:1d3][Fatigue:+1],,
+$id=29,,ダガー+1,"[短剣][要求筋力:1]
+[武器ヒット値:8][武器ダメージ:3][疲労値：+1]",Dagger+1,[Dagger] [Requires Strength:1] [Accuracy:8][Damage:3][Fatigue:+1],,
+,,,,,,,
+$id=34,,グレートソード,"[両手剣][両手武器][要求筋力:6]
+[武器ヒット値:1][武器ダメージ:6][疲労値：+5]",Great Sword,[Two-handed] [Requires Strength: 6] [Accuracy:1][Damage:6][Fatigue:+5],,
+$id=35,,グレートソード+1,"[両手剣][両手武器][要求筋力:6]
+[武器ヒット値:2][武器ダメージ:3d3][疲労値：+5]",Great Sword+1,[Two-handed] [Requires Strength: 6] [Accuracy:2][Damage:3d3][Fatigue:+5],,
+,,,,,,,
+$id=41,,☆☆☆,,☆☆☆,,,
+$id=42,,ファルシオン,"[片手剣][要求筋力:7]
+[武器ヒット値:5][武器ダメージ:5][疲労値：+3]",Falchion,"[One-handed] [Requires Strength: 7] 
+[Accuracy:5][Damage:5][Fatigue:+3]",,
+$id=43,,ファルシオン+1,"[片手剣][要求筋力:7]
+[武器ヒット値:6][武器ダメージ:3d3][疲労値：+3]",Falchion+1,"[One-handed] [Requires Strength: 7] 
+[Accuracy:6][Damage:3d3][Fatigue:+3]",,
+,,,,,,,
+,,,,,,,
+$id=48,,マンゴーシュ,"[短剣][要求筋力:1]
+[武器ヒット値:8][武器ダメージ:1d6][疲労値：+1]",main-gauche,"[Dagger] [Requires Strength:1] 
+[Accuracy:8][Damage:1d6][Fatigue:+1]",,
+$id=49,,マンゴーシュ+1,"[短剣][要求筋力:1]
+[武器ヒット値:8][武器ダメージ:4][疲労値：+1]",main-gauche+1,"[Dagger] [Requires Strength:1] 
+[Accuracy:8][Damage:4][Fatigue:+1]",,
+,,,,,,,
+$id=54,,ツヴァイハンダー,"[両手剣][両手武器][要求筋力:8]
+[武器ヒット値:1][武器ダメージ:9][疲労値：+5]",Zweihander,"[Two-handed] [Requires Strength: 8]
+[Accuracy:1][Damage:9][Fatigue:+5]",,
+$id=55,,ツヴァイハンダー+1,"[両手剣][両手武器][要求筋力:8]
+[武器ヒット値:1][武器ダメージ:2d6][疲労値：+5]",Zweihander+1,"[Two-handed] [Requires Strength: 8]
+[Accuracy:2][Damage:2d6][Fatigue:+5]",,
+,,,,,,,
+$id=58,,カタナ,"[両手剣][両手武器][要求筋力:12]
+[武器ヒット値:8][武器ダメージ:3d6][疲労値：+3]",Katana,"[Two-handed] [Requires Strength: 12]
+[Accuracy:8][Damage:3d6][Fatigue:+3]",,
+,,,,,,,
+$id=61,,☆☆☆☆,,☆☆☆☆,,,
+$id=62,,フランベルジュ,"[片手剣][要求筋力:10]
+[武器ヒット値:5][武器ダメージ:7][疲労値：+3]",フランベルジュ,"[片手剣][要求筋力:10]
+[武器ヒット値:5][武器ダメージ:7][疲労値：+3]",,
+$id=63,,フランベルジュ+1,"[片手剣][要求筋力:10]
+[武器ヒット値:6][武器ダメージ:8][疲労値：+3]",フランベルジュ+1,"[片手剣][要求筋力:10]
+[武器ヒット値:6][武器ダメージ:8][疲労値：+3]",,
+,,,,,,,
+$id=68,,スティレット,"[短剣][要求筋力:3]
+[武器ヒット値:10][武器ダメージ:5][疲労値：+1]",スティレット,"[短剣][要求筋力:3]
+[武器ヒット値:10][武器ダメージ:5][疲労値：+1]",,
+$id=69,,スティレット+1,"[短剣][要求筋力:3]
+[武器ヒット値:12][武器ダメージ:6][疲労値：+1]",スティレット+1,"[短剣][要求筋力:3]
+[武器ヒット値:12][武器ダメージ:6][疲労値：+1]",,
+,,,,,,,
+$id=74,,クラッシャー,"[大剣][両手武器][要求筋力:12]
+[武器ヒット値:1][武器ダメージ:3d6][疲労値：+5]",クラッシャー,"[大剣][両手武器][要求筋力:12]
+[武器ヒット値:1][武器ダメージ:3d6][疲労値：+5]",,
+$id=75,,クラッシャー+1,"[大剣][両手武器][要求筋力:12]
+[武器ヒット値:3][武器ダメージ:3d6][疲労値：+5]",クラッシャー+1,"[大剣][両手武器][要求筋力:12]
+[武器ヒット値:3][武器ダメージ:3d6][疲労値：+5]",,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+$id=81,,☆☆☆☆☆,,☆☆☆☆☆,,,
+,,,,,,,
+$id=98,,！戦闘テスト用ソード,,,,,
+$id=99,,オメガブッダソード,"装備中触れるだけで敵を消滅させる。
+ハイパーメテオバスターではなかったのか……？",Omega-Buddha-Sword,"When equipped, you can defeat an enemy without engaging in combat.
+Wasn't this legendary weapon also called the ""Hyper-Meteor-Buster""...?",,
+$id=100,,☆ヒロインの武器,,☆Weapon of Heroine,,,
+$id=101,,樫の木の杖,"[司祭武器][杖][要求筋力:1]
+[武器ヒット値:2][武器ダメージ:1][疲労値：+5]",Wooden Staff,[Staff][Require Strength:1][Accuracy:2][Damage:1][Fatigue：+5],,
+$id=102,,樫の木の杖+1,"[司祭武器][杖][要求筋力:1]
+[武器ヒット値:3][武器ダメージ:1d3][疲労値：+5]",Wooden Staff+1,[Staff][Require Strength:1][Accuracy:3][Damage:1d3][Fatigue：+5],,
+$id=103,,樫の木のメイス,"[司祭武器][杖][要求筋力:3]
+[武器ヒット値:1][武器ダメージ:2][疲労値：+10]",Wooden Mace,[Mace][Require Strength:3][Accuracy:1][Damage:2][Fatigue：+10],,
+$id=104,,樫の木のメイス+1,"[司祭武器][杖][要求筋力:3]
+[武器ヒット値:1][武器ダメージ:1d3][疲労値：+10]",Wooden Mace+1,[Mace][Require Strength:3][Accuracy:1][Damage:1d3][Fatigue：+10],,
+,,,,,,,
+$id=105,,告解の杖,"[司祭武器][杖][要求筋力:1]
+戦闘中の回復で対象のストレス-5",Staff of Confession,"[Priestess staff][Req. STR:1] [Hit:3][Dmg:1d3][Fatigue:+5]
+Healing in battle removes 5 stress from the target.",,
+$id=110,,☆☆,,☆☆,,,
+$id=111,,月桂樹の杖,"[司祭武器][杖][要求筋力:1]
+[武器ヒット値:3][武器ダメージ:2][疲労値：+5]",Laurel  Staff,"[Staff][Require Strength:1]
+[Accuracy:3][Damage:2][Fatigue：+5]",,
+$id=112,,月桂樹の杖+1,"[司祭武器][杖][要求筋力:1]
+[武器ヒット値:3][武器ダメージ:1d3][疲労値：+5]",Laurel  Staff+1,"[Staff][Require Strength:1]
+[Accuracy:3][Damage:1d3][Fatigue：+5]",,
+$id=113,,月桂樹のメイス,"[司祭武器][杖][要求筋力:3]
+[武器ヒット値:1][武器ダメージ:3][疲労値：+10]",Laurel  Mace,[Mace][Require Strength:3][Accuracy:1][Damage:3][Fatigue：+10],,
+$id=114,,月桂樹のメイス+1,"[司祭武器][杖][要求筋力:3]
+[武器ヒット値:2][武器ダメージ:1d6][疲労値：+10]",Laurel  Mace+1,[Mace][Require Strength:3][Accuracy:2][Damage:1d6][Fatigue：+10],,
+,,,,,,,
+$id=120,,☆☆☆,,☆☆☆,,,
+$id=121,,司教杖,"[司祭武器][杖][要求筋力:1]
+[武器ヒット値:4][武器ダメージ:3][疲労値：+5]",Baculus,"[Staff][Require Strength:1]
+[Accuracy:4][Damage:3][Fatigue：+5]",,
+$id=122,,司教杖+1,"[司祭武器][杖][要求筋力:1]
+[武器ヒット値:5][武器ダメージ:1d6][疲労値：+5]",Baculus+1,"[Staff][Require Strength:1]
+[Accuracy:5][Damage:1d6][Fatigue：+5]",,
+$id=123,,鉄のメイス,"[司祭武器][杖][要求筋力:3]
+[武器ヒット値:1][武器ダメージ:4][疲労値：+10]",Iron Mace,[Mace][Require Strength:3][Accuracy:1][Damage:4][Fatigue：+10],,
+$id=124,,鉄のメイス+1,"[司祭武器][杖][要求筋力:3]
+[武器ヒット値:2][武器ダメージ:2d3][疲労値：+10]",Iron Mace+1,[Mace][Require Strength:3][Accuracy:2][Damage:2d3][Fatigue：+10],,
+,,,,,,,
+$id=125,,暁の香炉,"[司祭武器][香炉][要求筋力:3]
+聖属性弱点の敵に+1d6",Censer of Dawn,"[Priestess censer][Req. STR:3] [Hit:2][Dmg:2][Fatigue:+6]
+Vs undead and demons: +1d6 holy smoke damage.",,
+$id=131,,アークワンド,"[司祭武器][杖][要求筋力:1][奇跡ボーナス:5]
+[武器ヒット値:4][武器ダメージ:4][疲労値：+5]",アークワンド,"[司祭武器][杖][要求筋力:1][奇跡ボーナス:5]
+[武器ヒット値:4][武器ダメージ:4][疲労値：+5]",,
+$id=132,,アークワンド+1,"[司祭武器][杖][要求筋力:1][奇跡ボーナス:7]
+[武器ヒット値:4][武器ダメージ:4][疲労値：+5]",アークワンド+1,"[司祭武器][杖][要求筋力:1][奇跡ボーナス:7]
+[武器ヒット値:4][武器ダメージ:4][疲労値：+5]",,
+$id=133,,モーニングスター,"[司祭武器][杖][要求筋力:5]
+[武器ヒット値:3][武器ダメージ:5][疲労値：+10]",モーニングスター,"[司祭武器][杖][要求筋力:5]
+[武器ヒット値:3][武器ダメージ:5][疲労値：+10]",,
+$id=134,,モーニングスター+1,"[司祭武器][杖][要求筋力:5]
+[武器ヒット値:3][武器ダメージ:6][疲労値：+10]",モーニングスター+1,"[司祭武器][杖][要求筋力:5]
+[武器ヒット値:3][武器ダメージ:6][疲労値：+10]",,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+$id=149,,魔女に与える鉄槌,[杖][要求筋力:1][武器ヒット値:0][武器ダメージ:0][疲労値：+5],Malleus Maleficarum,[Staff][Require Strength:1][Accuracy:0][Damage:0][Fatigue：+5],,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+$id=201,,［レオン武器］,,,,,
+$id=202,,なまくら刀,,Blunt Sword,,,
+$id=203,,ティルフィング,,Tyrfingr,,,
+,,,,,,,
+,,,,,,,
+$id=206,,［アイリス武器］,,,,,
+$id=207,,ナーガ,,Naga,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+$id=211,,［PM武器］,,,,,
+$id=212,,パチンコ,"[弓][要求筋力:1]
+[武器ヒット値:5][武器ダメージ:1d3][疲労値：+5]",Sling shot,"[Bow][Require Strength:1]
+[Accuracy:5][Damage:1d3][Fatigue：+5]",,
+$id=213,,パチンコ+1,"[弓][要求筋力:1]
+[武器ヒット値:6][武器ダメージ:2d3][疲労値：+5]",Sling shot+1,"[Bow][Require Strength:1]
+[Accuracy:6][Damage:2d3][Fatigue：+5]",,
+$id=214,,パチンコ+2,"[弓][要求筋力:1]
+[武器ヒット値:7][武器ダメージ:3d3][疲労値：+5]",Sling shot+2,"[Bow][Require Strength:1]
+[Accuracy:7][Damage:3d3][Fatigue：+5]",,
+,,,,,,,
+$id=215,,錬金術師のパチンコ,"[弓][要求筋力:1]
+通常攻撃20%で毒。1戦闘に1回、瓶投げの失敗を防ぐ",Alchemist's Sling,"[Bow][Req. STR:1] [Hit:6][Dmg:1d3+1][Fatigue:+5]
+20%: poison on hit. One missed Flask Throw per battle is forgiven.",,
+$id=271,,[ヴァンパイア武器],,,,,
+$id=272,,血涙の書,"[本][要求筋力:1]
+[武器ヒット値:5][武器ダメージ:1][疲労値：+1]",Book of Bloody Tears,"[Book][Require Strength:1]
+[Accuracy:5][Damage:1][Fatigue：+1]",,
+,,,,,,,
+$id=273,,月の子守唄,"[本][要求筋力:1]
+吸収+20%、攻撃でHP1回復",Moon Lullaby,"[Book][Req. STR:1] [Hit:5][Dmg:1][M.Dmg:4]
+Blood Moon drain +20%; hits restore 1 HP.",,
+$id=280,,［ヤリゾー武器］,,,,,
+$id=281,,ボロい槍,"[槍][要求筋力:1]
+[武器ヒット値:10][武器ダメージ:1][疲労値：+10]",Cheap Spaer,"[Spear][Require Strength:1]
+[Accuracy:10][Damage:1][Fatigue : +10]",,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+$id=282,,狩猟用の槍,"[槍][要求筋力:4]
+[武器ヒット値:8][武器ダメージ:1d6][疲労値：+8]",Boar Spear,"[Spear][Req. STR:4]
+[Hit:8][Dmg:1d6][Fatigue:+8]",,
+$id=283,,熊の爪,"[槍][要求筋力:5]
+被ダメージで超必殺ゲージ+25%、スタン+1ターン",Bear Claw,"[Spear][Req. STR:5] [Hit:6][Dmg:2d3][Fatigue:+10]
+Super charges 25% faster from wounds; stun +1 turn (not bosses).",,
+$id=300,,☆ドロップ武器［ベース］,,,,,
+$id=301,,ショートソード,[片手剣][要求筋力:3][武器ヒット値:3][武器ダメージ:2][疲労値：+3],Short Sword,"[One-handed] [Requires Strength: 3] [Accuracy:3][Damage:2][Fatigue:+3]
+Isn't this weapon too short to be called a sword...?",,
+$id=302,,ナイフ,[短剣][要求筋力:1][武器ヒット値:5][武器ダメージ:1][疲労値：+1],Knife,"[Dagger] [Requires Strength:1] [Accuracy:5][Damage:1][Fatigue:+1]
+A common cutlery used to cut vegetables. Popular with rogues.",,
+$id=303,,粗削りの大剣,[両手剣][要求筋力:5][武器ヒット値:1][武器ダメージ:4][疲労値：+5],Rough Great Sword,"[Two-handed] [Requires Strength: 5] [Accuracy:1][Damage:4][Fatigue:+5]
+A rusty double-bladed great sword that requires 2 hands to wield it.",,
+$id=304,,樫の木の杖,"[司祭武器][杖][要求筋力:1][奇跡にボーナス]
+[武器ヒット値:2][武器ダメージ:1][疲労値：+5]",Wooden Staff,[Staff][Require Strength:1][Accuracy:2][Damage:1][Fatigue：+5],,
+$id=305,,樫の木のメイス,"[司祭武器][杖][要求筋力:3]
+[武器ヒット値:1][武器ダメージ:2][疲労値：+10]",Wooden Mace,[Mace][Require Strength:3][Accuracy:1][Damage:2][Fatigue：+10],,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+$id=310,,［ランク２］,,,,,
+$id=311,,ロングソード,[片手剣][要求筋力:6][武器ヒット値:4][武器ダメージ:3][疲労値：+3],Long Sword,"[One-handed] [Requires Strength: 6] [Accuracy:4][Damage:3][Fatigue:+3]
+A generic weapon for many adventurers.",,
+$id=312,,ダガー,"[短剣][要求筋力:1]
+[武器ヒット値:6][武器ダメージ:1d3][疲労値：+1]",Dagger,[Dagger] [Requires Strength:1] [Accuracy:6][Damage:1d3][Fatigue:+1],,
+$id=313,,グレートソード,"[両手剣][両手武器][要求筋力:6]
+[武器ヒット値:1][武器ダメージ:6][疲労値：+5]",Great Sword,[Two-handed] [Requires Strength: 6] [Accuracy:1][Damage:6][Fatigue:+5],,
+$id=314,,月桂樹の杖,"[司祭武器][杖][要求筋力:1][奇跡にボーナス]
+[武器ヒット値:3][武器ダメージ:2][疲労値：+5]",Laurel  Staff,"[Staff][Require Strength:1]
+[Accuracy:3][Damage:2][Fatigue：+5]",,
+$id=315,,月桂樹のメイス,"[司祭武器][杖][要求筋力:3]
+[武器ヒット値:1][武器ダメージ:3][疲労値：+10]",Laurel  Mace,[Mace][Require Strength:3][Accuracy:1][Damage:3][Fatigue：+10],,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+$id=320,,［ランク3］,,,,,
+$id=321,,ファルシオン,"[片手剣][要求筋力:7]
+[武器ヒット値:5][武器ダメージ:5][疲労値：+3]",Falchion,"[One-handed] [Requires Strength: 7] 
+[Accuracy:5][Damage:5][Fatigue:+3]",,
+$id=322,,マンゴーシュ,"[短剣][要求筋力:1]
+[武器ヒット値:8][武器ダメージ:1d6][疲労値：+1]",main-gauche,"[Dagger] [Requires Strength:1] 
+[Accuracy:8][Damage:1d6][Fatigue:+1]",,
+$id=323,,ツヴァイハンダー,"[両手剣][両手武器][要求筋力:8]
+[武器ヒット値:1][武器ダメージ:9][疲労値：+5]",Zweihander,"[Two-handed] [Requires Strength: 8]
+[Accuracy:1][Damage:9][Fatigue:+5]",,
+$id=324,,司教杖,"[司祭武器][杖][要求筋力:1][奇跡にボーナス]
+[武器ヒット値:4][武器ダメージ:3][疲労値：+5]",Baculus,"[Staff][Require Strength:1]
+[Accuracy:3][Damage:3][Fatigue：+5]",,
+$id=325,,鉄のメイス,"[司祭武器][杖][要求筋力:3]
+[武器ヒット値:1][武器ダメージ:4][疲労値：+10]",Iron Mace,[Mace][Require Strength:3][Accuracy:1][Damage:4][Fatigue：+10],,
+,,,,,,,
+$id=330,,［ランク4］,,,,,
+$id=331,,ショートソード,"[片手剣][要求筋力:3]
+[武器ヒット値:3][武器ダメージ:2][疲労値：+3]",Short Sword,"[One-handed] [Requires Strength: 3] [Accuracy:3][Damage:2][Fatigue:+3]
+Isn't this weapon too short to be called a sword...?",,
+$id=332,,ナイフ,"[短剣][要求筋力:1]
+[武器ヒット値:5][武器ダメージ:1][疲労値：+1]",Knife,"[Dagger] [Requires Strength:1] [Accuracy:5][Damage:1][Fatigue:+1]
+A common cutlery used to cut vegetables. Popular with rogues.",,
+$id=333,,粗削りの大剣,"[大剣][両手武器][要求筋力:6]
+[武器ヒット値:1][武器ダメージ:4][疲労値：+5]",Rough Great Sword,"[Two-handed] [Requires Strength: 5] [Accuracy:1][Damage:4][Fatigue:+5]
+A rusty double-bladed great sword that requires 2 hands to wield it.",,
+$id=334,,司教杖,"[司祭武器][杖][要求筋力:1][奇跡にボーナス]
+[武器ヒット値:4][武器ダメージ:3][疲労値：+5]",Baculus,"[Staff][Require Strength:1]
+[Accuracy:3][Damage:3][Fatigue：+5]",,
+$id=335,,鉄のメイス,"[司祭武器][杖][要求筋力:3]
+[武器ヒット値:1][武器ダメージ:4][疲労値：+10]",Iron Mace,[Mace][Require Strength:3][Accuracy:1][Damage:4][Fatigue：+10],,
+,,,,,,,
+$id=340,,［ランク5］,,,,,
+$id=341,,ショートソード,"[片手剣][要求筋力:3]
+[武器ヒット値:3][武器ダメージ:2][疲労値：+3]",Short Sword,"[One-handed] [Requires Strength: 3] [Accuracy:3][Damage:2][Fatigue:+3]
+Isn't this weapon too short to be called a sword...?",,
+$id=342,,ナイフ,"[短剣][要求筋力:1]
+[武器ヒット値:5][武器ダメージ:1][疲労値：+1]",Knife,"[Dagger] [Requires Strength:1] [Accuracy:5][Damage:1][Fatigue:+1]
+A common cutlery used to cut vegetables. Popular with rogues.",,
+$id=343,,粗削りの大剣,"[大剣][両手武器][要求筋力:6]
+[武器ヒット値:1][武器ダメージ:4][疲労値：+5]",Rough Great Sword,"[Two-handed] [Requires Strength: 5] [Accuracy:1][Damage:4][Fatigue:+5]
+A rusty double-bladed great sword that requires 2 hands to wield it.",,
+,,,,,,,
+$id=351,,★ドロップ武器[ベース・ユニーク],,,,,
+,,,,,,,
+$id=360,,[ランク２],,[Rank2],,,
+$id=361,,ナラガ,[片手剣],Naraga,[One-handed],,
+$id=362,,アムト,[短剣],Amuto,[Dagger],,
+$id=363,,ホマヨ,[大剣],Homayo,[Two-handed],,
+,,,,,,,
+$id=370,,[ランク３],,[Rank3],,,
+,,,,,,,
+$id=380,,[ランク４],,[Rank4],,,
+,,,,,,,
+$id=390,,[ランク５],,[Rank5],,,
+,,,,,,,
+$id=401,,聖別,,Sanctified,,,
+$id=402,,吸血,,Vampiric,,,
+$id=403,,衝撃,,Stunning,,,
+$id=404,,闘気,,Furious,,,
+$id=405,,暁,,Dawnforged,,,
+$id=450,,★ドロップ武器[接頭],,,,,
+$id=451,,貧弱,,Poor,,,
+$id=452,,腐敗,,Corrupted,,,
+$id=453,,鋭利,,Sharp,,,
+$id=454,,軽量,,Light,,,
+$id=455,,重量,,Heavy,,,
+$id=456,,守護,,Guardian,,,
+$id=457,,疾風,,Gale,,,
+$id=458,,装飾,,Decoration,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+$id=470,,ヒット1,,Hit1,,,
+$id=471,,ヒット2,,Hit2,,,
+$id=472,,ヒット3,,Hit3,,,
+$id=473,,ヒット4,,Hit4,,,
+$id=474,,ヒット5,,Hit5,,,
+$id=475,,,,,,,
+$id=476,,パワー1,,Power1,,,
+$id=477,,パワー2,,Power2,,,
+$id=478,,パワー3,,Power3,,,
+$id=479,,パワー4,,Power4,,,
+$id=480,,パワー5,,Power5,,,
+$id=481,,,,,,,
+$id=482,,マナ1,,Mana1,,,
+$id=483,,マナ2,,Mana2,,,
+$id=484,,マナ3,,Mana3,,,
+$id=485,,マナ4,,Mana4,,,
+$id=486,,マナ5,,Mana5,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+$id=501,,安らぎ,,of Calm,,,
+$id=502,,精密,,of Precision,,,
+$id=503,,剛力,,of Might,,,
+$id=600,,★ドロップ武器[接尾],,,,,
+$id=601,,[赤石Lvl1],,[Red Lvl1],,,
+$id=602,,[赤石Lvl2],,[Red Lvl2],,,
+$id=603,,[赤石Lvl3],,[Red Lvl3],,,
+$id=604,,[赤石Lvl4],,[Red Lvl4],,,
+$id=605,,[赤石Lvl5],,[Red Lvl5],,,
+$id=606,,[赤石Lvl6],,[Red Lvl6],,,
+$id=607,,[赤石Lvl7],,[Red Lvl7],,,
+$id=608,,[赤石Lvl8],,[Red Lvl8],,,
+$id=609,,[赤石Lvl9],,[Red Lvl9],,,
+$id=610,,,,,,,
+$id=611,,[青石Lvl1],,[Blue Lvl1],,,
+$id=612,,[青石Lvl2],,[Blue Lvl2],,,
+$id=613,,[青石Lvl3],,[Blue Lvl3],,,
+$id=614,,[青石Lvl4],,[Blue Lvl4],,,
+$id=615,,[青石Lvl5],,[Blue Lvl5],,,
+$id=616,,[青石Lvl6],,[Blue Lvl6],,,
+$id=617,,[青石Lvl7],,[Blue Lvl7],,,
+$id=618,,[青石Lvl8],,[Blue Lvl8],,,
+$id=619,,[青石Lvl9],,[Blue Lvl9],,,
+$id=620,,,,,,,
+$id=621,,青の王冠,,Blue Crown,,,

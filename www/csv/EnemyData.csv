@@ -1,0 +1,271 @@
+敵ID,名前,筋力,体力,知力,魅力,技量,信仰,回避値,チンイラ,Ｍアーマー値,回避値,アーマー値,武器ヒット,ダメージ,経験値,通常攻撃レンジ,射精管理変数番号,変数予備２,変数予備３,変数予備４,変数予備５,自由記入1,自由記入2,スキル,割り込みスキル,アイテムドロップ
+101,enemy_name_rat,1,1,1,1,2,1,0,0,0,0,0,5,1,1,6,0,,,,,"$attack_animation_type = ""fang"";",s[61] = false,"7:1,1:3",,I318:1:60
+102,enemy_name_spider,2,2,1,1,1,1,0,0,0,0,0,3,1,1,6,0,,,,,"$attack_animation_type = ""fang"";",s[61] = false,1:3,,I302:1:60
+103,enemy_name_bee,4,1,1,1,5,1,0,0,0,0,0,5,1,1,6,0,,,,,"$attack_animation_type = ""spear"";",s[61] = false,1:3,,I307:1:60
+104,enemy_name_bat,3,2,1,1,3,2,1,0,0,1,0,5,1,1,6,0,,,,,"$attack_animation_type = ""fang"";",s[61] = false,1:1,,
+105,enemy_name_scorpion,6,6,3,3,6,3,0,0,0,0,1,8,1d3 + 1,2,6,0,,,,,"$attack_animation_type = ""spear"";",s[61] = false,1:3,,I307:1:60
+106,enemy_name_sneak,3,3,2,2,5,5,0,0,0,0,0,5,1d3,1,6,0,,,,,"$attack_animation_type = ""fang"";",s[61] = false,1:1,,"I304:1:60,I322:1:40"
+107,enemy_name_sneakW,6,6,6,6,6,6,1,0,1,0,1,5,1d6,3,6,0,,,,,"$attack_animation_type = ""fang"";",s[61] = false,"6:3,1:152",,"I304:1:80,I323:1:40"
+111,enemy_name_wolf,4,2,2,2,4,2,1,0,0,0,0,5,2,1,6,0,,,,,"$attack_animation_type = ""fang"";",s[61] = false,"7:1,1:6",,I305:1:60
+112,enemy_name_dire-wolf,6,5,5,2,6,2,2,0,0,1,0,8,8,3,6,0,,,,,"$attack_animation_type = ""fang"";",s[61] = false,"7:1,1:6",,"I305:1:60,I306:1:40"
+113,enemy_name_killer-panther,7,4,5,2,6,2,2,0,0,2,0,8,8,3,6,0,,,,,"$attack_animation_type = ""fang"";",s[61] = false,"7:1,1:6",,I306:1:60
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+201,enemy_name_goblin,2,2,1,1,2,1,0,3,0,0,0,5,1d3,2,6,1621,,,,,"$attack_animation_type = ""blow"";
+$trait_penis = 1",s[61] = true,1:2,,"I310:1:60,I311:1:20"
+202,enemy_name_goblin_rider,2,4,1,1,3,1,1,3,0,1,0,5,1d3+2,2,6,1621,,,,,"$attack_animation_type = ""blow"";
+$trait_fast = 1
+$trait_penis = 1
+$bind_type = 1",s[61] = true,"6:6,1:1",,"I310:1:60,I311:1:20"
+203,enemy_name_goblin_rider,2,4,1,1,3,1,1,3,0,1,0,5,1d3+2,2,6,1621,,,,,"$attack_animation_type = ""blow"";
+$trait_slow = 1
+$trait_piggy = 1
+$trait_penis = 1
+$rescue_in_combat = 1
+v[159] = 5
+v[17] = 52",s[61] = false,"6:6,1:1",,"I310:1:60,I311:1:20"
+204,enemy_name_goblin_alchemist,2,3,2,1,4,1,0,3,1,0,1,5,1d3+1,2,5,1621,,,,999,"$attack_animation_type = ""blow"";
+$trait_penis = 1",s[61] = true,"6:9,3:8,1:15",,"I310:1:60,I311:1:40,I57:1:40"
+205,enemy_name_goblin_warrior,4,5,2,2,5,1,1,3,1,0,1,5,1d6,3,5,1621,,,,999,"$attack_animation_type = ""blow"";
+$trait_penis = 1",s[61] = true,1:1,,"I310:1:60,I311:1:40,I57:1:40"
+206,enemy_name_goblin_archer,2,4,2,3,5,1,1,3,1,0,1,5,1d3+2,3,5,1621,,,,999,"$attack_animation_type = ""blow"";
+$trait_penis = 1",s[61] = true,1:1,,"I310:1:60,I311:1:40,I57:1:40"
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+211,enemy_name_orc,6,6,2,2,4,3,0,5,0,0,1,7,2d3,4,6,1622,,,,,"$attack_animation_type = ""blow"";
+$trait_penis = 1",s[61] = true,1:1,,"I310:1:60,I312:1:20"
+212,enemy_name_orcWarrior,6,5,2,2,4,3,0,5,0,0,1,7,2d3+2,4,6,1622,,,,,"$attack_animation_type = ""blow"";
+$trait_penis = 1",s[61] = true,1:1,,"I310:1:60,I312:1:20"
+213,enemy_name_orcGW,6,5,2,2,4,3,0,5,0,0,1,7,2d3+2,4,6,1622,,,,,"$attack_animation_type = ""blow"";
+$trait_penis = 1",s[61] = true,1:1,,"I310:1:60,I312:1:20"
+214,enemy_name_orcGeneral,8,8,2,2,6,3,0,5,0,0,3,7,2d3+4,15,6,1622,,,,,"$attack_animation_type = ""blow"";
+$trait_penis = 1
+$EnemyBonusHP = 20;",s[61] = true,1:1,,"I310:1:100,I312:1:40"
+215,enemy_name_orcDruid,6,5,2,2,4,3,0,5,0,0,1,7,4,4,6,1622,,,,,"$attack_animation_type = ""blow"";
+$trait_penis = 1",s[61] = true,,,"I310:1:60,I312:1:20"
+219,enemy_name_orcp,4,5,1,1,3,1,0,5,0,0,1,3,4,3,6,1622,,,,,"$attack_animation_type = ""blow"";
+$trait_penis = 1",s[61] = true,"8:5,1:1",,"I310:1:60,I312:1:20"
+221,enemy_name_ogre,6,8,1,1,1,1,0,3,0,0,3,5,8,20,7,1623,,,,,"$attack_animation_type = ""blow"";
+$trait_penis = 1
+$trait_death_penis = 0
+$trait_regeneration = 1
+$trait_meat_shield = 1
+$weak_magic = 1
+$EnemyBonusHP = 30;",s[61] = false,"8:5,1:6",,I313:1:30
+226,enemy_name_werewolf,6,5,3,3,5,5,3,0,3,3,2,10,6,10,7,1623,,,,,"$attack_animation_type = ""blow"";
+$trait_penis = 0
+$trait_death_penis = 0
+$trait_regeneration = 0
+$trait_meat_shield = 0
+$weak_fire = 1",s[61] = false,"6:6,1:1",,"I320:1:80,I306:1:60"
+241,enemy_name_gnoll_novice,4,4,1,2,3,2,2,3,1,2,1,5,3,3,7,1625,,,,,"$attack_animation_type = ""sword"";
+$trait_penis = 1",s[61] = true,"8:1,1:6",,"I10:1:20,G:10:60"
+242,enemy_name_gnoll_warrior,6,5,1,2,4,2,2,3,1,2,2,7,5,5,7,1625,,,,,"$attack_animation_type = ""sword"";
+$trait_penis = 1",s[61] = true,"8:1,1:6",,"I10:1:20,G:10:80"
+243,enemy_name_gnoll_scout,5,4,3,3,6,2,4,3,1,4,1,8,5,5,7,1625,,,,,"$attack_animation_type = ""sword"";
+$trait_penis = 1",s[61] = true,,,"I10:1:20,G:10:80"
+244,enemy_name_gnoll_slaughter,10,10,3,6,6,2,4,3,1,4,1,8,8,8,7,1625,,,,,"$attack_animation_type = ""sword"";
+$trait_penis = 1",s[61] = true,,,"I10:1:20,G:50:80"
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+301,enemy_name_insane,3,2,2,1,3,1,0,2,0,0,0,5,1,1,7,1620,,,,999,$trait_penis = 1,s[61] = true,,,G:5:20
+302,enemy_name_highwayman,3,2,2,1,3,1,0,2,0,0,0,5,1,1,8,1620,,,,,$trait_penis = 0,s[61] = false,"5:1,1:2",,G:10:20
+303,enemy_name_scavenger,4,3,3,1,4,2,1,2,0,1,0,7,3,2,8,1620,,,,,$trait_penis = 0,s[61] = false,,,G:10:20
+304,enemy_name_thief,4,3,3,1,4,2,1,2,0,1,0,7,3,2,8,1620,,,,,$trait_penis = 0,s[61] = false,,,G:10:20
+305,enemy_name_thief_leader,4,3,3,1,4,2,1,2,0,1,0,7,3,2,8,1620,,,,,$trait_penis = 0,s[61] = false,,,G:10:20
+306,enemy_name_pirates,4,3,3,1,3,2,1,2,0,1,0,8,3,2,10,1620,,,,,$trait_penis = 1,s[61] = true,,,G:10:20
+307,enemy_name_pirates_cap,5,5,4,3,4,1,3,1,0,3,1,10,4,5,10,1620,,,,,"$trait_penis = 1
+$EnemyBonusHP = 10;",s[61] = true,,,G:50:60
+314,enemy_name_human_wizard,3,3,7,6,3,3,2,0,3,2,1,10,3,5,3,1620,,,,,$trait_penis = 1,s[61] = false,"6:151,1:156",,G:10:20
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+336,enemy_name_doctor,3,5,7,6,3,3,2,0,3,2,1,10,3,5,3,1620,,,,,"$trait_penis = 0;
+$EnemyBonusHP = 10;",s[61] = false,"6:8,1:9",,G:200:100
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+401,,3,3,6,6,3,7,5,0,5,5,0,3,3,3,3,0,,,,,$trait_penis = 0,s[61] = false,,,
+402,enemy_name_fire_element,3,2,2,1,1,1,0,0,3,0,0,5,2,2,2,0,,,,,$weak_water = 1,s[61] = false,1:151,,I:328:1:40
+430,enemy_name_imp,4,3,5,3,4,3,3,0,2,3,1,5,3,2,6,0,,,,,$weak_holy = 1,s[61] = false,"2:161,1:151",,I310:1:60
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+501,enemy_name_zombie,3,2,2,1,1,1,0,0,0,0,0,5,2,2,7,0,,,,,,s[61] = false,"7:1,1:3",,G:10:20
+502,enemy_name_ghoul,4,4,2,1,1,2,0,0,1,1,1,5,3,2,7,0,,,,,$EnemyBonusHP = 5,s[61] = false,"7:1,1:3",,G:10:20
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+601,enemy_name_slime,2,2,1,1,1,1,0,0,0,0,0,5,2,1,6,0,,,,,"$trait_impervious = 1
+$weak_fire = 1
+$hold_limit = 5
+$trait_penis = 0",s[61] = false,1:4,,I303:1:40
+602,enemy_name_sludge,2,2,1,1,1,1,0,,0,0,0,6,1,1,6,0,,,,,"$trait_impervious = 1
+$weak_thunder = 1
+$hold_limit = 5
+$trait_penis = 0",s[61] = false,,,I303:1:40
+604,enemy_name_gummy,6,4,1,1,1,1,0,,0,0,0,6,2,2,6,0,,,,,"$trait_impervious = 1
+$weak_water = 1
+$weak_magic = 1
+$hold_limit = 5
+$trait_penis = 0",s[61] = false,1:151,,I303:1:40
+621,enemy_name_clay-gorlem,8,10,2,2,3,2,-1,,0,-1,2,3,6,5,8,0,,,,,"$weak_magic = 1
+$trait_impervious = 0
+$trait_penis = 0",s[61] = false,"8:5,1:1",,"I50:1:5,I324:1:20,I405:1:20"
+624,enemy_name_natural-gorlem,8,10,5,2,3,5,0,,2,0,2,3,5,5,8,0,,,,,"$weak_magic = 0
+$trait_impervious = 0
+$trait_penis = 0",s[61] = false,"8:5,1:1",,"I50:1:5,I324:1:20,I405:1:20"
+625,enemy_name_guardian,5,10,6,1,1,1,0,,3,0,3,6,8,30,7,0,,,,,"$weak_magic = 0
+$trait_impervious = 0
+$trait_penis = 0",s[61] = false,"8:101,6:5,1:1",,"I50:1:5,I324:1:20,I405:1:20"
+631,enemy_name_living_armor,4,4,1,1,3,1,-1,0,3,-1,3,5,4,2,10,0,,,,,$trait_penis = 0,s[61] = false,,,"I400:1:30,I324:1:20"
+633,enemy_name_LivingSword,8,3,3,2,3,2,-1,0,5,-1,1,5,4,3,10,0,,,,,"$attack_animation_type = ""sword"";
+$trait_penis = 0",s[61] = false,,,"I400:1:30,I324:1:20"
+641,enemy_name_mushroom,6,5,3,2,5,2,0,0,2,0,3,6,5,2,6,0,,,,,"$attack_animation_type = ""blow"";
+$trait_impervious = 0
+$weak_fire = 1
+$hold_limit = 0
+$trait_penis = 0",s[61] = false,1:3,,I325:1:50
+646,enemy_name_radish,6,8,1,1,6,1,0,0,2,0,1,6,6,2,6,0,,,,,"$attack_animation_type = ""blow"";
+$trait_impervious = 0
+$weak_fire = 1
+$hold_limit = 0
+$trait_penis = 0",s[61] = false,1:5,,I326:1:50
+649,enemy_name_mandragora,1,10,15,1,1,1,2,0,2,2,2,6,8,5,2,0,,,,,"$attack_animation_type = ""blow"";
+$trait_impervious = 0
+$weak_fire = 1
+$hold_limit = 0
+$trait_penis = 0",s[61] = false,1:161,,I327:1:50
+662,enemy_name_mimic-gate,10,12,8,8,3,8,0,0,5,0,2,10,10,8,6,0,,,,,"$attack_animation_type = ""fang"";
+$trait_impervious = 0
+$weak_fire = 0
+$hold_limit = 0
+$trait_penis = 0",s[61] = false,"5:3,1:151",,I51:1:5
+681,enemy_name_raijyu,3,7,8,8,6,8,3,0,5,3,0,6,6,3,5,0,,,,,"$trait_impervious = 0 
+$weak_fire = 0 
+$hold_limit = 0 
+$trait_penis = 0",s[61] = false,"3:166,2:65,1:6",,I330:1:3
+690,enemy_name_HellHound,6,7,8,8,6,8,3,0,5,3,0,6,6,3,5,0,,,,,"$trait_impervious = 0
+$weak_fire = 0
+$hold_limit = 0
+$trait_penis = 0",s[61] = false,"3:151,2:6,1:1",,"I:328:1:40,I306:1:60"
+692,enemy_name_Chimera,12,10,10,10,8,10,2,0,3,2,3,6,10,20,5,0,,,,,"$trait_impervious = 0
+$weak_fire = 0
+$hold_limit = 0
+$trait_penis = 0",s[61] = false,"4:166,3:161,2:156,1:151",,"I:328:1:20,I329:1:20,
+I:330:1:20,I331:1:20"
+,,,,,,,,,,,,,,,,,0,,,,,,,,,
+721,,3,2,2,1,1,0,0,,5,0,0,3,1,2,6,0,,,,,,s[61] = false,,,
+,,,,,,,,,,,,,,,,,0,,,,,,,,,
+801,enemy_name_wyvern,5,3,3,3,3,0,2,,10,2,10,10,3,10,6,0,,,,,,s[61] = false,,,I:344:1:40
+,,,,,,,,,,,,,,,,,0,,,,,,,,,
+901,enemy_name_unknown,4,5,1,1,1,0,0,1,3,0,1,5,2,5,9,0,,,,,"$trait_penis = 0
+$trait_attack_w_bind = 1
+$weak_holy = 1",s[61] = true,,,
+902,enemy_name_unknown2,3,6,2,3,3,5,0,0,5,0,1,10,5,8,10,0,,,,,"$trait_penis = 0
+$trait_attack_w_bind = 0
+$weak_holy = 1",s[61] = false,,,
+903,enemy_name_demon_2head,7,10,4,3,4,6,0,0,3,0,2,10,7,12,10,0,,,,,"$trait_penis = 0
+$trait_attack_w_bind = 0
+$weak_holy = 1",s[61] = false,,,
+905,enemy_name_daemon_cerberus,8,12,5,5,6,8,3,0,5,3,0,10,10,20,10,0,,,,,"$trait_penis = 0
+$trait_attack_w_bind = 0
+$weak_holy = 1",s[61] = false,,,
+906,enemy_name_daemon_crow,8,12,5,5,6,8,3,0,5,3,0,10,10,20,10,0,,,,,"$trait_penis = 0
+$trait_attack_w_bind = 0
+$weak_holy = 1",s[61] = false,,,
+950,enemy_name_masked_man,6,7,5,5,8,7,0,0,1,0,1,5,4,12,10,0,,,,,"$attack_animation_type = ""sword"";
+$trait_penis = 0
+$trait_attack_w_bind = 0
+$weak_holy = 1",s[61] = false,,,
+984,enemy_name_pol,99,99,99,99,99,99,28,,20,28,20,20,10,999,10,0,,,,,"$attack_animation_type = ""sword"";
+$trait_penis = 0
+$trait_attack_w_bind = 0
+$weak_holy = 1",s[61] = false,,,
+985,enemy_name_kow,99,99,99,99,99,99,50,,20,50,20,20,999,999,10,0,,,,,"$attack_animation_type = ""sword"";
+$trait_penis = 0
+$trait_attack_w_bind = 0
+$weak_holy = 1",s[61] = false,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+1001,enemy_name_unique1,5,4,3,3,5,3,1,0,1,1,1,5,4,5,6,1621,,,,,"$attack_animation_type = ""blow"";
+$trait_penis = 1",s[61] = false,"6:5,1:2",,
+1002,enemy_name_unique2,8,12,3,3,6,3,3,0,3,3,3,8,12,10,6,1621,,,,,"$attack_animation_type = ""blow"";
+$trait_penis = 1",s[61] = false,"6:5,1:2",,
+1003,enemy_name_unique3,12,6,3,2,3,2,2,0,5,2,2,5,6,10,10,0,,,,,"$attack_animation_type = ""sword"";
+$trait_penis = 0",s[61] = false,1:5,,
+1004,enemy_name_unique4,10,8,3,4,5,5,-5,0,2,-5,3,8,4,10,6,0,,,,,"$attack_animation_type = ""blow"";
+$trait_penis = 0",s[61] = false,"6:5,1:1",,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+116,enemy_name_boar,3,3,2,2,2,1,1,0,0,1,0,6,2,1,6,0,,,,,"$attack_animation_type = ""fang"";",s[61] = false,1:1,,"I:305:1:60,I:320:1:40"
+117,enemy_name_Dboar,5,5,3,3,4,2,3,0,1,3,1,6,4,4,6,0,,,,,"$attack_animation_type = ""fang"";",s[61] = false,1:1,,"I:305:1:60,I:321:1:40"
+121,enemy_name_bear,5,6,5,5,6,4,2,0,0,2,2,6,4,4,6,0,,,,,"$attack_animation_type = ""fang"";",s[61] = false,1:1,,"I:319:1:60,I:320:1:60"
+122,enemy_name_Dbear,10,8,5,5,8,5,2,0,2,2,3,6,8,6,6,0,,,,,"$attack_animation_type = ""fang"";",s[61] = false,1:1,,"I:319:1:60,I:321:1:60"
+126,enemy_name_lizard,6,6,4,4,4,5,0,0,0,0,3,8,5,5,6,0,,,,,"$attack_animation_type = ""fang"";",s[61] = false,1:1,,I:322:1:60
+251,enemy_name_lizardman,8,8,8,6,8,6,2,1,2,2,3,8,4,6,6,0,,,,,"$attack_animation_type = ""spear"";
+$trait_penis = 1",s[61] = true,"6:3,1:1",,I:323:1:60
+255,enemy_name_centaur,5,6,6,5,8,8,3,0,2,3,1,8,5,5,6,0,,,,,"$attack_animation_type = ""blow"";
+$trait_penis = 1",s[61] = false,1:1,,
+261,enemy_name_lamia,3,7,8,8,5,5,3,0,8,3,1,6,3,5,4,0,,,,,"$attack_animation_type = ""fang"";",s[61] = false,"6:3,1:151",if (v[390] <=30  && v[140] > v[158]) v[155] = 116,I:323:1:60
+262,enemy_name_medusa,6,12,12,15,6,8,3,0,8,3,2,6,5,30,1,0,,,,,"$attack_animation_type = ""fang"";",s[61] = false,"6:3,3:151,1:206",if (v[390] <=30  && v[140] > v[158]) v[155] = 116,I:323:1:100
+263,enemy_name_dryad,3,8,8,8,5,10,0,0,3,0,2,8,4,5,6,0,,,,,"$attack_animation_type = ""blow"";",s[61] = false,"3:161,1:4",,I:336:1:60
+281,enemy_name_acephalos,4,4,2,2,4,2,0,3,2,0,0,7,3,3,6,1621,,,,,"$attack_animation_type = ""blow"";
+$trait_penis = 1",s[61] = true,"7:1,1:2",,"I310:1:60,I311:1:20"
+282,enemy_name_redcap,8,4,4,4,8,4,5,2,0,5,1,8,6,5,6,0,,,,,"$attack_animation_type = ""blow"";
+$trait_penis = 1",s[61] = true,,,G:10:20
+256,enemy_name_minotaur,10,10,5,5,6,6,1,1,1,1,1,6,10,5,6,0,,,,,"$attack_animation_type = ""blow"";
+$trait_penis = 1",s[61] = true,,,G:100:20
+321,enemy_name_apprenticeofwitch,2,5,10,8,6,10,1,0,5,1,1,8,3,6,4,0,,,,,"$attack_animation_type = ""blow"";",s[61] = false,,,G:100:20
+322,enemy_name_flowerknight,8,8,4,4,8,6,1,0,3,1,3,8,5,6,6,0,,,,,"$attack_animation_type = ""sword"";",s[61] = false,,,G:100:20
+391,enemy_name_flowerwitch,1,20,20,20,20,20,5,0,5,5,5,8,10,50,1,0,,,,,"$attack_animation_type = ""blow"";",s[61] = false,,,G:10000:100
+392,enemy_name_hag,8,8,8,8,8,8,4,0,4,4,4,8,8,30,6,0,,,,,"$attack_animation_type = ""blow"";",s[61] = false,,,G:10000:100
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+511,enemy_name_skelton,3,3,3,3,3,3,0,0,0,0,0,6,2,1,6,0,,,,,"$attack_animation_type = ""sword"";",s[61] = false,,,I332:1:60
+531,enemy_name_retainer,6,4,6,4,6,4,2,0,2,2,2,2,5,5,6,0,,,,,"$attack_animation_type = ""fang"";",s[61] = false,,,G:10:20
+532,enemy_name_vampire,,,,,,,,,,,,,,,,,,,,,,,,,G:100:20
+539,enemy_name_dracula,6,6,8,12,8,12,6,0,6,6,2,8,8,30,6,0,,,,,"$attack_animation_type = ""fang"";",s[61] = false,,,G:10000:100
+581,enemy_name_sleepingbeauty,5,5,15,10,5,10,20,0,10,20,1,8,8,30,6,0,,,,,"$attack_animation_type = ""blow"";",s[61] = false,,,G:10000:100
+651,enemy_name_maneater,4,6,8,6,6,6,0,0,3,0,0,8,4,5,4,0,,,,,"$attack_animation_type = ""fang"";",s[61] = false,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+10001,enemy_name_goblin,0,1,1,1,1,1,-5,0,0,-5,0,0,1d3,2,10,0,,,,,"$attack_animation_type = ""blow"";
+$trait_impervious = 0
+$weak_fire = 0
+$hold_limit = 0
+$trait_penis = 0",s[61] = false,,,
+10002,enemy_name_thug,0,1,1,1,1,1,-5,0,0,-5,0,0,3,2,10,0,,,,,"$attack_animation_type = ""blow"";
+$trait_impervious = 0
+$weak_fire = 0
+$hold_limit = 0
+$trait_penis = 0",s[61] = false,,,
+10003,enemy_name_michael,8,8,3,3,8,3,0,0,0,0,0,5,2d3,5,6,0,,,,,"$attack_animation_type = ""sword"";
+$trait_impervious = 0
+$weak_fire = 0
+$hold_limit = 0
+$trait_penis = 0",s[61] = false,"7:35,1:1",,
+10004,enemy_name_sally,3,3,6,6,3,6,0,0,0,0,0,5,1d3,5,6,0,,,,,"$attack_animation_type = ""blow"";
+$trait_impervious = 0
+$weak_fire = 0
+$hold_limit = 0
+$trait_penis = 0","s[61] = false
+// support_skill = Heal",1:116,,
+10010,enemy_name_10010,8,8,3,3,8,3,0,0,0,0,0,5,2d3,5,6,0,,,,,"$attack_animation_type = ""sword"";
+$trait_impervious = 0
+$weak_fire = 0
+$hold_limit = 0
+$trait_penis = 0",s[61] = false,1:1,,
+10011,enemy_name_10011,8,8,3,3,8,3,0,0,0,0,0,5,2d3,5,6,0,,,,,"$attack_animation_type = ""sword"";
+$trait_impervious = 0
+$weak_fire = 0
+$hold_limit = 0
+$trait_penis = 0",s[61] = false,1:1,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+10013,enemy_name_???,8,10,5,5,8,5,3,0,2,3,2,5,3d3,5,6,0,,,,,"$attack_animation_type = ""blow"";
+$trait_impervious = 0
+$weak_fire = 0
+$hold_limit = 0
+$trait_penis = 0
+$EnemyBonusHP = 20;",s[61] = false,"8:6,5:3,1:1",,
+10019,enemy_name_sally,4,10,9,9,6,9,2,0,3,2,1,8,2d6,20,4,0,,,,,"$attack_animation_type = ""blow"";
+$trait_impervious = 0
+$weak_fire = 0
+$hold_limit = 0
+$trait_penis = 0",s[61] = false,1:186,if (v[390] <=30  && v[140] > v[158]) v[155] = 191,
+,,,,,,,,,,,,,,,,,,,,,,,,186,,

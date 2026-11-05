@@ -1,0 +1,265 @@
+$id=0,free,JPN_NAME,DESCRIPT,ENG_NAME,DESCRIPT,SPN_NAME,DESCRIPT
+$id=1,,☆プレイヤー装備[鎧],,[Player's Armor],,☆Weapon of Protagonist,
+$id=2,,布の服,[回避値:3][アーマー値:0][マジックアーマー値:0],Civilian Clothes,"[Avoid: 3] [Armor Point: 0]
+Everyday clothes for a normal man.",Short Sword,Weapon ATK: 3
+$id=3,,ソフトレザーアーマー,[回避値:2][アーマー値:1][マジックアーマー値:1],Soft Leather Armor,"[Avoid: 2] [Armor Point: 1]
+Popular armor worn by novice adventurers due to its availability.",Long Sword,Weapon ATK: 6
+$id=4,,ハードレザーアーマー,[回避値:1][アーマー値:1d3][マジックアーマー値:2],Hard Leather Armor,"[Avoid: 1] [Armor Point: 1d3]
+Popular armor worn by rogues and rangers due to the light weight.",Omega-Buddha-Sword,"When equipped, you can defeat an enemy without engaging in combat.
+Wasn't this legendary weapon also called the ""Hyper-Meteor-Buster""...?"
+$id=5,,ギャンブソン,[回避値:2][アーマー値:3][マジックアーマー値:3],Gambson,[Avoid: 2] [Armor Point: 3] [Magic Armor Point: 3],,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,☆Weapon of Heroine,
+$id=11,,チェインメイル,[回避値:0][アーマー値:4][マジックアーマー値:0],Chain Mail,"[Avoid: 0] [Armor Point: 4] [Magic Armor Point: 0]
+Standard armor typically worn by serious female adventurers.",,
+$id=12,,プレートアーマー,[回避値:-2][アーマー値:6][マジックアーマー値:0],Plate Armor,"[Avoid: -2] [Armor Point: 6] [Magic Armor Point: 0]
+This high-quality steel armor is popular with knights and paladins.",,
+$id=13,,ドワーヴンアーマー,[回避値:-4][アーマー値:8][マジックアーマー値:0],Dwarven Armor,"[Avoid: -4] [Armor Point: 8] [Magic Armor Point: 0]
+Extremely heavy due to the fine metal and craftsmanship of the Dwarves.",,
+$id=14,,ブリガンダイン,[回避値:-4][アーマー値:10][マジックアーマー値:0],Brigandine,[Avoid: -10] [Armor Point: 10] [Magic Armor Point: 0],,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+$id=19,,さすらい人の革鎧,[回避値:3][アーマー値:1],Leather Armor of the Wind,"[Avoid: 3] [Armor Point: 1]
+The material of this armor almost weighs as much as normal clothes.",,
+,,,,,,,
+$id=21,,☆プレイヤー装備[頭],,[Player's helmet],,,
+$id=22,,布のフード,[回避値:1][アーマー値:0],Hood,"[Avoid: 1] [Armor Point: 0]
+Protects your head... from rain.",,
+$id=23,,レザーヘルム,[回避値:1][アーマー値:1][マジックアーマー値:1],Leather Helm,[Avoid: 1] [Armor Point: 1] [Magic Armor Point: 1],,
+$id=24,,アヴァンタイル,[回避値:1][アーマー値:2][マジックアーマー値:0],Avantile,[Avoid: 1] [Armor Point: 2] [Magic Armor Point: 0],,
+,,,,,,,
+,,,,,,,
+$id=31,,ねじり鉢巻き,[回避値:0][アーマー値:0]\c[2][筋力+1],Hachimaki,"[Avoid: 0] [Armor Point: 0] \c[2][Strength: +1] 
+Wearing this suddenly gave you energy. Also keeps sweat off your face. ",,
+,,,,,,,
+,,,,,,,
+$id=41,,☆プレイヤー装備[盾],,[Player’s Shield],,,
+$id=42,,木のラウンドシールド,"[回避値:5][アーマー値:2][マジックアーマー値:2]
+防御時にのみアーマー値と回避値が付与される。",Wooden Round Shield,"[Avoid: 5] [Armor Point: 2] [Magic Armor Point: 2]Better protection than a wooden fence.
+Grants you Armor Points and Avoid ONLY when you select “Defend“ in combat.",,
+$id=43,,木のタワーシールド,"[回避値:0][アーマー値:4][技量:-1]
+防御時にのみアーマー値と回避値が付与される。",Wooden Tower Shield,"[Avoid: 0] [Armor Point: 4] [Technique: -1]
+Grants you Armor Points and Avoid ONLY when you select “Defend“ in combat.",,
+$id=44,,,,,,,
+$id=45,,皮のラウンドシールド,"[回避値:5][アーマー値:4][マジックアーマー値:4]
+防御時にのみアーマー値と回避値が付与される。",Leather Round Shield,"[Avoid: 5] [Armor Point: 4] [Magic Armor Point: 4]
+Grants you Armor Points and Avoid ONLY when you select “Defend“ in combat.",,
+$id=46,,皮のタワーシールド,"[回避値:0][アーマー値:6][技量:-2]
+防御時にのみアーマー値と回避値が付与される。",Leather Tower Shield,"[Avoid: 0] [Armor Point: 6] [Technique: -2]
+Grants you Armor Points and Avoid ONLY when you select “Defend“ in combat.",,
+$id=47,,,,,,,
+$id=48,,鉄のラウンドシールド,"[回避値:3][アーマー値:6][マジックアーマー値:6]
+防御時にのみアーマー値と回避値が付与される。",Iron Round Shield,"[Avoid: 3] [Armor Point: 6] [Magic Armor Point: 6]
+Grants you Armor Points and Avoid ONLY when you select “Defend“ in combat.",,
+$id=49,,鉄のタワーシールド,"[回避値:0][アーマー値:10][技量:-3]
+防御時にのみアーマー値と回避値が付与される。",Iron Tower Shield,"[Avoid: 0] [Armor Point: 10] [Technique: -3]
+Grants you Armor Points and Avoid ONLY when you select “Defend“ in combat.",,
+,,,,,,,
+$id=59,,☆プレイヤー防具[（ユニーク）],,Player's Shield[unique],,,
+$id=60,,オメガブッダシールド,"[回避値:99][アーマー値:99]
+防御時にのみアーマー値と回避値が付与される。",Omega Budha Shield,"[Avoid: 99] [Armor Point: 99]
+Grants you Armor Points and Avoid ONLY when you select “Defend“ in combat.",,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+$id=77,,☆特殊アクセサリ,,[unique accessory],,,
+$id=78,,古びたリング,"怪しい商人から買ったリング。
+スケベ女にモテるというが……？",Ancient Ring,"The ring bought from Syth Merchant.
+It was told this ring will help you attract women...?",,
+$id=79,,煌めくリング,主人公がペアで買わされたリングの片割れ。,Shiny Ring,"The other ring given from the Syth Merchant.
+It has a beautiful glow.",,
+$id=80,,リング,,Ring,,,
+$id=81,,☆ヒロイン衣装,,[heroine's costume],,,
+$id=82,,僧衣,"[\n[2]用コスチューム][マスク] 
+黄金７柱に使える聖なる乙女のための神聖なローブ。",Priestess's Robe,"[Costume/Outfit for \n[2]]
+A sacred robe worn by the holy maidens of The 7 Golden Pillars.",,
+$id=83,,戦僧衣,"[\n[2]用コスチューム][マスク]
+黄金７柱に仕えるバトルプリーストのための装衣。",Priestess's Battle Garb,"[Costume/Outfit for \n[2]]
+This garment is designed to help priestesses with mobility in combat.",,
+$id=84,,給仕服,給仕の服。,Waitress's Dress,Dress for waitress.,,
+$id=85,,バニースーツ,,Bunny Suit,,,
+$id=86,,ダンサー衣装,[\n[2]用コスチューム],Dancer’s Costume,"[Costume/Outfit for \n[2]]
+This garment is designed to help priestesses with mobility in combat.",,
+$id=87,,給仕服(萌え）,給仕の服。,,,,
+,,,,,,,
+,,,,,,,
+$id=90,,首輪,,collar,,,
+$id=91,,☆ヒロイン帽子,,[heroine's hat],,,
+$id=92,,司祭帽,"[\n[2]用コスチューム][マスク] 
+祈り手を堕落から守りし祝福されたかわいく白いベレット帽。",Priestess's Hat,"[Costume/Outfit for \n[2]]
+A cute beret that is blessed to help protect the mind against corruption.",,
+$id=93,,給仕のカチューシャ,,Waitress's headband,,,
+$id=94,,牛のカチューシャ,,Cow Headband,,,
+$id=95,,バニーイヤー,,Bunny Headband,,,
+,,,,,,,
+$id=98,,フェイスマスク,[\n[2]用コスチューム][マスク],Face Mask,"[Costume/Outfit for \n[2]]
+Wearing this hides a person's identity. Also rumored to protect the wearer from viruses.",,
+$id=99,,ダンサーヴェール,[\n[2]用コスチューム][マスク],Dancer's Face Veil,"[Costume/Outfit for \n[2]]
+A transparent mask worn to ""conceal"" beauty from others.",,
+$id=100,,MIAMI,[\n[2]用コスチューム][マスク],MIAMI,[Costume/Outfit for \n[2]],,
+$id=101,,☆ヒロインタイツ,,[heroine's Tights],,,
+$id=102,,全身タイツ,新陳代謝が良すぎる司祭は蒸れ防止に自身でタイツに穴を開けたのだ……,Body Tights,"[Costume/Outfit for \n[2]]
+Holes have been cut out to help \n[2] cleanse her body from filth and sin.",,
+,,,,,,,
+,,,,,,,
+$id=105,,サイハイストッキング,,Thigh-High Stockings,,,
+$id=106,,網タイツ,,Fishnet Tights,,,
+,,,,,,,
+$id=111,,☆ヒロイン下着,,[heroine's underwear],,,
+$id=112,,Tバック,,Thong,,,
+$id=113,,ランジェリー,,lingerie,,,
+,,,,,,,
+$id=117,,エナメルハイレグ,,High Cut Bodysuit,,,
+$id=119,,ダンサービキニ,ダンサービキニ。,Dancer’s Bikini,,,
+,,,,,,,
+$id=120,,マイクロビキニ,"[\n[2]用コスチューム]
+これこそがビキニ",Micro Bikini,"[Costume/Outfit for \n[2]]
+Sexy swimwear to show off the wearer's figure!",,
+$id=121,,一般的な水着,"カットの角度も甘くフルバックの水着……
+誰が得をするんだ……",swimming wear,Fullback bikini... nobody wants this... tsk...,,
+$id=122,,牛ビキニ,モォオォオォォ！！,,Moooooooooooooooooooooooooo!!!!!!!!!!!!!!!!!,,
+,,,,,,,
+$id=124,,コンドームベルト,,Used Condoms Belt,,,
+$id=125,,貞操帯（女）,まんこを出せない。[効果未実装],Chastity belt (Female),You can no longer show your pussy [Unimplemented],,
+,,,,,,,
+$id=140,,【サブキャラ衣装】,,,,,
+$id=141,,服[従者],服[従者],Cloth[Follower],Cloth[Follower],,
+$id=142,,水着[従者],水着[従者],Swimwear[]Follower],Swimwear[]Follower],,
+$id=143,,バニースーツ[従者],バニースーツ[従者],Bunny suit[Follower],Bunny suit[Follower],,
+$id=144,,メイド服[従者],メイド服[従者],Maid dress[Follower],Maid dress[Follower],,
+,,,,,,,
+,,,,,,,
+$id=151,,【装飾品】,,,,,
+$id=152,,筋力のお守り,筋力+1,Amulet of Strength,"Strength: +1
+OH YEAH, YOU FEEL STRONGER WHEN YOU WEAR THIS THING!!!",,
+$id=153,,体力のお守り,体力+1,Amulet of Endurance,"Endurance: +1
+You feel tougher wearing this trinket on your body!",,
+$id=154,,魔力のお守り,魔力+1,Amulet of Magic,"Intelligence: +1
+It seems this trinket increases one's knowledge. Better wear it soon.",,
+$id=155,,魅力のお守り,魅力+1,Amulet of Charm,"Charisma: +1
+You feel sexy and you know it when you wear this charm around your neck!",,
+$id=156,,技量のお守り,技量+1,Amulet of Technique,"Technique: +1
+You can sense your dexterity increase when you wear this trinket...",,
+$id=157,,信仰のお守り,信仰+1,Amulet of Faith,"Faith: +1
+Thou has a sense of being closer to the Gods with these rosary beads.",,
+$id=158,,筋力のお守り+1,筋力+2,Amulet of Strength+1,"Strength: +2
+OH YEAH, YOU FEEL STRONGER WHEN YOU WEAR THIS THING!!!",,
+$id=159,,体力のお守り+1,体力+2,Amulet of Endurance+1,"Endurance: +2
+You feel tougher wearing this trinket on your body!",,
+$id=160,,魔力のお守り+1,魔力+2,Amulet of Magic+1,"Intelligence: +2
+It seems this trinket increases one's knowledge. Better wear it soon.",,
+$id=161,,魅力のお守り+1,魅力+2,Amulet of Charm+1,"Charisma: +2
+You feel sexy and you know it when you wear this charm around your neck!",,
+$id=162,,技量のお守り+1,技量+2,Amulet of Technique+1,"Technique: +2
+You can sense your dexterity increase when you wear this trinket...",,
+$id=163,,信仰のお守り+1,信仰+2,Amulet of Faith+1,"Faith: +2
+Thou has a sense of being closer to the Gods with these rosary beads.",,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+$id=301,,防護のペンダント[毒],毒の状態異常を防ぐ。,Blessed Pendant [Poision],It prevents Poison.,,
+$id=302,,防護のペンダント[暗闇],暗闇の状態異常を防ぐ。,Blessed Pendant [Poision],It prevents Blind.,,
+$id=303,,防護のペンダント[沈黙],沈黙の状態異常を防ぐ。,Blessed Pendant [Poision],It prevents Silent.,,
+$id=304,,防護のペンダント[混乱],混乱の状態異常を防ぐ。,Blessed Pendant [Poision],It prevents Confuse.,,
+$id=305,,防護のペンダント[睡眠],睡眠の状態異常を防ぐ。,Blessed Pendant [Poision],It prevents Sleep.,,
+$id=306,,防護のペンダント[麻痺],麻痺の状態異常を防ぐ。,Blessed Pendant [Poision],It prevents Paralyze.,,
+,,,,,,,
+$id=310,,防護のペンダント[身体],毒・暗闇・麻痺の状態異常を防ぐ。,Blessed Pendant [Physical],"It prevents Poison, Blind and Paralyze.",,
+$id=311,,防護のペンダント[精神],沈黙・混乱・睡眠の状態異常を防ぐ。,Blessed Pendant [Mental],"It prevents Silent, Confuse and Sleep.",,
+,,,,,,,
+$id=316,,厚底ブーツ,フロアダメージを防ぐ。,Platform Boots,It prevents Floor Damage,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+$id=164,,瓶のベルト,[\n[10]用]瓶25%で消費なし,Flask Belt,"[For \n[10]] 25%: a flask used in battle isn't spent.
+Holy water +2 damage, pepper blinds 1 turn longer.",,
+$id=165,,コウモリのぬいぐるみ,[VP用]仲間が倒れると勇気が湧く,Plush Bat,"[For \n[19]] Soft and silly. When an ally falls:
+her super +15%, her stress −5.",,
+$id=166,,ロザリオ,ストレス増加-25%,Rosary,"Stress builds 25% slower.
+Plain wooden beads, polished smooth by prayer.",,
+$id=167,,不屈のメダリオン,戦闘中最初の崩壊が30%で奮起に,Medallion of Fortitude,"The first break in a battle has a 30% chance to become a rally.
+A trophy taken from a mighty foe.",,
+$id=168,,怒りのお守り,超必殺ゲージ+20%、消費疲労+10,Talisman of Rage,"Super charges 20% faster,
+but costs 10 more fatigue.",,
+$id=169,,安全ピン,[\n[2]用]衣装が破れにくい,Safety Pin,"[For \n[2]] Clothes tear noticeably slower
+(damage thresholds 6/13/22 instead of 4/10/18).",,
+$id=170,,焚き火のお守り,休息ポイント+1,Campfire Amulet,"+1 rest point at camp and at the inn.
+A warm stone that smells of smoke.",,
+$id=171,,婚約指輪,[\n[2]用]信仰+1、淫欲の上昇-20%,Engagement Ring,"[For \n[2]] Faith +1; lust rises 20% slower.
+Plain silver, and a promise she chose to accept.",,
+$id=172,,博打の指輪,[呪い]超必殺×1.3、失敗でダメージ1,Gambler's Ring,"\c[2][Cursed]\c[0] Super ×1.3, but a miss deals 1 damage
+and +10 stress. Can't be removed without cleansing.",,
+$id=173,,守銭奴の指輪,[呪い]勝利時ゴールド+50%、アーマー-2,Miser's Ring,"\c[2][Cursed]\c[0] Victory gold +50%, Armor −2.
+Can't be removed without cleansing.",,
+$id=200,,貞操帯（男）,ちんぽを出せない。[効果未実装],Chastity belt (Male),"
+",,
+,,,,,,,
+$id=202,,童貞達の怨念,装備中、エロ技量とエロ持久を０にする。,Curse of Virgin,makes your Ero technique and Ero endure to 0.,,
+,,,,,,,
+$id=400,,[ユニーク防具]胴体,,[unique armor],,,
+,,,,,,,
+$id=450,,[ユニーク防具]頭,,[unique helmet],,,
+,,,,,,,
+$id=500,,[ユニーク防具]オフハンド,,[unique Off-hand],,,
+,,,,,,,
+$id=505,,ドワーフの盃,"[回避値:5][アーマー値:5][Ｍアーマー値:5]
+防御時にのみアーマー値と回避値が付与される。",,"[Avoid: 5] [Armor Point: 5]
+Grants you Armor Points and Avoid ONLY when you select “Defend“ in combat.",,
+,,,,,,,
+$id=550,,【キャラ衣装】（スペシャル）,,[Costume] (Special),,,
+,,,,,,,
+$id=590,,アイリスのＴバック,"アイリス愛用のＴバック。
+汗と体液で沁みが出来ている。",Iris’s Thong,"Iris's favorite thong.
+It has stains from sweat and bodily fluids. ",,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+$id=600,,【サブキャラ衣装】（スペシャル）,,[Costume(Follower)] (Special),,,
+$id=601,,牛柄ビキニ[従者],牛柄ビキニ[従者],Cow bikini[Follower],Cow bikini[Follower],,
+$id=602,,アニマルスーツ[従者],"[DLC]
+アニマルスーツ[従者]",Animal Suit[Follower],"[DLC]
+Animal Suit[Follower]",,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+$id=607,,ナース服[PM],"[DLC]
+ナース服[PM]",Nurse Suit[PM],"[DLC]
+Nurse Suit[PM]",,
+,,,,,,,
+,,,,,,,
+$id=610,,ナース服[VP],"[DLC]
+ナース服[VP]",Nurse Suit[VP],"[DLC]
+Nurse Suit[VP]",,
+,,,,,,,
+$id=612,,黄金７柱司祭服[PM],"[DLC]
+司祭服[PM]",The 7 Golden Pillars Priestess Costume[PM],"[DLC]
+The 7 Golden Pillars Priestess Costume[PM]",,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+$id=617,,コンドームベルト[PM],"[DLC]
+コンドームベルト[PM]",Condom Belt[PM],"[DLC]
+Condom Belt[PM]",,
+,,,,,,,
+,,,,,,,
+$id=620,,コンドームベルト[VP],"[DLC]
+コンドームベルト[VP]",Condom Belt[VP],"[DLC]
+Condom Belt[VP]",,

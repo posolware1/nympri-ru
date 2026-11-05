@@ -1,0 +1,214 @@
+{
+ "source": "build_en.py",
+ "files": {
+  "DB_Actor.csv": {
+   "ru_md5": "954ef10b94eb2dbd04815b11569a1915",
+   "en_md5": "7c100011ed12275e0baab359973f0af3",
+   "rows": 42,
+   "stats": {
+    "orig": 26,
+    "merged": 0,
+    "manual": 0,
+    "ru": 16
+   }
+  },
+  "DB_Armor.csv": {
+   "ru_md5": "a7931d7f83f4644c5994701d6bbeceef",
+   "en_md5": "810aedfb0b57b803744da48c01432863",
+   "rows": 187,
+   "stats": {
+    "orig": 101,
+    "merged": 0,
+    "manual": 10,
+    "ru": 76
+   }
+  },
+  "DB_Class.csv": {
+   "ru_md5": "974b7a9028704a7b8c0cd5f332788aa3",
+   "en_md5": "3f1a7657803c87f06ef82e87fdea3274",
+   "rows": 7,
+   "stats": {
+    "orig": 5,
+    "merged": 0,
+    "manual": 0,
+    "ru": 2
+   }
+  },
+  "DB_Item.csv": {
+   "ru_md5": "431b83295131219e4cb71b3de4f75535",
+   "en_md5": "6efc4f458acc71bb703af1b9e4c1b588",
+   "rows": 543,
+   "stats": {
+    "orig": 245,
+    "merged": 0,
+    "manual": 9,
+    "ru": 289
+   }
+  },
+  "DB_NPC.csv": {
+   "ru_md5": "c342aae5e8c45ca7e7dfb4cd9453255b",
+   "en_md5": "33af6d043a7e854adf6a620716c16be4",
+   "rows": 226,
+   "stats": {
+    "orig": 218,
+    "merged": 0,
+    "manual": 0,
+    "ru": 8
+   }
+  },
+  "DB_NPCJob.csv": {
+   "ru_md5": "3bc9052e858b2b1186d1033d0baca335",
+   "en_md5": "58f6fe434853835483005b1070713b4a",
+   "rows": 22,
+   "stats": {
+    "orig": 14,
+    "merged": 0,
+    "manual": 0,
+    "ru": 8
+   }
+  },
+  "DB_Skill.csv": {
+   "ru_md5": "1af9c0dfaf8197752671d032f52e6705",
+   "en_md5": "06ba8455095272f59ea37ea378b79150",
+   "rows": 122,
+   "stats": {
+    "orig": 82,
+    "merged": 0,
+    "manual": 0,
+    "ru": 40
+   }
+  },
+  "DB_State.csv": {
+   "ru_md5": "11851beaea0b47e39ef59ef1d9e6c6c5",
+   "en_md5": "3e2517dcaa4b5c25b35d9926c05bbb9c",
+   "rows": 48,
+   "stats": {
+    "orig": 34,
+    "merged": 0,
+    "manual": 1,
+    "ru": 13
+   }
+  },
+  "DB_Weapon.csv": {
+   "ru_md5": "0788ccb657436b4a04272845fba3b4cf",
+   "en_md5": "65d55af4da83d4394042bbdd86993e95",
+   "rows": 261,
+   "stats": {
+    "orig": 139,
+    "merged": 0,
+    "manual": 17,
+    "ru": 105
+   }
+  },
+  "EroWindowText.csv": {
+   "ru_md5": "fb27e431159ecad9851f234916f7e593",
+   "en_md5": "13199f264630806b5167eb1dee0e68bb",
+   "rows": 124,
+   "stats": {
+    "orig": 64,
+    "merged": 0,
+    "manual": 0,
+    "ru": 60
+   }
+  },
+  "ProfileCharacterVariableMap.csv": {
+   "ru_md5": "4d4bf7ab2f42c4f1ec9ffe5e58ce9785",
+   "en_md5": "05e92424c6ba3ce5b095177ec3990917",
+   "rows": 370,
+   "stats": {
+    "orig": 36,
+    "merged": 0,
+    "manual": 0,
+    "ru": 334
+   }
+  },
+  "QuestList.csv": {
+   "ru_md5": "e824f09340323c63f1b83c245ca0b599",
+   "en_md5": "d787d47efa34b01c97bf3accedcaaab0",
+   "rows": 112,
+   "stats": {
+    "orig": 42,
+    "merged": 1,
+    "manual": 29,
+    "ru": 40
+   }
+  },
+  "commonSheet.csv": {
+   "ru_md5": "172b0a4ff71f4362992e82819872ebc8",
+   "en_md5": "c11742f372095c04209bf7b83dde59a3",
+   "rows": 1894,
+   "stats": {
+    "orig": 1182,
+    "merged": 0,
+    "manual": 0,
+    "ru": 712
+   }
+  },
+  "logsheet.csv": {
+   "ru_md5": "77f2440fab9c52b43190805d937a333a",
+   "en_md5": "24438c93a316238c6571aaebee34c254",
+   "rows": 3744,
+   "stats": {
+    "orig": 2179,
+    "merged": 0,
+    "manual": 34,
+    "ru": 1531
+   }
+  },
+  "profile.csv": {
+   "ru_md5": "69c3cc471d06055fc15dff990bf139bf",
+   "en_md5": "a67666585d7d0d53dd8ac906acc7c8ca",
+   "rows": 85,
+   "stats": {
+    "orig": 47,
+    "merged": 0,
+    "manual": 0,
+    "ru": 38
+   }
+  },
+  "sheet.csv": {
+   "ru_md5": "9df52d5654b11aa5321f1f52ad6e9516",
+   "en_md5": "778d293be55aca5f078fbe4b8fb73ee8",
+   "rows": 47509,
+   "stats": {
+    "orig": 31135,
+    "merged": 17,
+    "manual": 108,
+    "ru": 16249
+   }
+  },
+  "status.csv": {
+   "ru_md5": "248abc7155978422f723442b9df4773c",
+   "en_md5": "a0e8e815f0f7ee8dc4ad2f80a2e50d18",
+   "rows": 18,
+   "stats": {
+    "orig": 14,
+    "merged": 0,
+    "manual": 0,
+    "ru": 4
+   }
+  },
+  "window_ero_status_simple.csv": {
+   "ru_md5": "fe377f7b1b8931c9b184e8cad38409a5",
+   "en_md5": "3fac73ac1ba9f47298d2901cb71f8c1e",
+   "rows": 47,
+   "stats": {
+    "orig": 46,
+    "merged": 0,
+    "manual": 0,
+    "ru": 1
+   }
+  },
+  "npc/npc_misc.csv": {
+   "ru_md5": "6a44e4bc4fa96d14b2fcecd8c16dd330",
+   "en_md5": "a6b98d81406426060e61f5858826779d",
+   "rows": 19,
+   "stats": {
+    "orig": 15,
+    "merged": 0,
+    "manual": 0,
+    "ru": 4
+   }
+  }
+ }
+}
