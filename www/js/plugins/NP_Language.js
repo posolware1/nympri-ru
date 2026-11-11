@@ -26,6 +26,10 @@
  * Переключение: Настройки → «Язык / Language» или кнопка «RU | EN»
  * на титульном экране (слева от регулятора громкости). После
  * подтверждения игра перезапускается (location.reload()).
+ * Полный английский текст CSV/базы берётся из отдельного пакета nympri-ru
+ * (www/lang/en/build_info.json и data_overlay.json). Без этих файлов
+ * переключатель остаётся на русском и говорит об этом, а не делает вид,
+ * что английский текст уже стоит.
  *
  * API для других плагинов (в т.ч. будущего NP_Stress):
  *   NP_Language.lang()      -> 'ru' | 'en'
@@ -98,8 +102,21 @@ var NP_Language = NP_Language || {};
         var s = readText(rel);
         try { return s ? JSON.parse(s) : null; } catch (e) { console.warn('NP_Language: bad JSON', rel, e); return null; }
     }
+    function enFilesReady() {
+        var info = readJson(EN_DIR_REL + 'build_info.json');
+        var overlay = readJson(EN_DIR_REL + 'data_overlay.json');
+        return !!(info && info.files && Object.keys(info.files).length && overlay && typeof overlay === 'object');
+    }
+    NP_Language.enFilesReady = enFilesReady;
+    NP_Language.enBlocked = !enFilesReady();
+    if (EN && NP_Language.enBlocked) {
+        EN = false;
+        LANG = 'ru';
+        console.warn('NP_Language: www/lang/en is incomplete. English stays off until nympri-ru is installed.');
+    }
 
     // RU only: exact Show Text lines and Show Choices labels that never go through CSV.
+    // Runs after the English-files guard so a refused English switch still uses Russian.
     var BYPASS = {};
     if (!EN) {
         var bypassRaw = readJson('lang/ru/bypass.json');
@@ -388,6 +405,10 @@ var NP_Language = NP_Language || {};
     // switch and restart
     NP_Language.setLanguage = function(code, noReload) {
         code = code === 'en' ? 'en' : 'ru';
+        if (code === 'en' && NP_Language.enBlocked) {
+            console.warn('NP_Language: English files missing, switch refused');
+            return;
+        }
         ConfigManager.npLanguage = code;
         ConfigManager.save();
         if (noReload || code === LANG) return;
@@ -483,15 +504,30 @@ var NP_Language = NP_Language || {};
     }
     function openConfirm(scene) {
         var to = NP_Language.other();
-        var lines = to === 'en'
-            ? ['Переключить язык на English?', 'Switch the game to English? It will restart.']
-            : ['Переключить язык на Русский?', 'Switch the game to Russian? It will restart.'];
-        lines.push(NP_Language.inGame()
-            ? 'Несохранённый прогресс будет потерян. / Unsaved progress will be lost.'
-            : 'Игра перезапустится. / The game will restart.');
+        var blocked = to === 'en' && NP_Language.enBlocked;
+        var lines;
+        if (blocked) {
+            lines = [
+                'Файлы английского текста не найдены (www/lang/en).',
+                'English text files were not found (www/lang/en).',
+                'Их ставит отдельный пакет nympri-ru. Сейчас остаётся русский.',
+                'Install the separate nympri-ru pack. The game stays in Russian.'
+            ];
+        } else {
+            lines = to === 'en'
+                ? ['Переключить язык на English?', 'Switch the game to English? It will restart.']
+                : ['Переключить язык на Русский?', 'Switch the game to Russian? It will restart.'];
+            lines.push(NP_Language.inGame()
+                ? 'Несохранённый прогресс будет потерян. / Unsaved progress will be lost.'
+                : 'Игра перезапустится. / The game will restart.');
+        }
         scene._npLangHelp.setText(lines.join('\n'));
         scene._npLangHelp.open();
         var w = scene._npLangConfirm;
+        w.setHandler('ok', function() {
+            if (blocked) { w.callHandler('cancel'); return; }
+            NP_Language.setLanguage(to);
+        });
         w.refresh(); w.select(0); w.open(); w.activate();
     }
     NP_Language.openConfirm = openConfirm;

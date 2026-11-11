@@ -102,8 +102,17 @@ if (!codedRu.includes("\\I[122]")) fail("Russian value dropped the control code"
 
 const www = fs.mkdtempSync(path.join(require("os").tmpdir(), "np-bypass-"));
 fs.mkdirSync(path.join(www, "lang", "ru"), { recursive: true });
+fs.mkdirSync(path.join(www, "lang", "en"), { recursive: true });
 fs.writeFileSync(path.join(www, "index.html"), "");
 fs.copyFileSync(REAL_BYPASS, path.join(www, "lang", "ru", "bypass.json"));
+fs.writeFileSync(
+  path.join(www, "lang", "en", "build_info.json"),
+  JSON.stringify({ files: { "sheet.csv": {} } })
+);
+fs.writeFileSync(
+  path.join(www, "lang", "en", "data_overlay.json"),
+  JSON.stringify({ files: {}, sub: {} })
+);
 
 const ru = load(www, "ru");
 const ruMsg = message(ru);
@@ -146,6 +155,19 @@ missMsg.add("OFF");
 missMsg.setChoices(["OFF"], 0, 0);
 if (missMsg._texts[0] !== "OFF" || JSON.stringify(missMsg._choices) !== JSON.stringify(["OFF"])) {
   fail("missing bypass file changed text");
+}
+
+let blocked;
+try {
+  blocked = load(empty, "en");
+} catch (err) {
+  fail("missing www/lang/en threw: " + err);
+}
+if (!blocked.NP_Language.enBlocked) fail("English was not blocked");
+if (blocked.NP_Language.isEn() || blocked.NP_Language.lang() !== "ru") fail("English was not refused");
+blocked.NP_Language.setLanguage("en");
+if (blocked.NP_Language.lang() !== "ru" || blocked.NP_Language.isEn()) {
+  fail("setLanguage switched to English without www/lang/en");
 }
 
 console.log("bypass checks ok");
