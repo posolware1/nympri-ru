@@ -1,5 +1,7 @@
 ﻿Manual install. Python is not used.
 
+If you also want the plugins pack (https://github.com/posolware1/nympri-plugins), install that pack first, then this Russian patch. The plugins manual install stops if plugins.js already contains NP_.
+
 This is the Russian text patch for Nymphomania Priestess Alpha 0.80j (Windows).
 The game folder is the one with Game.exe. Inside it is www.
 Do not open or copy www\save.

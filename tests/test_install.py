@@ -402,6 +402,29 @@ class DocTests(unittest.TestCase):
         self.assertIn("Python 3 is needed only", en)
         self.assertIn("нужен только", ru)
 
+    def test_plugins_pack_is_installed_first(self):
+        url = "https://github.com/posolware1/nympri-plugins"
+        english = (
+            "install that pack first, then this Russian patch",
+            "The plugins manual install stops if plugins.js already contains NP_",
+        )
+        russian = (
+            "сначала поставьте его, потом этот русский патч",
+            "Ручная установка плагинов останавливается, если в plugins.js уже есть NP_",
+        )
+        docs = (
+            (ROOT / "README.md", english),
+            (ROOT / "manual" / "HOW.txt", english),
+            (ROOT / "README.ru.md", russian),
+            (ROOT / "manual" / "КАК.txt", russian),
+        )
+        for path, needles in docs:
+            text = path.read_text(encoding="utf-8-sig")
+            head = "\n".join(text.splitlines()[:10])
+            self.assertIn(url, head, path)
+            for needle in needles:
+                self.assertIn(needle, head, path)
+
     def test_manual_explains_replace_backup_and_check(self):
         how = (ROOT / "manual" / "HOW.txt").read_text(encoding="utf-8-sig")
         kak = (ROOT / "manual" / "КАК.txt").read_text(encoding="utf-8-sig")
