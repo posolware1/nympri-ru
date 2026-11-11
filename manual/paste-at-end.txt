@@ -1,0 +1,1 @@
+{"name":"NP_OptionsCategories","status":true,"description":"[RU mod] Options menu categories (load LAST)","parameters":{"showCounts":"true"}}

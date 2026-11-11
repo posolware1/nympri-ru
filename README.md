@@ -1,39 +1,25 @@
 # nympri-ru
 
-Russian localization **patch** for Nymphomania Priestess **Alpha 0.80j**, plus the `NP_Language` switch.
+Russian text patch for **Nymphomania Priestess Alpha 0.80j** (Windows). Not the full game. No `Game.exe`, pictures, or audio.
 
-Not a full game. No `Game.exe`, audio, images, or movies — translation data + 2 plugins only.
+Gameplay plugins: [nympri-plugins](https://github.com/posolware1/nympri-plugins)
 
-Gameplay plugins (battle HUD, diary, elites, …): [nympri-plugins](https://github.com/posolware1/nympri-plugins)
+Use the English Alpha 0.80j folder, the one that contains `Game.exe`.
 
-Ready ZIP: [Releases](https://github.com/posolware1/nympri-ru/releases) → `NymPri_080j_RU_Language_Patch.zip`
+## Install
 
-## Requirements
+Python 3 is needed only for this automatic way. Install it from https://www.python.org/downloads/ and on the first screen tick **Add python.exe to PATH**. If Windows opens the Store, that is the Store shortcut, not Python.
 
-- English **Alpha 0.80j** install (folder that contains `www\`).
-- Do **not** drop this on top of the full RU+mod build — that is a different package.
+1. Click **Code**, then **Download ZIP**.
+2. Extract the whole ZIP into a normal folder. Open the folder that contains `install.bat`. Do not start `install.bat` from inside the ZIP window.
+3. Copy the game's `www\csv` folder, `www\data\System.json`, and `www\js\plugins.js` somewhere outside the game. This patch replaces the text files. The installer does not keep a copy of them.
+4. Double-click `install.bat`.
+5. When the window asks, choose the game folder (`Game.exe`) or the `www` folder inside it.
+6. Wait until you see **Готово. Русский патч установлен.** and **Done. The Russian patch is installed.** Press Enter to close the window.
+7. Start the game. The language is Russian. In Options, open **Язык / Language**, or use **RU | EN** on the title screen.
 
-## Install (Windows)
+If the window says **Не получилось.**, open `install-log.txt` next to `install.bat` and send that file.
 
-1. Backup the game (at least `www\csv`, `www\data\System.json`, `www\js\plugins.js`).
-2. Download the release ZIP **or** clone/unpack this repo.
-3. Run:
-   ```bat
-   install.bat "C:\path\to\game"
-   ```
-   Or: `python install.py "C:\path\to\game"`
-4. Start the game. Default language: **Russian**.
+To undo, put those three copies back and delete `www\lang`. Details are in the manual.
 
-Manual: copy this repo’s `www\` into the game’s `www\` (overwrite), then  
-`python patch_plugins_js.py "C:\path\to\game\www\js\plugins.js"`  
-(`NP_Language` right after `MEO_Util_Node`, `NP_OptionsCategories` last — see `plugins_fragment.txt`).
-
-## Language switch
-
-Options → **Язык / Language**, or title button **RU | EN** (reloads). Choice is saved in `config.rpgsave`.
-
-RU is primary (`csv` + System terms). EN mode reads `www\lang\en\`.
-
-## Rollback
-
-Restore your backup of `www` (or `csv` / `System.json` / `plugins.js.bak`) and delete `www\lang\en`, `NP_Language.js`, `NP_OptionsCategories.js`.
+No Python: [manual/HOW.txt](manual/HOW.txt). Russian: [README.ru.md](README.ru.md) and [manual/КАК.txt](manual/КАК.txt).

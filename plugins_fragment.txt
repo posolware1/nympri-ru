@@ -1,12 +1,12 @@
-// === NymPri 0.80j RU Language Patch — plugins.js edits ===
-// 1) RIGHT AFTER the MEO_Util_Node entry, INSERT:
+// Same lines as manual/paste-after-MEO_Util_Node.txt and manual/paste-at-end.txt.
+// Paste those files. Each one is only the line that goes into plugins.js.
+//
+// 1) RIGHT AFTER the MEO_Util_Node entry (this line ends with a comma):
 {"name":"NP_Language","status":true,"description":"v1.1 Language: Russian / English (Options + Title).","parameters":{}},
 
-// 2) At the END of the plugins array (after the last plugin, before the closing ];),
-//    ADD a comma to the previous entry if needed, then INSERT:
+// 2) At the END of the plugins array, on the line before ];
+//    The line above it must end with a comma. This line does not:
 {"name":"NP_OptionsCategories","status":true,"description":"[RU mod] Options menu categories (load LAST)","parameters":{"showCounts":"true"}}
 
-// Load order rules:
-//   - NP_Language MUST be immediately after MEO_Util_Node (before MEO_Window_UtilWindow / any CSV readers).
-//   - NP_OptionsCategories SHOULD be last (after TB_* and other options plugins).
-// Optional: if you skip NP_OptionsCategories, Language still works via Options + Title "RU | EN".
+// NP_Language must be immediately after MEO_Util_Node.
+// NP_OptionsCategories must be last.
