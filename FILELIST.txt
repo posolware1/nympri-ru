@@ -4,7 +4,7 @@ csv/DB_Actor.csv	1605
 csv/DB_Armor.csv	20706
 csv/DB_Class.csv	258
 csv/DB_Item.csv	44457
-csv/DB_NPC.csv	114313
+csv/DB_NPC.csv	115360
 csv/DB_NPCJob.csv	522
 csv/DB_Skill.csv	13957
 csv/DB_State.csv	1716
@@ -14,13 +14,13 @@ csv/EroWindowText.csv	6518
 csv/ProfileCharacterVariableMap.csv	4587
 csv/QuestList.csv	80061
 csv/commonSheet.csv	344279
-csv/logsheet.csv	347822
+csv/logsheet.csv	350048
 csv/npc/npc_misc.csv	751
 csv/profile.csv	16015
-csv/sheet.csv	7738089
+csv/sheet.csv	7739138
 csv/status.csv	751
 csv/window_ero_status_simple.csv	1879
-data/System.json	77313
+data/System.json	77813
 js/plugins/NP_Language.js	28908
 js/plugins/NP_OptionsCategories.js	21608
 lang/en/build_info.json	4298
@@ -43,4 +43,4 @@ lang/en/csv/profile.csv	13453
 lang/en/csv/sheet.csv	6763753
 lang/en/csv/status.csv	498
 lang/en/csv/window_ero_status_simple.csv	1373
-lang/en/data_overlay.json	6614
+lang/en/data_overlay.json	8438
