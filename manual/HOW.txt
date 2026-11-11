@@ -1,0 +1,61 @@
+﻿Manual install. Python is not used.
+
+This is the Russian text patch for Nymphomania Priestess Alpha 0.80j (Windows).
+The game folder is the one with Game.exe. Inside it is www.
+Do not open or copy www\save.
+Do not copy this whole download into the game.
+Do not replace plugins.js with another whole file.
+
+This patch replaces the English text files with Russian ones.
+Before you copy anything, save your own copies. These steps do not keep the old text.
+plugins.js.manual-bak puts the plugin list back later. It does not put the English csv or System.json back.
+
+1. Extract the whole ZIP into a normal folder. Do not work inside the ZIP window.
+2. On the Desktop, make a new folder named NymPri-backup.
+3. Copy the game's www\csv into NymPri-backup. Copy the whole csv folder, including the npc folder inside it.
+4. Copy the game's www\data\System.json into NymPri-backup.
+5. Open the game's www\js. If plugins.js.manual-bak is already there, leave it. Do not replace it and do not delete it. It is an older copy of the plugin list.
+6. If plugins.js.manual-bak is not there, copy plugins.js and name the copy plugins.js.manual-bak. Leave it in the same js folder.
+7. Right-click the game's www\js\plugins.js. Choose Open with, then Notepad. Press Ctrl+F and search for NP_.
+   Remember what you see, then close Notepad without saving.
+   - Notepad found nothing: you will paste two lines in steps 12 and 13.
+   - Notepad found NP_: do not paste anything later. Still do steps 8 to 11. The text files still have to be replaced.
+8. Go up one folder from this file, to the folder that contains install.bat. Open www. Select these four folders inside it: csv, data, js, lang. Copy.
+9. Open the game's www. You must already see csv, data, and js in that window. Paste.
+10. If Windows asks to merge folders, click Yes.
+11. If Windows asks to replace files, click Replace the files in the destination.
+    Replace is the right button. csv and System.json are the Russian text. Skip would leave those files in English.
+    If you chose to decide for each file, click Replace on each one.
+    Do not delete the game's data folder or js folder first. Paste only replaces System.json inside data, and it adds two scripts inside js\plugins. Other files there stay.
+    The new lang folder is the English text for the RU | EN button. If Windows asks to replace files inside lang, click Replace too.
+    NP_Language.js and NP_OptionsCategories.js are part of this patch. If Windows asks to replace those two, click Replace.
+12. Only if step 7 found no NP_:
+    Open the game's www\js\plugins.js in Notepad.
+    Press Ctrl+F and find MEO_Util_Node. That line must end with a comma. If it does not, type a comma at the end. Click at the start of the next line.
+    Open manual\paste-after-MEO_Util_Node.txt. Press Ctrl+A, copy, and paste.
+13. Only if step 7 found no NP_:
+    Go to the bottom, to the line ];
+    The line above ]; must end with a comma. If it does not, type a comma at the end of that line. Click at the start of the ]; line.
+    Open manual\paste-at-end.txt. Press Ctrl+A, copy, and paste.
+    Press Ctrl+S and close Notepad.
+14. If step 7 found NP_, do not paste. Open plugins.js and check two things. NP_Language is the next name after MEO_Util_Node. The last name before ]; is NP_OptionsCategories. If either is wrong, close without saving. Do not try to fix it by pasting. Use install.bat instead (that way needs Python).
+15. Check before you start the game:
+    - www\js\plugins\NP_Language.js is there.
+    - www\js\plugins\NP_OptionsCategories.js is there.
+    - www\lang\en\build_info.json is there.
+    - Open www\data\System.json in Notepad. Press Ctrl+F and search for Уровень. Notepad finds it.
+    - Open www\csv\status.csv in Notepad. Press Ctrl+F and search for Раса. Notepad finds it.
+    - In plugins.js, NP_Language is the next plugin after MEO_Util_Node.
+    - The last name before ]; is NP_OptionsCategories.
+    - www\save is still there, and you did not copy it.
+16. Start the game. The language is Russian. Options has Язык / Language. The title screen has RU | EN.
+
+Put the game back
+1. Close the game.
+2. Copy NymPri-backup\csv back into the game's www. When Windows asks, click Replace. That returns the English tables.
+3. Copy NymPri-backup\System.json back into the game's www\data. Click Replace.
+4. Copy www\js\plugins.js.manual-bak onto www\js\plugins.js. Click Replace. That restores the plugin list. It does not restore the text. Steps 2 and 3 do that.
+5. Delete the folder www\lang. That removes the extra English files this patch added.
+6. NP_Language.js and NP_OptionsCategories.js can stay in www\js\plugins. They do not run when they are not in the list. Delete those two files only if you do not use the separate plugins pack. If you use that pack, leave the two files and restore that pack's plugin list instead of this manual-bak.
+
+install.bat keeps the same kind of list backup, named plugins.js.bak, and only the first one. Later runs do not replace it. That file also does not contain your old csv or System.json.
