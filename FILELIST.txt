@@ -17,7 +17,7 @@ csv/commonSheet.csv	344279
 csv/logsheet.csv	350048
 csv/npc/npc_misc.csv	751
 csv/profile.csv	16015
-csv/sheet.csv	7739138
+csv/sheet.csv	7738728
 csv/status.csv	751
 csv/window_ero_status_simple.csv	1879
 data/System.json	77813
