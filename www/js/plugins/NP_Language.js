@@ -2,13 +2,17 @@
 // NP_Language.js
 //=============================================================================
 /*:
- * @plugindesc v1.1 Выбор языка игры: Русский / English (переключатель в Настройках и на титуле).
+ * @plugindesc v1.2 Выбор языка игры: Русский / English (переключатель в Настройках и на титуле).
  * @author NP RU patch
  *
  * @help
  * Язык хранится в ConfigManager.npLanguage ('ru' | 'en', по умолчанию 'ru'),
  * т.е. в config.rpgsave — глобально, а не в сохранении. Сохранения
  * совместимы в обе стороны: структура данных и событий одинакова.
+ *
+ * Режим RU: строки «Показать текст» и подписи «Показать выбор», которые
+ * целиком совпадают с ключом в www/lang/ru/bypass.json, заменяются на
+ * русский. Управляющие коды остаются частью строки. В EN этот файл не читается.
  *
  * Режим EN:
  *  - CSV (./csv/*.csv) читаются из www/lang/en/csv/, если там есть файл
@@ -93,6 +97,32 @@ var NP_Language = NP_Language || {};
     function readJson(rel) {
         var s = readText(rel);
         try { return s ? JSON.parse(s) : null; } catch (e) { console.warn('NP_Language: bad JSON', rel, e); return null; }
+    }
+
+    // RU only: exact Show Text lines and Show Choices labels that never go through CSV.
+    var BYPASS = {};
+    if (!EN) {
+        var bypassRaw = readJson('lang/ru/bypass.json');
+        if (bypassRaw && typeof bypassRaw === 'object') BYPASS = bypassRaw;
+    }
+    NP_Language.bypassText = function(text) {
+        if (EN || typeof text !== 'string') return text;
+        if (Object.prototype.hasOwnProperty.call(BYPASS, text)) return BYPASS[text];
+        return text;
+    };
+    if (!EN && typeof Game_Message !== 'undefined') {
+        var _npMsgAdd = Game_Message.prototype.add;
+        Game_Message.prototype.add = function(text) {
+            return _npMsgAdd.call(this, NP_Language.bypassText(text));
+        };
+        var _npMsgChoices = Game_Message.prototype.setChoices;
+        Game_Message.prototype.setChoices = function(choices, defaultType, cancelType) {
+            var mapped = choices;
+            if (choices && typeof choices.map === 'function') {
+                mapped = choices.map(function(choice) { return NP_Language.bypassText(choice); });
+            }
+            return _npMsgChoices.call(this, mapped, defaultType, cancelType);
+        };
     }
 
     // ------------------------------------------------------------- EN mode
