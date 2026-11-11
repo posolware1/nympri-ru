@@ -5,6 +5,8 @@ With no argument, asks for the folder (a window on Windows, otherwise a typed pa
 Accepts the folder that contains Game.exe, the www folder, or www/js/plugins.js.
 Copies this patch's www/ over the game www/ (csv and System.json are replaced),
 then registers NP_Language and NP_OptionsCategories in plugins.js.
+An existing NP_*.js is kept when this patch is not a newer version, so a
+plugins-pack copy is not replaced by the older file shipped here.
 
 Idempotent. The first plugins.js.bak is kept. csv and System.json are not backed up.
 """
@@ -13,6 +15,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import os
+import re
 import sys
 from datetime import datetime
 from pathlib import Path
@@ -208,23 +211,94 @@ def source_files() -> list[Path]:
     return sorted(path for path in WWW_SRC.rglob("*") if path.is_file())
 
 
-def copy_www(www: Path) -> int:
+_VERSION_TAG = re.compile(r"@version\s+v?(\d+(?:\.\d+)*)", re.I)
+_VERSION_DESC = re.compile(r"@plugindesc\b[^\n]*?\bv(\d+(?:\.\d+)*)", re.I)
+
+
+def plugin_version_text(text: str) -> tuple[int, ...] | None:
+    """Version from @version, or from v1.2 in @plugindesc. Header only."""
+    head = "\n".join(text.splitlines()[:40])
+    match = _VERSION_TAG.search(head) or _VERSION_DESC.search(head)
+    if not match:
+        return None
+    return tuple(int(part) for part in match.group(1).split("."))
+
+
+def plugin_version(path: Path) -> tuple[int, ...] | None:
+    try:
+        text = path.read_text(encoding="utf-8", errors="replace")
+    except OSError:
+        return None
+    return plugin_version_text(text)
+
+
+def is_np_plugin(rel: Path) -> bool:
+    return (
+        len(rel.parts) >= 3
+        and rel.parts[0] == "js"
+        and rel.parts[1] == "plugins"
+        and rel.name.startswith("NP_")
+        and rel.suffix.lower() == ".js"
+    )
+
+
+def keep_existing_plugin(src: Path, dst: Path) -> bool:
+    """Keep dst unless both headers have a version and dst is older."""
+    if not dst.is_file():
+        return False
+    src_v = plugin_version(src)
+    dst_v = plugin_version(dst)
+    if src_v is None or dst_v is None:
+        return True
+    return dst_v >= src_v
+
+
+def version_label(version: tuple[int, ...] | None) -> str:
+    if version is None:
+        return "none"
+    return ".".join(str(part) for part in version)
+
+
+def copy_www(www: Path) -> tuple[int, list[str]]:
     import shutil
 
     count = 0
+    kept: list[str] = []
     for src in source_files():
         rel = src.relative_to(WWW_SRC)
         dst = www / rel
+        if is_np_plugin(rel) and keep_existing_plugin(src, dst):
+            kept.append(rel.as_posix())
+            src_v = plugin_version(src)
+            dst_v = plugin_version(dst)
+            if src_v is None or dst_v is None:
+                print(f"Kept existing {rel.as_posix()}. This patch does not replace an NP_ plugin that is already there.")
+                print(f"Оставлен существующий {rel.as_posix()}. Патч не заменяет уже лежащий плагин NP_.")
+            else:
+                print(
+                    f"Kept existing {rel.as_posix()} "
+                    f"(game {version_label(dst_v)}, patch {version_label(src_v)})."
+                )
+                print(
+                    f"Оставлен существующий {rel.as_posix()} "
+                    f"(в игре {version_label(dst_v)}, в патче {version_label(src_v)})."
+                )
+            continue
         dst.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(src, dst)
         count += 1
-    return count
+    return count, kept
 
 
-def copy_errors(www: Path) -> list[str]:
+def copy_errors(www: Path, kept: list[str] | None = None) -> list[str]:
+    skip = set(kept or [])
     errors = []
     for src in source_files():
         rel = src.relative_to(WWW_SRC)
+        if rel.as_posix() in skip:
+            if not (www / rel).is_file():
+                errors.append(f"missing {rel.as_posix()}")
+            continue
         dst = www / rel
         if not dst.is_file():
             errors.append(f"missing {rel.as_posix()}")
@@ -332,7 +406,7 @@ def _run(argv: list[str] | None, prompted: dict) -> int:
         return fail(1)
     print(f"Game folder: {www}")
     print("Copying files…")
-    copied = copy_www(www)
+    copied, kept = copy_www(www)
     print(f"Copied {copied} files into {www}")
     try:
         print(patch_plugins_js.patch_file(plugins_js))
@@ -343,7 +417,7 @@ def _run(argv: list[str] | None, prompted: dict) -> int:
         print("Список плагинов мог не записаться. Смотрите строки выше.")
         print("The plugin list may not have been written. See the lines above.")
         return fail(1)
-    errors = copy_errors(www)
+    errors = copy_errors(www, kept)
     text, _bom = patch_plugins_js.read_plugins_text(plugins_js)
     errors.extend(patch_plugins_js.order_errors(patch_plugins_js.names_of(patch_plugins_js.parse_plugins(text))))
     print(REPLACED_RU)
