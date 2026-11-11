@@ -171,7 +171,9 @@ class InstallTests(unittest.TestCase):
         (plugins_dir / "NP_Language.js").write_text(language, encoding="utf-8")
         self.assertEqual(install.main([str(game)]), 0)
         self.assertEqual((plugins_dir / "NP_OptionsCategories.js").read_text(encoding="utf-8"), options)
-        self.assertEqual((plugins_dir / "NP_Language.js").read_text(encoding="utf-8"), language)
+        shipped_lang = (ROOT / "www" / "js" / "plugins" / "NP_Language.js").read_bytes()
+        self.assertEqual((plugins_dir / "NP_Language.js").read_bytes(), shipped_lang)
+        self.assertEqual(install.plugin_version_text(shipped_lang.decode("utf-8")), (1, 2))
         self.assertIn("npStoryHint:'ui'", options)
         self.assertIn("npSoftlockFix:'mech'", (plugins_dir / "NP_OptionsCategories.js").read_text(encoding="utf-8"))
         self.assertIn("Уровень", (www / "data" / "System.json").read_text(encoding="utf-8"))
@@ -183,6 +185,16 @@ class InstallTests(unittest.TestCase):
         log = (self.tmp / "install-log.txt").read_text(encoding="utf-8-sig")
         self.assertIn("Kept existing js/plugins/NP_OptionsCategories.js", log)
         self.assertIn(install.SUCCESS_RU, log)
+
+    def test_same_version_language_is_kept(self):
+        game = self.tmp / "game"
+        www = self.make_game(game)
+        plugins_dir = www / "js" / "plugins"
+        plugins_dir.mkdir(parents=True)
+        language = "/*:\n * @plugindesc v1.2 pack language\n */\nvar NP_Language = { pack: true };\n"
+        (plugins_dir / "NP_Language.js").write_text(language, encoding="utf-8")
+        self.assertEqual(install.main([str(game)]), 0)
+        self.assertEqual((plugins_dir / "NP_Language.js").read_text(encoding="utf-8"), language)
 
     def test_older_np_plugin_is_replaced(self):
         game = self.tmp / "game"
@@ -205,7 +217,7 @@ class InstallTests(unittest.TestCase):
         )
         self.assertIsNone(install.plugin_version_text(" * @plugindesc [NP] Options menu. Load LAST.\n"))
         shipped = (ROOT / "www" / "js" / "plugins" / "NP_Language.js").read_text(encoding="utf-8")
-        self.assertEqual(install.plugin_version_text(shipped), (1, 1))
+        self.assertEqual(install.plugin_version_text(shipped), (1, 2))
         shipped_opts = (ROOT / "www" / "js" / "plugins" / "NP_OptionsCategories.js").read_text(encoding="utf-8")
         self.assertIsNone(install.plugin_version_text(shipped_opts))
 
@@ -431,6 +443,19 @@ class InstallTests(unittest.TestCase):
         for left, right in zip(manual_entries, installed_entries):
             if str(left.get("name", "")).startswith("NP_"):
                 self.assertEqual(left, right)
+
+    def test_bypass_exact_match(self):
+        proc = subprocess.run(
+            ["node", str(ROOT / "tests" / "bypass_check.js")],
+            cwd=str(ROOT),
+            capture_output=True,
+            text=True,
+            timeout=30,
+        )
+        self.assertEqual(proc.returncode, 0, proc.stdout + proc.stderr)
+        self.assertIn("bypass checks ok", proc.stdout)
+        bypass = json.loads((ROOT / "www" / "lang" / "ru" / "bypass.json").read_text(encoding="utf-8"))
+        self.assertEqual(len(bypass), 258)
 
     def test_patch_top_level_folders(self):
         tops = sorted(path.name for path in (ROOT / "www").iterdir())
