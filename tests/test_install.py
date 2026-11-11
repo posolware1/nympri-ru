@@ -137,6 +137,78 @@ class InstallTests(unittest.TestCase):
         self.assertEqual(bak.read_bytes(), original)
         self.assertEqual((game / "Game.exe").read_bytes(), b"MZ")
 
+    def test_ru_alone_installs_language_and_options(self):
+        game = self.tmp / "game"
+        www = self.make_game(game)
+        self.assertFalse((www / "js" / "plugins" / "NP_Language.js").exists())
+        self.assertFalse((www / "js" / "plugins" / "NP_OptionsCategories.js").exists())
+        self.assertEqual(install.main([str(game)]), 0)
+        self.assert_installed(www)
+        names = patch_plugins_js.names_of(
+            patch_plugins_js.parse_plugins((www / "js" / "plugins.js").read_text(encoding="utf-8"))
+        )
+        self.assertEqual(names[names.index("MEO_Util_Node") + 1], "NP_Language")
+        self.assertEqual(names[-1], "NP_OptionsCategories")
+
+    def test_pack_plugin_files_are_not_downgraded(self):
+        game = self.tmp / "game"
+        www = self.make_game(game)
+        plugins_dir = www / "js" / "plugins"
+        plugins_dir.mkdir(parents=True)
+        options = (
+            "/*:\n"
+            " * @plugindesc [NP] Options menu split into categories. Load LAST.\n"
+            " */\n"
+            "var NP_OptionsCategories = { MAP: { npStoryHint:'ui', npSoftlockFix:'mech' } };\n"
+        )
+        language = (
+            "/*:\n"
+            " * @plugindesc v1.1 pack language\n"
+            " */\n"
+            "var NP_Language = { pack: true };\n"
+        )
+        (plugins_dir / "NP_OptionsCategories.js").write_text(options, encoding="utf-8")
+        (plugins_dir / "NP_Language.js").write_text(language, encoding="utf-8")
+        self.assertEqual(install.main([str(game)]), 0)
+        self.assertEqual((plugins_dir / "NP_OptionsCategories.js").read_text(encoding="utf-8"), options)
+        self.assertEqual((plugins_dir / "NP_Language.js").read_text(encoding="utf-8"), language)
+        self.assertIn("npStoryHint:'ui'", options)
+        self.assertIn("npSoftlockFix:'mech'", (plugins_dir / "NP_OptionsCategories.js").read_text(encoding="utf-8"))
+        self.assertIn("Уровень", (www / "data" / "System.json").read_text(encoding="utf-8"))
+        names = patch_plugins_js.names_of(
+            patch_plugins_js.parse_plugins((www / "js" / "plugins.js").read_text(encoding="utf-8"))
+        )
+        self.assertEqual(names[names.index("MEO_Util_Node") + 1], "NP_Language")
+        self.assertEqual(names[-1], "NP_OptionsCategories")
+        log = (self.tmp / "install-log.txt").read_text(encoding="utf-8-sig")
+        self.assertIn("Kept existing js/plugins/NP_OptionsCategories.js", log)
+        self.assertIn(install.SUCCESS_RU, log)
+
+    def test_older_np_plugin_is_replaced(self):
+        game = self.tmp / "game"
+        www = self.make_game(game)
+        plugins_dir = www / "js" / "plugins"
+        plugins_dir.mkdir(parents=True)
+        old = "/*:\n * @plugindesc v1.0 old language\n */\nOLD_LANGUAGE\n"
+        (plugins_dir / "NP_Language.js").write_text(old, encoding="utf-8")
+        self.assertEqual(install.main([str(game)]), 0)
+        shipped_lang = ROOT / "www" / "js" / "plugins" / "NP_Language.js"
+        shipped_opts = ROOT / "www" / "js" / "plugins" / "NP_OptionsCategories.js"
+        self.assertEqual((plugins_dir / "NP_Language.js").read_bytes(), shipped_lang.read_bytes())
+        self.assertEqual((plugins_dir / "NP_OptionsCategories.js").read_bytes(), shipped_opts.read_bytes())
+
+    def test_plugin_version_from_header(self):
+        self.assertEqual(install.plugin_version_text(" * @plugindesc v1.1 hi\n"), (1, 1))
+        self.assertEqual(
+            install.plugin_version_text(" * @plugindesc v1.0\n * @version 2.0\n"),
+            (2, 0),
+        )
+        self.assertIsNone(install.plugin_version_text(" * @plugindesc [NP] Options menu. Load LAST.\n"))
+        shipped = (ROOT / "www" / "js" / "plugins" / "NP_Language.js").read_text(encoding="utf-8")
+        self.assertEqual(install.plugin_version_text(shipped), (1, 1))
+        shipped_opts = (ROOT / "www" / "js" / "plugins" / "NP_OptionsCategories.js").read_text(encoding="utf-8")
+        self.assertIsNone(install.plugin_version_text(shipped_opts))
+
     def test_www_folder_and_plugins_js_path(self):
         game = self.tmp / "game"
         www = self.make_game(game)
@@ -439,6 +511,10 @@ class DocTests(unittest.TestCase):
         self.assertIn("Replace the files in the destination", how)
         self.assertIn("Skip would leave", how)
         self.assertNotIn("click Skip and stop", how)
+        self.assertIn("whose name starts with NP_, click Skip", how)
+        self.assertNotIn("replace those two, click Replace", how)
+        self.assertIn("чьё имя начинается с NP_, нажмите Пропустить", kak)
+        self.assertNotIn("эти два файла, нажмите Заменить", kak)
         self.assertIn("Заменить файлы в папке назначения", kak)
         self.assertIn("Пропустить", kak)
         self.assertIn("Объединить папки", kak)

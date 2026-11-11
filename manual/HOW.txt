@@ -27,10 +27,10 @@ plugins.js.manual-bak puts the plugin list back later. It does not put the Engli
 10. If Windows asks to merge folders, click Yes.
 11. If Windows asks to replace files, click Replace the files in the destination.
     Replace is the right button. csv and System.json are the Russian text. Skip would leave those files in English.
-    If you chose to decide for each file, click Replace on each one.
-    Do not delete the game's data folder or js folder first. Paste only replaces System.json inside data, and it adds two scripts inside js\plugins. Other files there stay.
+    If you chose to decide for each file, click Replace on csv and System.json.
+    If Windows asks to replace a file whose name starts with NP_, click Skip. That keeps a newer plugins-pack copy. If it does not ask, the new file is the right one.
+    Do not delete the game's data folder or js folder first. Paste only replaces System.json inside data, and it adds two scripts inside js\plugins when those names are not there yet. Other files there stay.
     The new lang folder is the English text for the RU | EN button. If Windows asks to replace files inside lang, click Replace too.
-    NP_Language.js and NP_OptionsCategories.js are part of this patch. If Windows asks to replace those two, click Replace.
 12. Only if step 7 found no NP_:
     Open the game's www\js\plugins.js in Notepad.
     Press Ctrl+F and find MEO_Util_Node. That line must end with a comma. If it does not, type a comma at the end. Click at the start of the next line.
