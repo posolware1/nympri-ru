@@ -4,6 +4,8 @@ Russian text patch for **Nymphomania Priestess Alpha 0.80j** (Windows). Not the 
 
 Gameplay plugins: [nympri-plugins](https://github.com/posolware1/nympri-plugins)
 
+If you also want the plugins pack ([nympri-plugins](https://github.com/posolware1/nympri-plugins)), install that pack first, then this Russian patch. The plugins manual install stops if plugins.js already contains NP_.
+
 Use the English Alpha 0.80j folder, the one that contains `Game.exe`.
 
 ## Install

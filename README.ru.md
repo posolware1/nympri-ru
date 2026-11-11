@@ -4,6 +4,8 @@
 
 Плагины геймплея: [nympri-plugins](https://github.com/posolware1/nympri-plugins)
 
+Если нужен ещё набор плагинов ([nympri-plugins](https://github.com/posolware1/nympri-plugins)), сначала поставьте его, потом этот русский патч. Ручная установка плагинов останавливается, если в plugins.js уже есть NP_.
+
 Нужна английская Alpha 0.80j. Папка игры — та, где лежит `Game.exe`.
 
 ## Установка
